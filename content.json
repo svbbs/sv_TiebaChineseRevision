@@ -1,0 +1,403 @@
+{ "Format": "1.26.5",
+
+	"When":{
+		"Language":"zh"
+	},
+
+	"Changes":
+  [		
+	  {
+		  "Action": "EditData",
+		  "Target": "Data/Events/FarmHouse",
+		  "Entries":
+			  {	//佩妮->潘妮
+				  "4324303/e 4325434/O Penny/A pennyRedecorating/l noQuilt/B": "spring_day_ambient/-1000 -1000/farmer 27 13 0 Penny 26 13 1/fade unfade/makeInvisible 26 13/makeInvisible 20 4/eyes 1 -10/positionOffset farmer 0 8/viewport -100 -100 true unfreeze/pause 1000/emote farmer 24/pause 3000/showFrame Penny 21/startJittering/pause 500/stopJittering/showFrame Penny 4/pause 500/speak Penny \"@……早上好……$11\"/pause 1000/showFrame Penny 21/startJittering/pause 500/stopJittering/showFrame Penny 4/pause 500/faceDirection farmer 3/emote Penny 32/pause 500/faceDirection farmer 2/emote farmer 16/jump farmer/pause 1000/animate Penny false true 150 4 5 6 7/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/stopAnimation Penny/showFrame Penny 21/pause 500/speak Penny \"注意到有什么变得柔软了吗？这个床罩是我亲手做的。$11\"/eyes -1 2000/startJittering/pause 2000/stopJittering/speak Penny \"所以，你觉得怎么样？$11\"/quickQuestion #看起来很棒！#我不喜欢这个。(break)emote Penny 20\\speak Penny \"我很高兴你喜欢它。房子开始变得越来越很舒适了，不是吗？$h\"\\faceDirection Penny 2\\faceDirection farmer 2\\emote farmer 20\\faceDirection farmer 3\\faceDirection Penny 1\\pause 1000\\animate Penny false true 100 35\\animate farmer true true 100 101(break)emote Penny 28\\speak Penny \"哦……好的。$s#$b#我把旧家具放到一个箱子里了……想换就可以换回来……$s\"\\faceDirection Penny 3/pause 3000/fade/viewport -1000 -1000/pause 500/message \"潘妮一直在家里辛勤工作……\"/pause 500/message \"这真的很有家的感觉！\"/pause 2000/end",
+			  }
+	  },
+	  {	
+		  "Action": "EditData",
+		  "Target": "Strings/StringsFromMaps",
+		  "Entries":
+			  {	//约迪->乔迪
+				  "SamHouse.3": "乔迪-^因为我很快就会回家，因此我想先告诉你几件事。^我可能和你记忆中的我有很大的不同。 我在外面看到了某些事情，让我感到十分震撼，最近我的精神一直紧绷着，无法放松。^我不想吓到你或者让你感到不安， 我只是不想让你见到我时感到震惊。^记住, 无论我在你面前表现的有多奇怪，你和孩子始终是我的一切。^我们很快会见面。^-肯特",
+			  }
+	  },
+	  {
+		  "Action": "EditData",
+		  "Target": "Data/Events/Forest",
+		  "Entries":
+			  {	//修改再水化
+				  "3910975/f Shane 1500/e 3910674/t 900 2000/w rainy": "echos/-2000 -2000/farmer 83 92 2 Shane -3000 -3000 2 Harvey -3000 -3000 2/skippable/specificTemporarySprite shaneCliffs/viewport 83 99 clamp true/pause 1000/move farmer 0 5 2/pause 500/speak Shane \"……$7#$b#@……$7\"/pause 1000/showFrame farmer 4/pause 1000/speak Shane \"对……对不起……*打嗝*$7#$b#……$7#$b#我……我的人生……$7#$b#是个可悲的笑话……$7#$b#看着我……$7#$b#……$7#$b#我为什么要挣扎呢？ ……*抽咽*$7#$b#我根本掌控不了自己的人生……$7#$b#我只是……风中摇曳的一片垃圾…… *打嗝*$7#$b#……$7#$b#我最近经常来这里……往下看……$7#$b#这是控制我人生的最后一个机会…… 这些悬崖……$7#$b#……$7#$b#但…… 但…… *打嗝*…… 但是我太害怕，太焦虑。就像平时一样…… $7\"/pause 1000/showFrame farmer 0/pause 2000/speak Shane \"@…… 我的人生就是工作，睡觉，吃喝……到…… 到自我仇恨的沮丧心情。$7#$b#为什么我还要继续？ 告诉我…… 告…… 告诉我为什么我不应该现在马上从悬崖边上滚下去……$7\"/pause 1000/showFrame farmer 0/pause 1000/question shaneCliffs \"#因为有太多的留恋！#贾斯需要你。你就像她的父亲。#因为这会是一种罪恶。#这是你自己的决定。我只知道为了你我会一直在这里。\"/pause 500/pause 500/pause 500/pause 1000/speak Shane \"@……$7\"/pause 500/showFrame farmer 4/pause 1000/speak Shane \"……我想你应该带我去医院了。$7\"/pause 500/showFrame farmer 0/jump farmer/pause 1500/globalFade/viewport -1000 -1000/playMusic none/changeLocation Hospital/warp farmer 16 7/playMusic Hospital_Ambient/warp Harvey 16 6/faceDirection farmer 0/specificTemporarySprite shaneHospital/viewport 16 6 true/pause 2000/speak Harvey \"……我已经帮他清洗过胃部并且给他身体重新补充了水分。他会好起来的。#$b#总之，庆幸你及时把他送到医院。\"/faceDirection Harvey 1/emote Harvey 28/speak Harvey \"酒精太多会对身体造成很大负担…… 但是现在我最担心的是他的心理健康……$s#$b#当他醒来时，我会和他聊聊关于他的治疗方案。我认识祖祖城的一个优秀心理学家……\"/pause 500/faceDirection farmer 1/pause 1000/speak Harvey \"有时，生活会很痛苦…#$b#但是未来总是充满美好和希望的。你得学会相信它。\"/pause 2000/end invisible Shane",
+			  }
+	  },
+	  {
+		  "Action": "EditData",
+		  "Target": "Data/Events/Saloon",
+		  "Entries":
+			  {	//son 儿子->孩子
+				  "3917590/n saloonSportsRoom/O Alex": "distantBanjo/-100 -100/farmer 31 20 0 Alex 32 7 0 Shane 33 8 0 Gus 34 8 0 Kent 35 8 0 George 36 7 0/skippable/specificTemporarySprite gridballGameTV/viewport 34 7 true/move farmer 0 -13 1 true/pause 1000/textAboveHead Alex \"干得好！\"/pause 600/jump Gus/pause 2000/textAboveHead George \"进球！\"/pause 400/textAboveHead Alex \"走起来！\"/faceDirection Kent 3 true/faceDirection Gus 1 true/animate Gus false true 100 22/animate Kent false true 100 17/shake Gus 500/shake Kent 500/pause 500/textAboveHead George \"好样的！\"/pause 1000/stopAnimation Gus/stopAnimation Kent/faceDirection Kent 0 true/faceDirection Gus 0/pause 1000/faceDirection Alex 3/pause 400/speak Alex \"嘿，@！你做到了！$h\"/faceDirection Alex 1/speak Alex \"所以……你觉得呢？\"/pause 500/emote farmer 8/faceDirection Alex 3/speak Alex \"我一直在想……你知道我以前经常梦想有一天成为运动员吗？#$b#唔，最终结果是跟我想的有些不一样……$9#$b#不过别误会了！我还是很开心的！$h#$b#……但是我觉得如果能有一个地方可以让我们一起在外头看周日的比赛会很酷。格斯非常喜欢这个主意，他把他房子的里屋分出来一部分给我了！#$b#这样，我就可以用简单的办法，让我的“梦想”一直保持。\"/pause 500/emote farmer 32/pause 600/faceDirection George 3/speak George \"你做得很好，孩子。我本来是可以在家里看的，但来这里让我感觉自己又年轻了！$h\"/faceDirection Alex 1/speak Alex \"谢谢，爷爷。\"/pause 500/speak Kent \"我很高兴能有个借口离开家，让我能够喘口气。\"/faceDirection Alex 2/pause 100/textAboveHead Shane \"我也一样\"/pause 1200/speak Gus \"我很开心。而且它对生意也有好处！$h#$b#虽然可能对谢恩的肝脏不太好……$s\"/pause 100/faceDirection Shane 2 true/animate Shane false true 100 18/jump Shane/pause 500/textAboveHead Shane \"嘿！\"/pause 500/emote Alex 32/pause 2000/fade/viewport -1000 -1000/pause 400/message \"看来他们有了一个新的星期天常规活动。\"/pause 1000/message \"5,000 金花得很值！\"/pause 1000/end dialogue Alex \"再次感谢你的出资，@。对我来说这是一个有趣的项目，并且看起来大伙都很高兴！\"",
+			  }
+	  },
+	  {
+		  "Action": "EditData",
+		  "Target": "Data/mail",
+		  "Entries":
+			  {	//今天->明天
+				  "fall_26": "亲爱的 @,^不知道你有没有注意到寒气，冬天可能要来了……^不然就是黑暗的游魂，呼啸着和我们一起庆祝明天的节日……万灵节！^晚上10点来镇里 和我们一起庆祝吧。^-镇长刘易斯 [#]万灵节通知",
+			  }
+	  },
+	  {
+		  "Action": "EditData",
+		  "Target": "Strings/StringsFromCSfiles",
+		  "Entries":
+			  {	//谷仓->畜棚
+				  "MustBePlacedInBarn": "只能放置在畜棚里。",
+			  }
+	  },
+	  {
+		  "Action": "EditData",
+		  "Target": "Characters/Dialogue/Maru",
+		  "Entries":
+			  {	//同父异母->同母异父
+				  "summer_Tue": "不知之前有没有和你讲过，其实塞巴斯蒂安是我同母异父的兄弟。#$e#不过我们俩长相是完全不同啦。",
+			  }
+	  },
+	  {
+		  "Action": "EditData",
+		  "Target": "Strings/StringsFromCSfiles",
+		  "Entries":
+			  {	//今天->明天
+				  "TV.cs.13189": "明天多云，一整天都会狂风大作。",
+			  }
+	  },
+	  {
+		  "Action": "EditData",
+		  "Target": "Strings/Locations",
+		  "Entries":
+			  {	//老师傅->老坎诺利大师
+				  "Woods_Statue": "--老坎诺利大师香炸奶酪卷--\n……依旧寻求着最甜的味道……",
+			  }
+	  },
+	  {
+		  "Action": "EditData",
+		  "Target": "Strings/UI",
+		  "Entries":
+			  {	//去掉重复的厘米
+				  "Collections_Description_BiggestCatch": "最大捕获尺寸：{0}。",
+			  }
+	  },
+	  {
+		  "Action": "EditData",
+		  "Target": "Characters/Dialogue/MarriageDialogueHaley",
+		  "Entries":
+			  {	//高新->高兴
+				  "Indoor_Day_3": "我很高兴自己学着享受打扫！房子很容易变脏。$10#$e#把所有东西清理好是件让人有成就感的事。#$e#在你走之前我能吻你吗？$11",
+			  }
+	  },
+	  {
+		  "Action": "EditData",
+		  "Target": "Data/Events/Mountain",
+		  "Entries":
+			  {	//润色 “这里的水从来不会变得更干净”
+				  "8357109/w sunny/t 600 1900/n linusTrashCleanup": "spring_day_ambient/-1000 -1000/farmer -100 -100 2 Linus 63 21 2/skippable/hideShadow Linus true/showFrame Linus 24/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 129 241 14 15 60 20/viewport 63 21 true/pause 5000/speak Linus \"啊……感觉真不错。$4\"/pause 1000/speak Linus \"这里的水从来没有这么干净过。$4\"/pause 2000/speak Linus \"……我也会变得更干净！嘿嘿嘿。$5\"/pause 3000/end",
+			  }
+	  },
+	  {
+		  "Action": "EditData",
+		  "Target": "Characters/Dialogue/MarriageDialogue",
+		  "Entries":
+			  {	//润色 “我不知道如果我的肺能处理这样的新鲜”
+				  "Outdoor_Shane": "我不确定我的肺能不能承受这样的新鲜空气。我比较习惯Joja空气。",
+			  }
+	  },
+	  {
+		  "Action": "EditData",
+		  "Target": "Strings/schedules/Sandy",
+		  "Entries":
+			  {	//补充对应缺失的中文对话
+				  "Sandy_Birthday_Greeting": "噢，艾米丽！我一直盼着你来呢！$h#$b#我今天早上还感觉有些寂寞呢。#$e#但现在我很高兴你来了！$h",
+				  "Sandy_Birthday_Hangout": "现在星露谷的天气怎么样？#$e#那里的花闻起来很香。$h",
+				  "Sandy_Birthday_Lake": "靠近湖边似乎总能感受到些凉意。#$e#偶尔走出家门也不错！$h",
+				  "Sandy_Birthday_Bones": "很奇怪，不是吗？",
+				  "Sandy_Birthday_Camel": "我想她卖的是一些稀有产品。",
+				  "Sandy_Birthday_Bye": "我今天玩的很愉快。$h#$b#谢谢你做我的朋友。$h#$e#随时可以再来！$h",
+			  }
+	  },
+	  {
+		  "Action": "EditData",
+		  "Target": "Strings/Locations",
+		  "Entries":
+			  {	//东边->西边 埋在北边->藏在北边
+				  "NutHint_NorthBuried": "还有 {0} 个埋在北边……",
+				  "NutHint_WestBuried": "还有 {0} 个埋在西边……",
+				  "NutHint_SouthBuried": "还有 {0} 个埋在南边……",
+				  "NutHint_NorthHidden": "还有 {0} 个藏在北边……",
+			  }
+	  },
+	  {
+		  "Action": "EditData",
+		  "Target": "Characters/Dialogue/Caroline",
+		  "Entries":
+			  {	//沙龙->餐吧
+				  "Thu": "#$1 Caroline1#嗯……不知能不能让皮埃尔负责今天的晚饭。#$e#嗯……今天的晚饭我该做些什么好呢？#$e#要不从餐吧那儿买份儿外卖好了。",
+			  }
+	  },
+	  {
+		  "Action": "EditData",
+		  "Target": "Strings/StringsFromMaps",
+		  "Entries":
+			  {	//多跟->多根
+				  "Hospital.4": "是否有时感到生活艰难？你是否曾经遇到过一直解决不掉的烦恼？如果有的话可以到医生那里去取普拉沃罗兴农药剂。^（普拉沃罗兴农并不见得适合每一个人。副作用可能包括失眠、暴怒、喉咙处出现肿胀、双唇永久变色、脱发、中风。在极少数情况下（1/500）服用对象会有一根骨头或者多根骨头完全解体。） ",
+			  }
+	  },
+	  {
+		  "Action": "EditData",
+		  "Target": "Strings/Locations",
+		  "Entries":
+			  {	//修复蜗牛教授名字在事件中显示为英文的问题
+				  "IslandFieldOffice_Intro_Event": "fieldofficeTentMusic/-1000 -1000/farmer 4 10 0/skippable/addTemporaryActor SafariGuy 16 32 5 4 0 true Professor_Snail/viewport 4 6 true/move farmer 0 -2 0/pause 1000/faceDirection SafariGuy 1 true/pause 50/faceDirection SafariGuy 2 true/pause 500/changeName SafariGuy 蜗牛教授/speak SafariGuy \"啊……请进！\"/move farmer 2 0 0/move farmer 0 -4 3/faceDirection SafariGuy 1/pause 500/speak SafariGuy \"欢迎来到我的办事处。\"/faceDirection SafariGuy 2/faceDirection farmer 2/showFrame SafariGuy 16/emote SafariGuy 28/pause 500/speak SafariGuy \"如你所见……这里很空。$s#$b#我被困在那个山洞里，所以项目没什么进展。$s\"/pause 50/showFrame SafariGuy 0/pause 200/faceDirection SafariGuy 1/pause 100/speak SafariGuy \"但这就是我叫你来的原因！嘿嘿……$h\"/faceDirection farmer 3/emote farmer 8/speak SafariGuy \"是这样的，我是做骨头生意的……#$b#特别是古代的骨头……这个岛上正好到处都是。#$b#所以说，如果你在这个岛上找到什么骨头、化石、木乃伊标本，请把它们带过来，好吗？我会给你相应的报酬！$h\"/pause 200/faceDirection SafariGuy 1/end",
+			  }
+	  },
+	  {
+		  "Action": "EditData",
+		  "Target": "Data/TV/TipChannel",
+		  "Entries":
+			  {	//修订离地而居中的若干错误
+				  "1": "给所有新人一个提示：在等待第一次收成的同时，你可以去砍柴和收集野外采集物以挣取些额外收入！",
+				  "8": "接下来就说说围栏吧。围栏有助于抑制杂草的蔓延和保护你的庄稼。围栏还可以让农民圈养他们的牲口。一般的木围栏很快就会破损，但是石头、铁以及硬木做的围栏可以用很久!",
+				  "78": "鱼类聚焦：大眼鱼。你可以在秋天和冬天的雨夜找到这种鱼。任何淡水水域都有它们的身影。",
+				  "88": "想知道怎样才可以获得“精炼石英”吗？你须要将一块普通的旧石英放入炉内。然后用一些煤炭来起火。",
+				  "95": "下面这些鱼，你只有在冬天才能找到：鱿鱼和蛇齿单线鱼。鱿鱼可以在夜晚的大海中抓到。蛇齿单线鱼则出现在淡水湖中。当然，也有传言说还有一些非常稀有和奇特的鱼，只有在特别的季节中才会出现。但是我没有它们的相关资料。",
+				  "99": "我们来说说晶球吧。晶球是中空的石头，通常含有珍贵的矿物。只需一点辛劳费，铁匠就可以帮你敲开它们。晶球也有很多种类，每种晶球都含有不同的矿物。不过，稀有的“万象晶球”则会含有所有种类的矿物。",
+				  "148": "再次提醒一下，下面这些鱼，你只有在夏天才能找到：麻哈脂鲤，可以在白天的森林可流中找到。虹鳟鱼，可以在白天的森林河流和山涧找到。河豚，可以下午时分的大海中找到。还有章鱼，可以在早晨的大海中找到。可以的话，就抓住它们！",
+				  "151": "鱼类聚焦：大海参。你可以在大海中找到这种珍贵的鱼。它只会在夏天和冬天的晚上出现。",
+				  "190": "鱼类聚焦：木跃鱼、沙鱼以及蝎鲤鱼。据说，木跃鱼只生存在丛林深处。沙鱼和蝎鲤鱼只能在沙漠绿洲中找到。",
+			  }
+	  },
+	  {
+		  "Action": "EditData",
+		  "Target": "Data/Fish",
+		  "Fields": 
+			  {	//将原英文名改为中文名
+				  "160": { 13: "鮟鱇鱼" },
+				  "795": { 13: "虚空鲑鱼" },
+				  "796": { 13: "史莱姆鱼" },				
+			  }
+	  },
+	  
+	  //ver3.1.0
+	  //蓝铁饼鱼->蓝碟鱼
+	  {
+		  "Action": "EditData",
+		  "Target": "Data/Fish",
+		  "Fields": 
+			  {
+				  "838": { 13: "蓝碟鱼" }
+			  }
+	  },
+
+	  {
+		  "Action": "EditData",
+		  "Target": "Data/ObjectInformation",
+		  "Fields": 
+			  {	
+				  "838": { 4: "蓝碟鱼" }			
+			  }
+	  },
+	  
+	  {
+		  "Action": "EditData",
+		  "Target": "Strings/SpecialOrderStrings",
+		  "Entries":
+			  {	
+				  "Willy2_Objective_1_Text": "捕获 5 条蓝碟鱼。"
+			  }
+	  },
+	  
+	  //马里奥彩蛋，老哥->老弟
+	  {
+		  "Action": "EditData",
+		  "Target": "Strings/StringsFromMaps",
+		  "Entries":
+			  {	
+				  "Pirates2": "小红：妈妈咪呀！冷静点，老弟。哎呦喂！"
+			  }
+	  },
+	  
+	  //克->金
+	  {
+		  "Action": "EditData",
+		  "Target": "Data/ExtraDialogue",
+		  "Entries":
+			  {	
+				  "PurchasedItem_3_QualityLow_Rude": "我昨晚去购物了，买了廉价出售的{1}{2}，只需要{3}金。#$e#那是{4}！难怪皮埃尔的售价{5}那么便宜？",
+				  "PurchasedItem_3_QualityHigh_Rude": "我昨晚去购物了，买了廉价出售的{1}{2}，只需要{3}金。#$e#它真是相当{4}。",
+				  "PurchasedItem_3_NonRude": "我昨晚去购物了，买了廉价出售的{1}{2}，只需要{3}金。#$e#我不能错过那么低的价格。",
+			  }
+	  },
+	  
+	  //萨姆->山姆
+	  {
+		  "Action": "EditData",
+		  "Target": "Strings/StringsFromMaps",
+		  "Entries":
+			  {	
+				  "SamHouse.9": "山姆的电吉他。它有一对主动拾音器和一个摇把。",
+				  "SamHouse.11": "这是山姆的电脑。他电脑中有海量电脑游戏。"
+			  }
+	  },
+
+	  //ver3.2.2
+	  //-锚- -> 锚
+	  {
+		  "Action": "EditData",
+		  "Target": "Data/ObjectInformation",
+		  "Entries":
+			  {
+				  "117": "Anchor/100/-300/Arch/锚/它可能属于古代海盗。/Beach .05/Item 1 289",
+			  }
+	  },
+	  
+	  //Island Bikini->姜岛比基尼
+	  {
+		  "Action": "EditData",
+		  "Target": "Data/ClothingInformation",
+		  "Entries":
+			  {
+				  "1297": "Island Bikini/姜岛比基尼/姜岛经典款。/299/-1/50/255 195 0/true/Shirt/Sleeveless",
+			  }
+	  },
+
+	  //ver3.2.3
+	  //pookie->布奇->亲爱的
+	  {
+		  "Action": "EditData",
+		  "Target": "Strings/StringsFromCSFiles",
+		  "Entries":
+			  {
+				  "NPC.cs.4507": "亲爱的",
+			  }
+	  },
+
+	  //ver3.2.4
+	  //蠢材的黄金->愚人金
+	  {
+		  "Action": "EditData",
+		  "Target": "Data/ObjectInformation",
+		  "Entries":
+			  {
+				  "559": "Pyrite/120/-300/Minerals -12/黄铁矿/常被称为“愚人金”。",
+			  }
+	  },
+
+	  //ver3.2.5
+	  //再次修正乔治对话，儿子->孩子
+	  {
+		  "Action": "EditData",
+		  "Target": "Data/Events/JoshHouse",
+		  "Entries":
+			  {
+				  "5837189/n georgeGifts": "jaunty/-1000 -1000/farmer -100 -100 02 George 18 19 2 Evelyn 3 17 0/skippable/animate George false true 400 0 20/positionOffset George 0 -16/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 17 17/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 19.5 18.5/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 16.5 18/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 20 17/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 19 17/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 103 243 10 13 18.5 19.5/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 17.25 20.6/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 17 21/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 17.5 21/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 103 243 10 13 15 18/specificTemporarySprite staticSprite LooseSprites\\\\Cursors 288 1231 16 16 17 19 998/viewport 18 19 true/pause 5000/warp farmer 9 24/playSound doorClose/move farmer 0 -4 1/move farmer 4 0 1/stopAnimation George/faceDirection George 3/speak George \"@？这都是什么意思……#$b#是什么恶作剧吗？\"/pause 500/quickQuestion #我们想表达对你的感谢#你的妻子搞出来的#是的，就是恶作剧(break)playMusic none\\pause 1000\\positionOffset George -4 0\\playSound Cowboy_Footstep\\pause 500\\positionOffset George -4 0\\playSound Cowboy_Footstep\\pause 500\\positionOffset George -4 0\\playSound Cowboy_Footstep\\pause 500\\specificTemporarySprite georgeLeekGift\\specificTemporarySprite removeSprite 998\\playSound Ship\\pause 800\\showFrame George 21\\playSound coin\\playMusic echos\\pause 1000\\speak George \"韭葱……$s\"\\pause 1000\\speak George \"是我的最爱……就像妈妈在好多年前一直做的一样……\"\\pause 2000\\showFrame George 0\\faceDirection George 2\\speak George \"唔。嗯……\"\\emote George 40\\showFrame George 16\\pause 500\\speak George \"嗯，那个……唔……#$b#我想我大概没有我以为的那样，被遗忘和忽视了……$s\"\\faceDirection George 3\\speak George \"谢谢你，孩子。$h^谢谢，亲爱的。$h#$b#我这老头子太高兴了。$h\"\\pause 500\\emote farmer 32(break)playMusic none\\pause 300\\jump George\\pause 1000\\speak George \"哈！她以为能耍我！\"\\pause 500\\faceDirection George 2\\pause 400\\showFrame George 16\\pause 600\\speak George \"她以为能耍我……让我以为我只是个麻烦。$s\"\\stopAnimation George\\faceDirection George 3\\speak George \"呵，我才没那么蠢……\"\\pause 400\\faceDirection George 1\\speak George \"赶紧滚！$u\"\\emote farmer 28(break)playMusic none\\pause 300\\jump George\\pause 1000\\speak George \"哈！所以你就是捣蛋鬼？\"\\emote George 40\\playMusic playful\\speak George \"哈哈……这样啊，我年轻的时候也经常恶作剧。$h\"\\faceDirection George 2\\speak George \"嗯，至少你让我笑了笑。$h\"\\pause 2000\\faceDirection George 3\\emote George 8\\speak George \"什么，你以为我会打开？\"\\jump George\\pause 1000\\speak George \"哈！不可能。你以为我会中那个老套的“爆炸礼物”的陷阱？\"\\faceDirection George 2\\speak George \"我会直接把它们丢进垃圾桶！\"\\pause 300\\faceDirection farmer 2 true\\showFrame farmer 94\\jump farmer/pause 2000/end",
+			  }
+	  },
+
+	  //润色科罗布斯的对话内容 吧务人员范无救提供
+	  {
+		  "Action": "EditData",
+		  "Target": "Characters/Dialogue/MarriageDialogueKrobus",
+		  "Entries":
+			  {
+				  "Neutral_0": "我的生命是永恒的，但你不同，我无法跟你一起白头到老，有时候我会感到悲伤，不过我会永远怀念这段我跟你一起度过的日子。$s",
+			  }
+	  },
+
+	  //修正对话中作物名字不一致的问题，统一为韭葱
+	  {
+		  "Action": "EditData",
+		  "Target": "Data/mail",
+		  "Entries":
+			  {
+				  "spring_15_2": "亲爱的 @,^我想给我的丈夫一份特别的礼物。他特别喜欢韭葱，你可以给我点么？^-艾芙琳奶奶%item quest 116 %%[#]艾芙琳的惊喜",
+			  }
+	  },
+
+	  {
+		  "Action": "EditData",
+		  "Target": "Data/Quests",
+		  "Entries":
+			  {
+				  "116": "ItemDelivery/奶奶的礼物/艾芙琳想给她丈夫一个惊喜的礼物。/带给艾芙琳一根韭葱。/Evelyn 20/-1/500/-1/true/哦，谢谢你，亲爱的。这韭葱看起来很可口。乔治会很高兴的。#$b#他早饭最喜欢吃韭葱炒鸡蛋了。",
+			  }
+	  },
+
+	  //修正了冈瑟对话中的错误翻译，并使整体对话内容更为合理
+	  {
+		  "Action": "EditData",
+		  "Target": "Data/Events/ArchaeologyHouse",
+		  "Entries":
+			  {
+				  "0/n somethingToDonate/l somethingWasDonated": "libraryTheme/29 12/farmer 22 13 1 Gunther 31 12 2/removeQuest 23/addQuest 24/skippable/pause 1000/showFrame Gunther 4/pause 500/showFrame Gunther 0/pause 500/showFrame Gunther 12/pause 500/showFrame Gunther 0/pause 1000/showFrame Gunther 1/pause 500/speak Gunther \"简直糟透了……#$b#整个收藏室里连半个藏品都找不到。\"/move farmer 7 0 1/showFrame Gunther 12/pause 800/emote Gunther 16/jump Gunther/pause 800/speak Gunther \"这是什么？你找到了一件物品？让我看看！\"/move farmer 0 -1 1/move farmer 1 0 1/pause 500/playSound coin/animate Gunther false true 500 2 3/pause 3000/speak Gunther \"太美妙了！#$b#这件物品很古老了。#$b#我很想深入研究一下……不过它是你找到的。\"/stopAnimation Gunther/showFrame Gunther 12/pause 1000/speak Gunther \"唔……#$b#我想找你帮个忙。#$b#你是否愿意捐献你找到的任何文物或者矿物？#$b#我们可以联手制造大新闻！#$b#而且，如果你一直捐献的话，说不定我会送你一些有趣的物品。\"/pause 1000/showFrame Gunther 0/pause 500/speak Gunther \"考虑下吧，好吗？#$b#如果你决定捐献了，就把物品带到前台来。\"/move farmer -3 0 2 true/pause 400/showFrame Gunther 1/proceedPosition farmer/move farmer 0 1 3/move farmer -7 0 3 true/pause 1000/globalFade/viewport -1000 -1000/end",
+			  }
+	  },
+
+	  //ver3.3.0
+	  // Eep!->诶！ 洞穴胡萝卜汤->山洞萝卜汤
+	  {
+		  "Action": "EditData",
+		  "Target": "Data/Events/Mountain",
+		  "Entries":
+			  {
+				  "371652/f Linus 2000/w sunny/t 600 1700/a 12 26": "sweet/18 32/farmer -1000 -1000 2 Robin -1000 -1000 2 Linus 23 33 1/animate Linus false true 250 20 21/pause 3000/doAction 24 33/pause 500/doAction 24 33/pause 800/doAction 24 33/pause 1000/stopAnimation Linus/move Linus -2 0 0/move Linus 0 -1 1/animate Linus false true 250 20 21/pause 500/doAction 22 32/pause 900/doAction 22 32/pause 200/doAction 22 32/pause 1200/stopAnimation Linus/move Linus -6 0 0/move Linus 0 -5 0 true/viewport move 0 -1 4000/move false/move Linus -2 0 3/warp Robin 12 26/playSound doorClose/pause 400/showFrame Robin 19/textAboveHead Robin \"诶！\"/shake Robin 500/pause 500/faceDirection Linus 0/showFrame Robin 0/pause 1 500/warp farmer 11 26/playSound doorClose/faceDirection Linus 3/pause 500/move farmer 0 1 1/pause 1000/speak Robin \"哦...是莱纳斯，对吧？$s\"/emote Robin 40/speak Robin \"你饿了吗？我可以为你做顿午饭...来点剩下的山洞萝卜汤怎么样？\"/pause 500/speak Linus \"你真好，但是不用了，谢谢！我今天找东西吃的运气很好。$h\"/pause 1000/speak Robin \"嘿...好吧。$5\"/pause 500/faceDirection Robin 3/pause 500/speak Robin \"@？你看起来像有话要说...\"/pause 500/question fork0 \"#我只是想说莱纳斯干得不错，这让我很高兴...#我想邀请莱纳斯和我一起住在农场里...\"/pause 100/fork linusWell/faceDirection Robin 2 true/textAboveHead Robin \"哇！\"/showFrame Linus 22/jump Linus/pause 2000/showFrame Linus 0/pause 1000/showFrame Linus 0/faceDirection Robin 2/speak Robin \"这么慷慨！真是个好主意！我可以为你建造一间舒适的真房子，莱纳斯。$h\"/move Robin 0 1 1/speak Robin \"你终于要有自来水、暖气、屋顶了...就像我们其他人一样！是不是很棒，莱纳斯？\"/playMusic spring_day_ambient/pause 1000/showFrame Linus 19/pause 1000/speak Linus \"呃...$s#$b#嗯...不用了，谢谢。$s\"/playSound thudStep/showFrame Robin 19/positionOffset Robin 0 -8/pause 40/positionOffset Robin 0 -8/pause 40/positionOffset Robin 0 -8/pause 40/positionOffset Robin 0 -8/pause 40/positionOffset Robin 0 -8/pause 40/positionOffset Robin 0 -8/pause 40/positionOffset Robin 0 -8/pause 40/positionOffset Robin 0 -8/playSound woodWhack/textAboveHead Robin \"什么..？\"/pause 1000/emote farmer 8/emote Linus 28/playMusic echos/speak Linus \"我很感激你的善意...真的很...$s#$b#但...我以前告诉过你...我选择以这种方式生活...\"/pause 500/showFrame Linus 0/move Linus 0 1 2/pause 500/speak Linus \"大多数时候我喜欢独处...我喜欢天籁之音...随着大自然的节奏起伏...#$b#这是让我舒适的一种生活方式。我从未想过要改变这一点。\"/showFrame Linus 0/pause 500/move Linus 0 -1 3/faceDirection Linus 3/showFrame Robin 0/pause 1000/speak Robin \"我想我从来没有这样想过...$5\"/move Linus 0 1 3/move Linus -2 0 0/faceDirection farmer 2/playMusic spring_day_ambient/speak Linus \"@...我非常珍惜我们的友谊。而且我知道你也是。$h#$b#但...你不需要尝试“帮助”我...我最清楚怎样过自己的生活...好吗？\"/move Linus -2 0 3/faceDirection farmer 3/faceDirection Robin 3/emote farmer 60/speak Linus \"...你闻到了吗？这是成熟浆果的甜香味...$h\"/jump Linus/speed Linus 4/move Linus -4 0 3/move Linus 0 -10 0 true/fade/viewport -2000 -2000/pause 2000/end",
+			  }
+	  },
+
+	  // 如果你想尽可能多的找到矿石的话->如果你想最大化利用矿石的话 顺带润色其他内容
+	  {
+		  "Action": "EditData",
+		  "Target": "Data/Events/Farm",
+		  "Entries":
+			  {
+				  "992553/t 600 1130/n copperFound": "continue/64 15/farmer 64 16 2 Clint 64 18 0/skippable/pause 1500/speak Clint \"啊……嗨。早啊。#$b#我注意到你一直在凿石头找矿石。真的很棒！\"/pause 500/speak Clint \"如果你想最大化利用矿石的话，你需要一个熔炉。\"/pause 500/speak Clint \"正巧我有个闲置的蓝图。给，你收下吧。\"/pause 800/itemAboveHead/playSound getNewSpecialItem/addCraftingRecipe Furnace/pause 3300/message \"学会如何制造'熔炉'。\"/pause 800/speak Clint \"你可以用熔炉来熔炼金属锭。这些金属锭可以用来锻造，建造，以及升级工具。\"/pause 500/faceDirection Clint 1/pause 500/faceDirection Clint 0/speak Clint \"当你熔炼了一定数量的铜锭时，可以考虑让我给你升级一件工具。你的工作会变得更加轻松。#$b#那好 。我回去了。慢慢来。\"/pause 200/addQuest 11/end",	
+			  }
+	  },
+
+	  // 包装箱->出货箱，使描述更准确以免产生误解
+	  {
+		  "Action": "EditData",
+		  "Target": "Characters/Dialogue/Lewis",
+		  "Entries":
+			  {
+				  "Tue": "把你想要卖掉的东西都放到你房子旁边的出货箱里。#$e#我会去看看你往里面放了什么的。",	
+			  }
+	  },
+
+	  // 石膏->木雕
+	  {
+		  "Action": "EditData",
+		  "Target": "Characters/Dialogue/Leah",
+		  "Entries":
+			  {
+				  "Sun": "如果你听到我的小屋里传出砰砰的声音，那可能是我在制作木雕。",	
+			  }
+	  },
+
+	  // 将所有"金属棒 Metal bars"统一改为"金属锭"
+	  {
+		  "Action": "EditData",
+		  "Target": "Data/mail",
+		  "Entries":
+			  {
+				  "Clint": "呃，你好……^抱歉，我不怎么会写信。我一不小心做多了金属锭，或许你能用得上。 ^—铁匠克林特 %item object 334 1 335 1 336 1 %%[#]来自克林特的礼物",	
+			  }
+	  },
+
+	  {
+		  "Action": "EditData",
+		  "Target": "Strings/UI",
+		  "Entries":
+			  {
+				  "LevelUp_ProfessionDescription_Blacksmith": "金属锭价值增加50%  。",	
+			  }
+	  }
+  ]
+}
