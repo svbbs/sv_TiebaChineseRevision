@@ -1,1 +1,1 @@
-# sv_TiebaChineseRevision
+# 星露谷物语贴吧官方中文修订MOD
