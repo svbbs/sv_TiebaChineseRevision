@@ -399,5 +399,26 @@
 				  "LevelUp_ProfessionDescription_Blacksmith": "金属锭价值增加50%  。",	
 			  }
 	  }
+
+	  // ver3.3.1
+	  // 润色翻译，希望找到我的人生计划不需要花费很长时间->我不会在这世上活得久到需要一个人生计划……
+
+	  {
+		"Action": "EditData",
+		"Target": "Data/mail",
+		"Entries":
+			{
+				"3910674/f Shane 1000": "echos/-2000 -2000/farmer 18 18 1 Marnie 21 14 0 Jas 25 16 2 Shane -1000 -1000 2/skippable/specificTemporarySprite shanePassedOut/viewport 22 8 true/pause 2000/speak Marnie \"谢恩？\"/pause 2000/doAction 21 13/pause 500/move Marnie 0 -7 1/textAboveHead Marnie \"噢！ 亲爱的……\"/move farmer 3 0 0/faceDirection Jas 3 true/move farmer 0 -10 1/faceDirection Marnie 2/pause 500/speak Marnie \"@…… 你能帮忙吗？ 他在处于人生低潮。$s\"/pause 500/faceDirection farmer 0/pause 500/faceDirection farmer 1/move farmer 3 0 0/faceDirection Marnie 1 true/move farmer 0 -1 1/pause 1000/speak Shane \"不……$7\"/pause 2000/specificTemporarySprite waterShane/pause 250/playSound wateringCan/pause 1000/specificTemporarySprite waterShaneDone/warp Shane 25 7/textAboveHead Shane \"什……？！\"/jump Shane/shake Shane 2000/showFrame Shane 18/pause 3000/showFrame Shane 0/move farmer -1 0 1/faceDirection Shane 3/speak Marnie \"谢恩！ 你怎么了？ 你所能做的一切就是躲在你的房间忧郁喝啤酒吗！$s\"/move Jas -4 0 0 true/pause 200/faceDirection Shane 2 true/pause 50/faceDirection Shane 1/emote Shane 12/shake Shane 1000/textAboveHead Shane \"……\"/pause 1500/speak Shane \"你不懂……\"/pause 1000/textAboveHead Marnie \"我担心……\"/move Jas 0 -8 1/speak Marnie \"你的计划是什么？ 你想过未来吗？\"/faceDirection Shane 0/textAboveHead Shane \"计划？\"/pause 2000/speak Shane \"我不会在这世上活得久到需要一个人生计划……\"/jump Jas/pause 500/shake Jas 10000/speed Jas 4/textAboveHead Jas \"……*呜呜*……\"/move Jas 0 10 2 true/faceDirection Marnie 2/emote Marnie 28 true/faceDirection farmer 3/faceDirection Shane 1 true/pause 50/faceDirection Shane 2/pause 600/move Marnie 0 10 2 true/pause 1000/textAboveHead Shane \"贾斯……\"/pause 500/faceDirection farmer 1/pause 400/showFrame Shane 19/pause 1000/textAboveHead Shane \"对不起……\"/pause 2000/end",	
+			}
+	  },
+	  // 我想你->我向你
+	  {
+		"Action": "EditData",
+		"Target": "Strings/UI",
+		"Entries":
+			{
+				"passedOut3_NotBilled": "@,^昨晚有人将你送到诊所了。你因中暑而晕倒！^你要照顾好自己，并在合适的时间及时睡觉。^由于你没有钱，我向你提供免费的医疗服务。^^-哈维医生[#]哈维免费的医疗服务",	
+			}
+      }
   ]
 }

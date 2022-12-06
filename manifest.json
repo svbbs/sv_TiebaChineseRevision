@@ -1,7 +1,7 @@
 {
    "Name": "贴吧官方中文修订",
    "Author": "星露谷贴吧模组编写团队 戳破你个荷包蛋、Q星海之城、我时光",
-   "Version": "3.3.0",
+   "Version": "3.3.1",
    "Description": "对中文版星露谷的错误及不恰当文本进行了修订",
    "UniqueID": "FarAways.TiebaChineseRevision",
    "MinimumApiVersion": "3.14.0",
