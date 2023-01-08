@@ -411,13 +411,64 @@
 				"3910674/f Shane 1000": "echos/-2000 -2000/farmer 18 18 1 Marnie 21 14 0 Jas 25 16 2 Shane -1000 -1000 2/skippable/specificTemporarySprite shanePassedOut/viewport 22 8 true/pause 2000/speak Marnie \"谢恩？\"/pause 2000/doAction 21 13/pause 500/move Marnie 0 -7 1/textAboveHead Marnie \"噢！ 亲爱的……\"/move farmer 3 0 0/faceDirection Jas 3 true/move farmer 0 -10 1/faceDirection Marnie 2/pause 500/speak Marnie \"@…… 你能帮忙吗？ 他在处于人生低潮。$s\"/pause 500/faceDirection farmer 0/pause 500/faceDirection farmer 1/move farmer 3 0 0/faceDirection Marnie 1 true/move farmer 0 -1 1/pause 1000/speak Shane \"不……$7\"/pause 2000/specificTemporarySprite waterShane/pause 250/playSound wateringCan/pause 1000/specificTemporarySprite waterShaneDone/warp Shane 25 7/textAboveHead Shane \"什……？！\"/jump Shane/shake Shane 2000/showFrame Shane 18/pause 3000/showFrame Shane 0/move farmer -1 0 1/faceDirection Shane 3/speak Marnie \"谢恩！ 你怎么了？ 你所能做的一切就是躲在你的房间忧郁喝啤酒吗！$s\"/move Jas -4 0 0 true/pause 200/faceDirection Shane 2 true/pause 50/faceDirection Shane 1/emote Shane 12/shake Shane 1000/textAboveHead Shane \"……\"/pause 1500/speak Shane \"你不懂……\"/pause 1000/textAboveHead Marnie \"我担心……\"/move Jas 0 -8 1/speak Marnie \"你的计划是什么？ 你想过未来吗？\"/faceDirection Shane 0/textAboveHead Shane \"计划？\"/pause 2000/speak Shane \"我不会在这世上活得久到需要一个人生计划……\"/jump Jas/pause 500/shake Jas 10000/speed Jas 4/textAboveHead Jas \"……*呜呜*……\"/move Jas 0 10 2 true/faceDirection Marnie 2/emote Marnie 28 true/faceDirection farmer 3/faceDirection Shane 1 true/pause 50/faceDirection Shane 2/pause 600/move Marnie 0 10 2 true/pause 1000/textAboveHead Shane \"贾斯……\"/pause 500/faceDirection farmer 1/pause 400/showFrame Shane 19/pause 1000/textAboveHead Shane \"对不起……\"/pause 2000/end",	
 			}
 	  },
+
 	  // 我想你->我向你
 	  {
 		"Action": "EditData",
-		"Target": "Strings/UI",
+		"Target": "Data/mail",
 		"Entries":
 			{
-				"passedOut3_NotBilled": "@,^昨晚有人将你送到诊所了。你因中暑而晕倒！^你要照顾好自己，并在合适的时间及时睡觉。^由于你没有钱，我向你提供免费的医疗服务。^^-哈维医生[#]哈维免费的医疗服务",	
+				"passedOut3_NotBilled": "@,^昨晚有人将你送到诊所了。你因中暑而晕倒！^你要照顾好自己，并在合适的时间及时睡觉。^由于你没有钱，我向你提供免费的医疗服务。^^-哈维医生[#]哈维免费的医疗服务",
+			}
+      },
+
+	  // ver3.3.2
+	  // 吧友@Elonaplus提供：润色翻译，……你抓住我了->……被你发现了 修订，埃米莉->艾米丽
+	  {
+		"Action": "EditData",
+		"Target": "Data/Events/Town",
+		"Entries":
+			{
+				"101/f Clint 1500/e 97/k 2123243/k 2123343/o Emily/t 900 1830/a 0 90": "jaunty/11 90/farmer 5 90 1 Clint 6 92 1 Emily 15 90 1 Caroline 16 90 3/move farmer 1 0 2/skippable/emote farmer 16/faceDirection Clint 0 true/emote Clint 16/speak Clint \"@！$4#$b#……被你发现了。$s\"/pause 500/move farmer 0 1 2/faceDirection Clint 1/emote Clint 28/pause 500/faceDirection farmer 1/pause 200/faceDirection farmer 2/pause 800/speak Clint \"我本来想邀请艾米丽和我约会。我站在她的门阶上，万事俱足……但是接下来我听到她来了就躲进了这个灌木丛中$s#$b#现在我就等着她跟卡洛琳聊完，这样我就能偷偷回家了。$s\"/pause 800/emote farmer 12/pause 800/pause 500/faceDirection Clint 0/speak Clint \"你刚刚说什么？如果我不约她出去你就再也不升级你的工具了？$s\"/faceDirection Clint 1/pause 1500/speak Clint \"你真是个坏蛋，@。#$b#*唉*……好吧, 我约。$s\"/pause 600/move farmer 1 0 1/move Clint 0 -2 1/speak Clint \"我记得@在酒馆给我的建议。\"/move Clint 8 0 1/stopMusic/pause 500/speak Clint \"呃……艾米丽？\"/pause 800/faceDirection Emily 3/pause 800/faceDirection Emily 1/speak Emily \"对不起，卡洛琳。能稍等一下么？\"/pause 500/move Caroline 7 0 0/faceDirection Emily 3/pause 400/speak Emily \"克林特，怎么了？\"/pause 500/faceDirection Clint 2/pause 400/faceDirection Clint 1/speak Clint \"不知道你……明天……有没有……空……和……我一起……*咽口水*$4\"/pause 200/faceDirection Clint 3/pause 300/emote Emily 8/pause 300/faceDirection Clint 1/pause 500/jump Clint/pause 800/speak Clint \"我有两张明天嘉年华的票。你 ……可以跟我一起去吗？$4\"/jump Emily/pause 800/emote Emily 16/pause 400/playMusic musicboxsong/speak Emily \"当然，克林特！那听起来太棒了！$h\"/pause 800/speak Clint \"真的吗？好！我5点来接你。$h\"/speak Emily \"好！明天见！\"/move Emily 7 0 1/faceDirection Caroline 3/speed Clint 4/move Clint -7 0 2/faceDirection farmer 0/speak Clint \"看到了么？！我明晚有约会了！$h\"/pause 500/jump farmer/pause 1000/faceDirection Clint 1/pause 400/faceDirection Clint 2/speak Clint \"妈呀……我太紧张了。$s\"/end dialogue Clint \"多谢你刚刚逼我这么做。我好害怕，但是又好开心。$h\"",	
+			}
+      },
+
+	  // 修订 埃米莉->艾米丽
+	  {
+		"Action": "EditData",
+		"Target": "Data/ExtraDialogue",
+		"Entries":
+			{
+				"PurchasedItem_Haley": "昨晚，艾米丽想要把{1}{2}作为我们的晚餐……  我趁着她没看到的时候，把它扔掉了。#$e#我不喜欢健康食品……$s",
+			}
+      },
+	  
+	  // 以物品介绍为准，将“山洞胡萝卜”统一为“山洞萝卜”
+	  {
+		"Action": "EditData",
+		"Target": "Data/Events/AnimalShop",
+		"Entries":
+			{
+				"92/e 91/i 78/t 900 1700": "jaunty/13 17/farmer 13 19 0 Marnie 13 14 2/move farmer 0 -1 0/removeQuest 21/removeItem 78/friendship Marnie 100/skippable/emote Marnie 16/speed Marnie 4/move Marnie 0 -1 2/speed Marnie 4/move Marnie 2 0 2/speed Marnie 4/move Marnie 0 3 2/move Marnie -2 0 2/pause 300/speak Marnie \"噢！你把山洞萝卜拿来了！太感谢你了。 @先生。$h^噢！你把山洞萝卜拿来了！太感谢你了。 @女士。$h\"/pause 500/move farmer 0 -1 1/faceDirection farmer 1/pause 500/playSound woodyStep/addObject 14 17 78/showFrame 35/pause 500/showFrame 6/pause 400/faceDirection farmer 1/move Marnie 1 0 2/emote Marnie 32/speak Marnie \"看起来很不错……我都忍不住要自己吃了！$h#$b#……开玩笑呢。\"/faceDirection farmer 1/pause 600/speak Marnie \"希望没给你添麻烦……十分感激你能帮忙\"/pause 300/removeObject 14 17/pause 400/end dialogue Marnie \"再次感谢你能帮忙。$h#$e#我的羊也向你说“谢谢”了。\"",
+			}
+      },
+
+	  {
+		"Action": "EditData",
+		"Target": "Data/Events/Farm",
+		"Entries":
+			{
+				"91/f Marnie 750/t 600 930": "continue/64 15/farmer 64 16 2 Marnie 64 18 0/pause 1500/addQuest 21/skippable/speak Marnie \"早上好啊， @先生！$h^早上好啊， @小姐！$h#$b#我来是请你帮忙的，因为你是个善良的邻居。#$b#我在训练我的山羊向人打招呼……但它们的注意力根本不在我身上，除非我用它们最爱的食物山洞萝卜来吸引它们！$u#$b#所以……由于我害怕矿山……你有机会的话能不能给我带一根山洞萝卜？#$b#不强迫的……但如果你愿帮我的话，上午9:00到下午5:00之间带着山洞萝卜来我家就好。你的善举会让一位老姑娘非常开心的。再见。\"/pause 300/end dialogue Marnie \"我家的山羊想山洞萝卜都快想疯了……真搞不懂为什么。\"",
+			}
+      },
+	  
+	  // 润色翻译，尖叫->哭闹
+	  {
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/MarriageDialogueAbigail",
+		"Entries":
+			{
+				"TwoKids_0": "我已经给%kid1和%kid2喂过巧克力麦片了。他们在哭闹！",
 			}
       }
   ]
