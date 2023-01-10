@@ -422,7 +422,7 @@
 			}
       },
 
-	  // ver3.3.2
+	  // ver3.4
 	  // 吧友@Elonaplus提供：润色翻译，……你抓住我了->……被你发现了 修订，埃米莉->艾米丽
 	  {
 		"Action": "EditData",
@@ -469,6 +469,35 @@
 		"Entries":
 			{
 				"TwoKids_0": "我已经给%kid1和%kid2喂过巧克力麦片了。他们在哭闹！",
+			}
+      },
+
+	 // 润色翻译，小女婴->女儿 
+	  {
+		"Action": "EditData",
+		"Target": "Data/NPCDispositions",
+		"Entries":
+			{
+				"Pam": "adult/rude/outgoing/negative/female/not-datable/Gus/Town/spring 18/Penny '女儿' Gus ''/Trailer 15 4/潘姆"
+			}
+      },
+
+	  // 润色翻译，支持->青睐
+	  {
+		"Action": "EditData",
+		"Target": "Strings/StringsFromCSFiles",
+		"Entries":
+			{
+				"NPC.cs.4100": "如果你想赢得{0}的青睐，送给他“{1}”。"
+			}
+      },
+
+	  {
+		"Action": "EditData",
+		"Target": "Strings/StringsFromCSFiles",
+		"Entries":
+			{
+				"NPC.cs.4103": "如果你想赢得{0}的青睐，送给她“{1}”。"
 			}
       }
   ]
