@@ -1,4 +1,4 @@
-{ "Format": "1.26.5",
+{ "Format": "2.0.0",
 
 	"When":{
 		"Language":"zh"
@@ -14,12 +14,28 @@
 				  "4324303/e 4325434/O Penny/A pennyRedecorating/l noQuilt/B": "spring_day_ambient/-1000 -1000/farmer 27 13 0 Penny 26 13 1/fade unfade/makeInvisible 26 13/makeInvisible 20 4/eyes 1 -10/positionOffset farmer 0 8/viewport -100 -100 true unfreeze/pause 1000/emote farmer 24/pause 3000/showFrame Penny 21/startJittering/pause 500/stopJittering/showFrame Penny 4/pause 500/speak Penny \"@……早上好……$11\"/pause 1000/showFrame Penny 21/startJittering/pause 500/stopJittering/showFrame Penny 4/pause 500/faceDirection farmer 3/emote Penny 32/pause 500/faceDirection farmer 2/emote farmer 16/jump farmer/pause 1000/animate Penny false true 150 4 5 6 7/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/stopAnimation Penny/showFrame Penny 21/pause 500/speak Penny \"注意到有什么变得柔软了吗？这个床罩是我亲手做的。$11\"/eyes -1 2000/startJittering/pause 2000/stopJittering/speak Penny \"所以，你觉得怎么样？$11\"/quickQuestion #看起来很棒！#我不喜欢这个。(break)emote Penny 20\\speak Penny \"我很高兴你喜欢它。房子开始变得越来越很舒适了，不是吗？$h\"\\faceDirection Penny 2\\faceDirection farmer 2\\emote farmer 20\\faceDirection farmer 3\\faceDirection Penny 1\\pause 1000\\animate Penny false true 100 35\\animate farmer true true 100 101(break)emote Penny 28\\speak Penny \"哦……好的。$s#$b#我把旧家具放到一个箱子里了……想换就可以换回来……$s\"\\faceDirection Penny 3/pause 3000/fade/viewport -1000 -1000/pause 500/message \"潘妮一直在家里辛勤工作……\"/pause 500/message \"这真的很有家的感觉！\"/pause 2000/end",
 			  }
 	  },
+	  {
+		  "Action": "EditData",
+		  "Target": "Strings/MovieReactions",
+		  "Entries":
+			  { //帕姆->潘姆、佩妮->潘妮
+				"Penny_*_DuringMovie": "(潘姆和潘妮正全神贯注地看着！)",
+			  }
+	  },
 	  {	
 		  "Action": "EditData",
 		  "Target": "Strings/StringsFromMaps",
 		  "Entries":
 			  {	//约迪->乔迪
 				  "SamHouse.3": "乔迪-^因为我很快就会回家，因此我想先告诉你几件事。^我可能和你记忆中的我有很大的不同。 我在外面看到了某些事情，让我感到十分震撼，最近我的精神一直紧绷着，无法放松。^我不想吓到你或者让你感到不安， 我只是不想让你见到我时感到震惊。^记住, 无论我在你面前表现的有多奇怪，你和孩子始终是我的一切。^我们很快会见面。^-肯特",
+			  }
+	  },
+	  {	
+		  "Action": "EditData",
+		  "Target": "Strings/StringsFromCSFiles",
+		  "Entries":
+			  {	//盖斯->格斯
+				  "ItemDeliveryQuest.cs.13462": "嗨！我需要{0}来做我的新开胃菜。只要放一个在酒吧，我就会非常感激的。－格斯",
 			  }
 	  },
 	  {
@@ -72,14 +88,6 @@
 	  },
 	  {
 		  "Action": "EditData",
-		  "Target": "Strings/Locations",
-		  "Entries":
-			  {	//老师傅->老坎诺利大师
-				  "Woods_Statue": "--老坎诺利大师香炸奶酪卷--\n……依旧寻求着最甜的味道……",
-			  }
-	  },
-	  {
-		  "Action": "EditData",
 		  "Target": "Strings/UI",
 		  "Entries":
 			  {	//去掉重复的厘米
@@ -108,19 +116,6 @@
 		  "Entries":
 			  {	//润色 “我不知道如果我的肺能处理这样的新鲜”
 				  "Outdoor_Shane": "我不确定我的肺能不能承受这样的新鲜空气。我比较习惯Joja空气。",
-			  }
-	  },
-	  {
-		  "Action": "EditData",
-		  "Target": "Strings/schedules/Sandy",
-		  "Entries":
-			  {	//补充对应缺失的中文对话
-				  "Sandy_Birthday_Greeting": "噢，艾米丽！我一直盼着你来呢！$h#$b#我今天早上还感觉有些寂寞呢。#$e#但现在我很高兴你来了！$h",
-				  "Sandy_Birthday_Hangout": "现在星露谷的天气怎么样？#$e#那里的花闻起来很香。$h",
-				  "Sandy_Birthday_Lake": "靠近湖边似乎总能感受到些凉意。#$e#偶尔走出家门也不错！$h",
-				  "Sandy_Birthday_Bones": "很奇怪，不是吗？",
-				  "Sandy_Birthday_Camel": "我想她卖的是一些稀有产品。",
-				  "Sandy_Birthday_Bye": "我今天玩的很愉快。$h#$b#谢谢你做我的朋友。$h#$e#随时可以再来！$h",
 			  }
 	  },
 	  {
@@ -174,19 +169,9 @@
 				  "190": "鱼类聚焦：木跃鱼、沙鱼以及蝎鲤鱼。据说，木跃鱼只生存在丛林深处。沙鱼和蝎鲤鱼只能在沙漠绿洲中找到。",
 			  }
 	  },
-	  {
-		  "Action": "EditData",
-		  "Target": "Data/Fish",
-		  "Fields": 
-			  {	//将原英文名改为中文名
-				  "160": { 13: "鮟鱇鱼" },
-				  "795": { 13: "虚空鲑鱼" },
-				  "796": { 13: "史莱姆鱼" },				
-			  }
-	  },
 	  
 	  //ver3.1.0
-	  //蓝铁饼鱼->蓝碟鱼
+	  //润色：蓝铁饼鱼->蓝碟鱼
 	  {
 		  "Action": "EditData",
 		  "Target": "Data/Fish",
