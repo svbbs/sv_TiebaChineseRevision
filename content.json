@@ -571,18 +571,6 @@
 			}
       },
 
-	 // 润色翻译，小女婴->女儿 
-	  {
-		"Action": "EditData",
-		"Target": "Data/NPCDispositions",
-		"Priority": "Early",
-		"When":{"Language":"zh"},
-		"Entries":
-			{
-				"Pam": "adult/rude/outgoing/negative/female/not-datable/Gus/Town/spring 18/Penny '女儿' Gus ''/Trailer 15 4/潘姆"
-			}
-      },
-
 	  // 润色翻译，支持->青睐
 	  {
 		"Action": "EditData",
