@@ -407,17 +407,6 @@
 			}
       },
 
-	  // ver3.4
-	  // 吧友@Elonaplus提供：润色翻译，……你抓住我了->……被你发现了 修订，埃米莉->艾米丽
-	  {
-		"Action": "EditData",
-		"Target": "Data/Events/Town",
-		"Entries":
-			{
-				"101/f Clint 1500/e 97/k 2123243/k 2123343/o Emily/t 900 1830/a 0 90": "jaunty/11 90/farmer 5 90 1 Clint 6 92 1 Emily 15 90 1 Caroline 16 90 3/move farmer 1 0 2/skippable/emote farmer 16/faceDirection Clint 0 true/emote Clint 16/speak Clint \"@！$4#$b#……被你发现了。$s\"/pause 500/move farmer 0 1 2/faceDirection Clint 1/emote Clint 28/pause 500/faceDirection farmer 1/pause 200/faceDirection farmer 2/pause 800/speak Clint \"我本来想邀请艾米丽和我约会。我站在她的门阶上，万事俱足……但是接下来我听到她来了就躲进了这个灌木丛中$s#$b#现在我就等着她跟卡洛琳聊完，这样我就能偷偷回家了。$s\"/pause 800/emote farmer 12/pause 800/pause 500/faceDirection Clint 0/speak Clint \"你刚刚说什么？如果我不约她出去你就再也不升级你的工具了？$s\"/faceDirection Clint 1/pause 1500/speak Clint \"你真是个坏蛋，@。#$b#*唉*……好吧, 我约。$s\"/pause 600/move farmer 1 0 1/move Clint 0 -2 1/speak Clint \"我记得@在酒馆给我的建议。\"/move Clint 8 0 1/stopMusic/pause 500/speak Clint \"呃……艾米丽？\"/pause 800/faceDirection Emily 3/pause 800/faceDirection Emily 1/speak Emily \"对不起，卡洛琳。能稍等一下么？\"/pause 500/move Caroline 7 0 0/faceDirection Emily 3/pause 400/speak Emily \"克林特，怎么了？\"/pause 500/faceDirection Clint 2/pause 400/faceDirection Clint 1/speak Clint \"不知道你……明天……有没有……空……和……我一起……*咽口水*$4\"/pause 200/faceDirection Clint 3/pause 300/emote Emily 8/pause 300/faceDirection Clint 1/pause 500/jump Clint/pause 800/speak Clint \"我有两张明天嘉年华的票。你 ……可以跟我一起去吗？$4\"/jump Emily/pause 800/emote Emily 16/pause 400/playMusic musicboxsong/speak Emily \"当然，克林特！那听起来太棒了！$h\"/pause 800/speak Clint \"真的吗？好！我5点来接你。$h\"/speak Emily \"好！明天见！\"/move Emily 7 0 1/faceDirection Caroline 3/speed Clint 4/move Clint -7 0 2/faceDirection farmer 0/speak Clint \"看到了么？！我明晚有约会了！$h\"/pause 500/jump farmer/pause 1000/faceDirection Clint 1/pause 400/faceDirection Clint 2/speak Clint \"妈呀……我太紧张了。$s\"/end dialogue Clint \"多谢你刚刚逼我这么做。我好害怕，但是又好开心。$h\"",	
-			}
-      },
-
 	  // 修订 埃米莉->艾米丽
 	  {
 		"Action": "EditData",
