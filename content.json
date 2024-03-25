@@ -658,5 +658,231 @@
 				"Shady_Guy_Selected_3": "可疑的家伙：要选{0}？没问题，没问题……小孩，祝你好运。",
 			}
       },
+
+	  // 补充部分人物有关看电影缺失的中文对话 [临时翻译，有待商榷]
+	  {
+		"Action": "EditData",
+		"Target": "Strings/Characters",
+		"Priority": "Early",
+		"When":{"Language":"zh"},
+		"Entries":
+			{	
+				// 阿比盖尔 [I hope it's an exciting one.]
+				"MovieInvite_Spouse_Abigail": "去看电影？当然，听起来很有趣！我在电影院等你。$h#$e#我希望这会很有意思。",
+				//"MovieInvite_Spouse_Abigail": "A movie? Sure, sounds fun! I'll meet you at the theater.$h#$e#I hope it's an exciting one.",
+
+				// 潘妮
+				"MovieInvite_Spouse_Penny": "有张电影票？没问题，我很愿意和你一起去！亲爱的，咱们在电影院见。",
+  				//"MovieInvite_Spouse_Penny": "A movie ticket? Yes, I'd love to go with you! I'll meet you at the theater, honey.$h",
+
+				// 海莉
+				"MovieInvite_Spouse_Haley": "噢...约会之夜，嗯哼？让我稍微打扮一下然后咱们电影院见。",
+  				//"MovieInvite_Spouse_Haley": "Oooh... date night, huh? Let me just freshen up a little and I'll meet you at the theater.$h",
+
+				// 艾米丽
+				"MovieInvite_Spouse_Emily": "有张电影票！你知道吗，我整天都在想着电影。你一定是看懂了我的心思！$h#$e#那咱们电影院见。",
+  				//"MovieInvite_Spouse_Emily": "A movie ticket! You know, I was thinking about the movies all day. You must've read my mind! $h#$e#I'll meet you at the theater.",
+
+				// 莉亚
+				"MovieInvite_Spouse_Leah": "噢，看电影？当然，听起来很有趣....就好像我们再次约会一样，哈哈。$h#$e#那咱们电影院见。",
+  				//"MovieInvite_Spouse_Leah": "Oh, a movie? Sure, sounds fun.... It'll be like we're dating again, hehe.$h#$e#I'll meet you at the theater.",
+
+				// 玛鲁
+				"MovieInvite_Spouse_Maru": "噢！你为我们计划了一个约会之夜？$h#$b#我很愿意去！我在电影院等你！",
+  				//"MovieInvite_Spouse_Maru": "Oh! You planned a date night for us? $h#$b#I'd love to go! I'll see you at the theater.$h",
+
+				// 亚历克斯 [and I'd rather see it with you!]
+				"MovieInvite_Spouse_Alex": "嘿，听起来很有趣！我一直想看这部...并且我很想和你去看！#$b#我在电影院等你！",
+  				//"MovieInvite_Spouse_Alex": "Hey, sounds fun! I've been wanting to see this one... and I'd rather see it with you!#$b#I'll meet you at the theater.",
+
+				// 山姆
+				"MovieInvite_Spouse_Sam": "不错！你给我们准备了电影票？你真是太棒了！我在电影院等你！$h",
+  				//"MovieInvite_Spouse_Sam": "Nice! You got us tickets? You're the best! I'll wait for you at the theater.$h",
+
+				// 塞巴斯蒂安
+				"MovieInvite_Spouse_Sebastian": "噢，你想去看电影？听起来还可以，那咱们电影院见。$h",
+  				//"MovieInvite_Spouse_Sebastian": "Oh, you want to go to the movies? Sounds pretty good. I'll meet you there.$h",
+
+				// 谢恩
+				"MovieInvite_Spouse_Shane": "噢，你想去看这部电影，嗯哼？能给我买点零食的话那就这么定了，哈哈...$h#$e#我在电影院等你。",
+  				//"MovieInvite_Spouse_Shane": "Oh, you want to see a show, huh? Buy me a snack and it's a deal, hehe...$h#$e#I'll meet you there.",
+				
+				// 艾利欧特
+				"MovieInvite_Spouse_Elliott": "当然，亲爱的。我很愿意去陪你看电影！我在电影院等你.",
+  				//"MovieInvite_Spouse_Elliott": "Yes, my dear, I'd love to see a movie with you! I'll meet you at the theater.",
+
+				// 哈维
+				"MovieInvite_Spouse_Harvey": "电影票？嗯...可以，我愿意陪你去！$h#$e#一起去看电影是件不错的事，我不想让你感到婚姻生活的无聊！",
+  				//"MovieInvite_Spouse_Harvey": "Movie tickets? Well... yes, I'd love to go with you!$h#$e#It's good to do things like this, I don't want married life to get boring for you!",
+			}
+      },
+	  
+	  // 艾芙琳
+	  {
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Evelyn",
+		"Priority": "Early",
+		"When":{"Language":"zh"},
+		"Entries":
+			{
+				"MovieInvitation": "噢天呐！亲爱的你真是太好了。为什么不呢...我想去看电影！$h#$b#你先去吧，咱们在电影院见。",
+				//"MovieInvitation": "Oh my! That's so kind of you, dear. Why yes... I'd love to go to the movies!$h#$b#You go on ahead, and I'll meet you at the theater.",
+			}
+      },
+
+	  // 乔治
+	  {
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/George",
+		"Priority": "Early",
+		"When":{"Language":"zh"},
+		"Entries":
+			{
+				"MovieInvitation": "你想和像我这样的老家伙一起去看电影吗？...那...好吧，咱们在电影院见。",
+				//"MovieInvitation": "You wanna see a movie with an old geezer like me? ...Well... okay. I'll meet you there.",
+			}
+      },
+
+	  // 肯特
+	  {
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Kent",
+		"Priority": "Early",
+		"When":{"Language":"zh"},
+		"Entries":
+			{
+				"MovieInvitation": "嗯...好吧，谢谢你，那咱们电影院见。$h",
+				//"MovieInvitation": "Erm... okay. Thank you. I'll meet you there.$h",
+			}
+      },
+
+	  // 莱纳斯
+	  {
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Linus",
+		"Priority": "Early",
+		"When":{"Language":"zh"},
+		"Entries":
+			{
+				"MovieInvitation": "噢...我？我通常不会去的，但是...那好吧，你能想到我真是太好了。#$b#我一会儿就去。",
+				//"MovieInvitation": "Oh... me? I usually wouldn't, but... okay. It's nice of you to think about me.#$b#I'll head over there in a little while.",
+			}
+      },
+
+	  // 潘姆 [ol' Pam]
+	  {
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Pam",
+		"Priority": "Early",
+		"When":{"Language":"zh"},
+		"Entries":
+			{
+				"MovieInvitation": "嗯？和老潘姆的约会之夜？哈哈！$h^嗯？和老潘姆的女士之夜？哈哈！$h#$b#当然可以，孩子...咱们到那见。",
+				//"MovieInvitation": "Date night with ol' Pam, huh? Hah!$h^Ladies night with ol' Pam, huh? Hah!$h#$b#Sure thing, kid... I'll see you there.",
+			}
+      },
+
+	  // 皮埃尔
+	  {
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Pierre",
+		"Priority": "Early",
+		"When":{"Language":"zh"},
+		"Entries":
+			{
+				"MovieInvitation": "嘿，这真是个好主意...能不用忙于柜台真不错。我会在那等你的！",
+				//"MovieInvitation": "Hey, that's a great idea... It'll be nice to get out from behind the counter. I'll meet you there!",
+			}
+      },
+
+	  // 罗宾
+	  {
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Robin",
+		"Priority": "Early",
+		"When":{"Language":"zh"},
+		"Entries":
+			{
+				"MovieInvitation": "哦...有两张今晚电影的票，嗯哼？听起来不错！咱们在电影院见！$h",
+				//"MovieInvitation": "Ooh... Two tickets for tonight's show, huh? Sounds good! I'll meet you there.$h",
+			}
+      },
+	  
+	  // 威利 [I'll just finish me pipe]
+	  {
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Willy",
+		"Priority": "Early",
+		"When":{"Language":"zh"},
+		"Entries":
+			{
+				"MovieInvitation": "啊...一张电影票。这真不错，小伙子。啊...一张电影票。这真不错，女士。#$b#等我钓完这条鱼，我就过去。",
+				//"MovieInvitation": "Ah... a movie. That's kind of ye, lad.^Ah... a movie. That's kind of ye, miss.#$b#I'll just finish me pipe, and head over.",
+			}
+      },
+
+	  // 法师
+	  {
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Wizard",
+		"Priority": "Early",
+		"When":{"Language":"zh"},
+		"Entries":
+			{
+				"MovieInvitation": "嗯...我想我可以陪你去看...是的。你一到，我就会出现，再见了。",
+				//"MovieInvitation": "Hmm... I suppose I could accompany you... yes. Once you've arrived, I shall appear. Farewell.",
+			}
+      },
+
+	  // 补充万灵节缺失的中文对话
+	  {
+		"Action": "EditData",
+		"Target": "Data/Festivals/fall27",
+		"Priority": "Early",
+		"When":{"Language":"zh"},
+		"Entries":
+			{	
+				"Sandy_y2": "听说家乡在下雨。你是为避雨才跑来这里的吗？$h#$e#话说我有点怀念雨景了……$s",
+			}
+      },
+
+	  // 补充花舞节缺失的中文对话
+	  {
+		"Action": "EditData",
+		"Target": "Data/Festivals/spring24",
+		"Priority": "Early",
+		"When":{"Language":"zh"},
+		"Entries":
+			{	
+				"Dwarf_y2": "地面上下雨了？*喘气*#$e#下雨……这是个很陌生的概念。我们大部分人一辈子都没经历过下雨。",
+				"Sandy_y2": "听说家乡在下雨。你是为避雨才跑来这里的吗？$h#$e#话说我有点怀念雨景了……$s",
+			}
+	  },
+
+	  // 补充夏威夷宴会缺失的中文对话
+	  {
+		"Action": "EditData",
+		"Target": "Data/Festivals/summer11",
+		"Priority": "Early",
+		"When":{"Language":"zh"},
+		"Entries":
+			{	
+				"Dwarf_y2": "地面上下雨了？*喘气*#$e#下雨……这是个很陌生的概念。我们大部分人一辈子都没经历过下雨。",
+				"Sandy_y2": "听说家乡在下雨。你是为避雨才跑来这里的吗？$h#$e#话说我有点怀念雨景了……$s",
+			}
+	  },
+
+	  // 补充月光水母起舞缺失的中文对话
+	  {
+		"Action": "EditData",
+		"Target": "Data/Festivals/summer28",
+		"Priority": "Early",
+		"When":{"Language":"zh"},
+		"Entries":
+			{	
+				"Dwarf_y2": "地面上下雨了？*喘气*#$e#下雨……这是个很陌生的概念。我们大部分人一辈子都没经历过下雨。",
+				"Sandy_y2": "听说家乡在下雨。你是为避雨才跑来这里的吗？$h#$e#话说我有点怀念雨景了……$s",
+			}
+	  }
   ]
 }
