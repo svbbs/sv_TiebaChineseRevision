@@ -936,5 +936,31 @@
 				"governorReaction6": "pause 1000/playMusic ocean/speak Governor \"嗯...有点刺鼻...但实际上，味道还是挺好的！\"/pause 600/emote Governor 8/speak Governor \"等一下...我的碗里有东西...这是什么？$2\"/pause 500/showFrame Governor 14/playSound slimeHit/jump Governor/pause 500/showFrame Lewis 24/jump Lewis/textAboveHead Lewis \"什么么么?!\"/showFrame Emily 26/pause 1000/showFrame Marnie 16/jump Marnie/textAboveHead Marnie \"*喘气*\"/pause 1000/shake Governor 2000/emote Governor 12/pause 500/showFrame Emily 4/showFrame Marnie 8/speak Governor \"这个...这太离谱了！$1#$b#我一生中从未受过如此侮辱！$1\"/pause 600/showFrame Governor 13/playSound throw/specificTemporarySprite luauShorts/pause 500/jump Lewis/pause 1000/speak Governor \"呸...我的舌头肿起来...我想我要晕了。$u\"/pause 400/globalFade/viewport -1000 -1000/pause 1000/warp Governor -100 -100/playSound slimedead/faceDirection Lewis 2/viewport Lewis clamp true/pause 1000/speak Lewis \"无论是谁参与了这一骇人听闻的行为，都应该受到真正的谴责。为这如此病态的目的，竟然用我非常私人的物品！$4#$b#还毁掉一锅完美的汤...不可饶恕！我从未像现在这样为这个社区感到羞耻过...真的很恶心。$4\"/pause 500/faceDirection Lewis 0/emote Lewis 12/speak Lewis \"回家，节日结束了。$s\"/pause 500/globalFade/viewport -1000 -1000/message \"我猜这个“小恶作剧”也许并不是很成功...\"/pause 500/message \"该回家了。\"/waitForOtherPlayers festivalEnd/end",
 			}
       },
+	  
+	  // 补充翻译
+	  {
+		"Action": "EditData",
+		"Target": "Strings/UI",
+		"Priority": "Early",
+		"When":{"Language":"zh"},
+		"Entries":
+			{
+				"AGO_LegacyRandomization": "使用传统随机化",
+				"AGO_LegacyRandomization_Tooltip": "以一种经常重复模式的方式进行随机选择。大多数玩家应禁用此功能。",//repeats patterns翻译存疑
+				"Item_CantBeUsedHere": "此物品不能在此使用。",
+			}
+      },
+	  
+	  {
+		"Action": "EditData",
+		"Target": "Strings/Strings/StringsFromCSFiles",
+		"Priority": "Early",
+		"When":{"Language":"zh"},
+		"Entries":
+			{
+				"FarmComputer_Intro_NamedLocation": "{0}分析：",
+				"FarmComputer_Intro_Generic": "位置分析：",
+			}
+      },
   ]
 }
