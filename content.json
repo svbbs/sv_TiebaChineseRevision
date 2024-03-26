@@ -658,6 +658,82 @@
 				"Shady_Guy_Selected_3": "可疑的家伙：要选{0}？没问题，没问题……小孩，祝你好运。",
 			}
       },
+	  
+	  //翻译日历上的沙漠节名字
+	  {
+		"Action": "EditData",
+		"Target": "Data/PassiveFestivals",
+		"Priority": "Early",
+		"When":{"Language":"zh"},
+		"Entries":
+			{
+				"DesertFestival": {
+				"DisplayName": "沙漠节",
+				"Condition": "LOCATION_ACCESSIBLE Desert",
+				"ShowOnCalendar": true,
+				"Season": "Spring",
+				"StartDay": 15,
+				"EndDay": 17,
+				"StartTime": 1000,
+				"StartMessage": "[LocalizedText Strings\\1_6_Strings:DesertFestival_NowOpen]",
+				"OnlyShowMessageOnFirstDay": false,
+				"MapReplacements": {
+				"Desert": "DesertFestival"
+				},
+				"DailySetupMethod": "StardewValley.Locations.DesertFestival, Stardew Valley: SetupFestivalDay",
+				"CleanupMethod": "StardewValley.Locations.DesertFestival, Stardew Valley: CleanupFestival",
+				"CustomFields": null
+				}
+			}
+      },
+	  
+	  //补充节日缺失翻译
+	  {
+		"Action": "EditData",
+		"Target": "Data/Festivals/spring24",
+		"Priority": "Early",
+		"When":{"Language":"zh"},
+		"Entries":
+			{
+				"mainEvent": "pause 500/playMusic none/pause 500/globalFade/viewport -1000 -1000/loadActors MainEvent/warpFarmers 14 30 0 3 22 1 3 26 1 7 31 0 12 31 0 18 31 0 25 29 3 right 24 25 3/warp Girls 9 24/warp Guys 9 27/showFrame Girls 40/showFrame Guys 44/viewport 14 25 clamp true/pause 2000/playMusic FlowerDance/pause 600/animate Girls false true 600 43 41 43 42/animate Guys false true 600 44 45/pause 9600/animate Girls false true 600 46 47/animate Guys false true 300 46 47/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/animate Girls false true 600 43 41 43 42/animate Guys false true 600 44 45/pause 7600/stopAnimation Girls/stopAnimation Guys/pause 3000/globalFade/viewport -1000 -1000/message \"真不错！该回家了...\"/waitForOtherPlayers festivalEnd/end",
+				"Dwarf_y2": "你说上面在下雨？#$e#雨...对我们来说几乎是神话。我们中的一些人一生都没有见过它。",
+				"Sandy_y2": "我听说今天下雨了，所以你来了？$h#$e#事实上，我有点怀念下雨的日子......$s",
+			}
+      },	  
+	  
+	  {
+		"Action": "EditData",
+		"Target": "Data/Festivals/fall27",
+		"Priority": "Early",
+		"When":{"Language":"zh"},
+		"Entries":
+			{
+				"Sandy_y2": "我听说今天下雨了，所以你来了？$h#$e#事实上，我有点怀念下雨的日子......$s",
+			}
+      },
+	  
+	  {
+		"Action": "EditData",
+		"Target": "Data/Festivals/summer28",
+		"Priority": "Early",
+		"When":{"Language":"zh"},
+		"Entries":
+			{
+				"Dwarf_y2": "你说上面在下雨？*喘气*#$e#雨...对我们来说几乎是神话。我们中的一些人一生都没有见过它。",
+				"Sandy_y2": "我听说今天下雨了，所以你来了？$h#$e#事实上，我有点怀念下雨的日子......$s",
+			}
+      },
+	  
+	  {
+		"Action": "EditData",
+		"Target": "Data/Festivals/summer11",
+		"Priority": "Early",
+		"When":{"Language":"zh"},
+		"Entries":
+			{
+				"governorReaction6": "pause 1000/playMusic ocean/speak Governor \"嗯...有点刺鼻...但实际上，味道还是挺好的！\"/pause 600/emote Governor 8/speak Governor \"等一下...我的碗里有东西...这是什么？$2\"/pause 500/showFrame Governor 14/playSound slimeHit/jump Governor/pause 500/showFrame Lewis 24/jump Lewis/textAboveHead Lewis \"什么么么?!\"/showFrame Emily 26/pause 1000/showFrame Marnie 16/jump Marnie/textAboveHead Marnie \"*喘气*\"/pause 1000/shake Governor 2000/emote Governor 12/pause 500/showFrame Emily 4/showFrame Marnie 8/speak Governor \"这个...这太离谱了！$1#$b#我一生中从未受过如此侮辱！$1\"/pause 600/showFrame Governor 13/playSound throw/specificTemporarySprite luauShorts/pause 500/jump Lewis/pause 1000/speak Governor \"呸...我的舌头肿起来...我想我要晕了。$u\"/pause 400/globalFade/viewport -1000 -1000/pause 1000/warp Governor -100 -100/playSound slimedead/faceDirection Lewis 2/viewport Lewis clamp true/pause 1000/speak Lewis \"无论是谁参与了这一骇人听闻的行为，都应该受到真正的谴责。为这如此病态的目的，竟然用我非常私人的物品！$4#$b#还毁掉一锅完美的汤...不可饶恕！我从未像现在这样为这个社区感到羞耻过...真的很恶心。$4\"/pause 500/faceDirection Lewis 0/emote Lewis 12/speak Lewis \"回家，节日结束了。$s\"/pause 500/globalFade/viewport -1000 -1000/message \"我猜这个“小恶作剧”也许并不是很成功...\"/pause 500/message \"该回家了。\"/waitForOtherPlayers festivalEnd/end",
+			}
+      },
 
 	  // 补充部分人物有关看电影缺失的中文对话 [临时翻译，有待商榷]
 	  {
