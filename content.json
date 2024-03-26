@@ -953,7 +953,7 @@
 	  
 	  {
 		"Action": "EditData",
-		"Target": "Strings/Strings/StringsFromCSFiles",
+		"Target": "Strings/StringsFromCSFiles",
 		"Priority": "Early",
 		"When":{"Language":"zh"},
 		"Entries":
