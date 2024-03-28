@@ -170,7 +170,7 @@
 			  }
 	  },
 
-	  // 东边->西边 埋在北边->藏在北边
+	  // 东边->西边 埋在北边->藏在北边 补充缺失的中文对话
 	  {
 		  "Action": "EditData",
 		  "Target": "Strings/Locations",
@@ -182,6 +182,8 @@
 				  "NutHint_WestBuried": "还有 {0} 个埋在西边……",
 				  "NutHint_SouthBuried": "还有 {0} 个埋在南边……",
 				  "NutHint_NorthHidden": "还有 {0} 个藏在北边……",
+				  "Backwoods_MonsterGrave": "阿比盖尔为了救我而夺走了一条生命...#我永远不会忘记这件事。"
+				  //"Backwoods_MonsterGrave": "Abigail took a life to save mine...#I'll never forget that."
 			  }
 	  },
 
@@ -816,7 +818,7 @@
 		"When":{"Language":"zh"},
 		"Entries":
 			{
-				"MovieInvitation": "啊...一张电影票。这真不错，小伙子。啊...一张电影票。这真不错，女士。#$b#等我钓完这条鱼，我就过去。",
+				"MovieInvitation": "啊...一张电影票。这真不错，小伙子。^啊...一张电影票。这真不错，女士。#$b#等我钓完这条鱼，我就过去。",
 				//"MovieInvitation": "Ah... a movie. That's kind of ye, lad.^Ah... a movie. That's kind of ye, miss.#$b#I'll just finish me pipe, and head over.",
 			}
       },
@@ -834,56 +836,17 @@
 			}
       },
 
-	  // 补充万灵节缺失的中文对话
+	  // 补充1.6版本后下水道缺失的中文对话
 	  {
 		"Action": "EditData",
-		"Target": "Data/Festivals/fall27",
+		"Target": "Data/Events/Sewer",
 		"Priority": "Early",
 		"When":{"Language":"zh"},
 		"Entries":
-			{	
-				"Sandy_y2": "听说今天下雨了。你是为避雨才跑来这里的吗？$h#$e#话说我有点怀念雨景了……$s",
-			}
+			{
+				"691039/f Dwarf 50/n CF_Sewer/d Fri": "Overcast/16 13/farmer -1000 -1000 0 Dwarf 14 13 1 Krobus 18 13 3 Wizard -1000 -1000 2/skippable/pause 500/emote Dwarf 12/speak Dwarf \"一个活着的影子？这很离谱！#$b#我全族的死都是因为你们。\"/move Krobus -1 0 3/emote Krobus 12/playSound shadowpeep/speak Krobus \"如果你们矮人没把我们从祖祖辈辈居住的家园赶出，我们也不会武力讨伐！#$b#你族人的事我很抱歉。\"/move Dwarf 1 0 1/speak Dwarf \"光道歉有什么用。\"/jump Dwarf/pause 500/animate Dwarf false true 50 4 5 6 7/jump Krobus/pause 500/animate Krobus false true 50 12 13 14 15/pause 1000/playSound throw/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/shake Dwarf 500/playSound clubhit/jump Krobus/pause 500/shake Krobus 500/playSound clubSmash/jump Dwarf/pause 500/shake Dwarf 250/pause 250/playSound hitEnemy/pause 250/shake Krobus 250/playSound shadowHit/pause 500/faceDirection farmer 0 true/animate farmer false true 500 13 14/warp farmer 16 9/playSound stoneStep/shake Dwarf 250/pause 250/playSound hitEnemy/pause 250/playSound stoneStep/positionOffset farmer 0 16/shake Krobus 250/playSound shadowHit/pause 500/playSound stoneStep/positionOffset farmer 0 16/shake Dwarf 250/pause 250/playSound hitEnemy/pause 250/positionOffset farmer 0 16/shake Krobus 250/playSound shadowHit/pause 500/playSound stoneStep/positionOffset farmer 0 16/shake Dwarf 250/pause 250/playSound hitEnemy/pause 250/playSound stoneStep/positionOffset farmer 0 16/shake Krobus 250/playSound shadowHit/pause 500/positionOffset farmer 0 16/shake Dwarf 250/pause 250/playSound hitEnemy/pause 250/playSound stoneStep/positionOffset farmer 0 16/shake Krobus 250/playSound shadowHit/pause 500/playSound stoneStep/positionOffset farmer 0 16/warp farmer 16 11/faceDirection farmer 2/pause 300/showFrame farmer 94/jump farmer/startJittering/pause 1000/stopJittering/speed farmer 6/showFrame 0/move farmer 0 2 2 true/pause 300/shake Dwarf 1000/shake Krobus 1000/playSound clubSmash/positionOffset Dwarf -16 0/positionOffset Krobus 16 0/pause 30/positionOffset Dwarf -16 0/positionOffset Krobus 16 0/pause 30/positionOffset Dwarf -16 0/positionOffset Krobus 16 0/pause 30/positionOffset Dwarf -16 0/positionOffset Krobus 16 0/pause 30/showFrame farmer 0/pause 500/faceDirection farmer 3/faceDirection farmer 1/faceDirection farmer 2/speak Dwarf \"让我来教训教训他！他这人太恶心了。\"/speak Krobus \"来比划比划啊，小矮子。\"/playMusic none/pause 1000/playSound wand/screenFlash 3/showFrame Wizard 16/warp Wizard 16 16/pause 2000/showFrame Wizard 0/pause 500/faceDirection Wizard 1 true/pause 50/faceDirection Wizard 0/pause 800/showFrame Wizard 17/screenFlash .35/playSound flameSpellHit/shake Wizard 500/specificTemporarySprite wizardSewerMagic/stopAnimation Krobus/stopAnimation Dwarf/faceDirection Krobus 2 true/faceDirection Dwarf 2 true/shake Krobus 1000/shake Dwarf 1000/pause 1000/speak Wizard \"都给我闭嘴！你们俩！\"/pause 500/showFrame Wizard 8/playSound dwop/pause 1000/playMusic Upper_Ambient/speak Wizard \"元素战争早就结束了。你们俩已经没有继续战斗的理由了。#$b#为了在你们周围的人类中生活，你们必须和好才行。这道理你们都懂吧！\"/pause 1000/faceDirection Dwarf 3 true/faceDirection Krobus 1 true/pause 500/emote Dwarf 40 true/emote Krobus 40 true/pause 3000/speak Dwarf \"很好，我以后再也不会靠近下水道了。\"/faceDirection farmer 3/faceDirection Dwarf 1/pause 500/faceDirection farmer 1/pause 500/faceDirection Krobus 3/speak Krobus \"……对于过去的事情我真的很抱歉，矮人。我对你个人并没有什么不满。\"/pause 1000/faceDirection farmer 2 true/faceDirection Dwarf 2 true/faceDirection Krobus 2 true/pause 1000/speak Wizard \"很好。那就让我用“誓言之印”来达成最终协议吧。\"/pause 1000/faceDirection Wizard 3 true/playSound dwop/pause 50/faceDirection Wizard 2/pause 1500/showFrame Wizard 16/playSound yoba/specificTemporarySprite WizardPromise/pause 3000/speed farmer 2/move farmer 0 -2 2/emote farmer 40/pause 800/end"
+		  	}
       },
-
-	  // 补充花舞节缺失的中文对话
-	  {
-		"Action": "EditData",
-		"Target": "Data/Festivals/spring24",
-		"Priority": "Early",
-		"When":{"Language":"zh"},
-		"Entries":
-			{	
-				"Dwarf_y2": "地面上下雨了？*喘气*#$e#下雨……这是个很陌生的概念。我们大部分人一辈子都没经历过下雨。",
-				"Sandy_y2": "听说今天下雨了。你是为避雨才跑来这里的吗？$h#$e#话说我有点怀念雨景了……$s",
-			}
-	  },
-
-	  // 补充夏威夷宴会缺失的中文对话
-	  {
-		"Action": "EditData",
-		"Target": "Data/Festivals/summer11",
-		"Priority": "Early",
-		"When":{"Language":"zh"},
-		"Entries":
-			{	
-				"Dwarf_y2": "地面上下雨了？*喘气*#$e#下雨……这是个很陌生的概念。我们大部分人一辈子都没经历过下雨。",
-				"Sandy_y2": "听说今天下雨了。你是为避雨才跑来这里的吗？$h#$e#话说我有点怀念雨景了……$s",
-			}
-	  },
-
-	  // 补充月光水母起舞缺失的中文对话
-	  {
-		"Action": "EditData",
-		"Target": "Data/Festivals/summer28",
-		"Priority": "Early",
-		"When":{"Language":"zh"},
-		"Entries":
-			{	
-				"Dwarf_y2": "地面上下雨了？*喘气*#$e#下雨……这是个很陌生的概念。我们大部分人一辈子都没经历过下雨。",
-				"Sandy_y2": "听说今天下雨了。你是为避雨才跑来这里的吗？$h#$e#话说我有点怀念雨景了……$s",
-			}
-	  },
 	  
 	  //翻译日历上的沙漠节名字
 	  {
@@ -961,6 +924,6 @@
 				"FarmComputer_Intro_NamedLocation": "{0}分析：",
 				"FarmComputer_Intro_Generic": "位置分析：",
 			}
-      },
+	  }
   ]
 }
