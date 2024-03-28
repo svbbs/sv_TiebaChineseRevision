@@ -2,135 +2,135 @@
 
 1. 部分人物有关受邀看电影的对话
 
-官中已知，观望中
+    官中已知，观望中
 
-中文修订部分：对应 664~837 行，简易翻译待商榷
+    中文修订部分：对应 664~837 行，已简易翻译待商榷
 
-Strings/Characters
+    Strings/Characters
 
 2. 下水道相关对话全部未翻译。
 
-已根据1.5版本的官中进行补充
+    已根据1.5版本的官中进行补充
 
-Data/Events/Sewer
+    Data/Events/Sewer
 
 3. 阿比盖尔14心剧情中怪物坟墓互动显示的文字未翻译
 
-待商定
+    已简易翻译待商榷
 
-Strings/Locations
+    Strings/Locations
 
-"Backwoods_MonsterGrave": "Abigail took a life to save mine...#I'll never forget that."
+    "Backwoods_MonsterGrave": "Abigail took a life to save mine...#I'll never forget that."
 
 4. objects重灾区，很多条目未翻译
 
-Strings/Objects
+    Strings/Objects
 
-"CactusSeedsOutside": "Must be planted indoors or on Ginger Island.",
+    "CactusSeedsOutside": "Must be planted indoors or on Ginger Island.",
 
-"AmethystStone_Description": "Break apart to obtain amethysts.",
+    "AmethystStone_Description": "Break apart to obtain amethysts.",
 
-"AquamarineStone_Name": "Aquamarine Stone",
-"AquamarineStone_Description": "Break apart to obtain aquamarines.",
+    "AquamarineStone_Name": "Aquamarine Stone",
+    "AquamarineStone_Description": "Break apart to obtain aquamarines.",
 
-"CinderShardStone_Name": "Cinder Shard Stone",
-"CinderShardStone_Description": "Break apart to obtain cinder shards.",
+    "CinderShardStone_Name": "Cinder Shard Stone",
+    "CinderShardStone_Description": "Break apart to obtain cinder shards.",
 
-"ClayStone_Name": "Clay Stone",
-"ClayStone_Description": "Break apart to obtain clay.",
+    "ClayStone_Name": "Clay Stone",
+    "ClayStone_Description": "Break apart to obtain clay.",
 
-"CopperStone_Name": "Copper Stone",
+    "CopperStone_Name": "Copper Stone",
 
-"DiamondStone_Name": "Diamond Stone",
-"DiamondStone_Description": "Break apart to obtain diamonds.",
+    "DiamondStone_Name": "Diamond Stone",
+    "DiamondStone_Description": "Break apart to obtain diamonds.",
 
-"EmeraldStone_Name": "Emerald Stone",
-"EmeraldStone_Description": "Break apart to obtain emeralds.",
+    "EmeraldStone_Name": "Emerald Stone",
+    "EmeraldStone_Description": "Break apart to obtain emeralds.",
 
-"FossilStone_Name": "Fossil Stone",
-"FossilStone_Description": "Break apart to obtain fossils and bones.",
+    "FossilStone_Name": "Fossil Stone",
+    "FossilStone_Description": "Break apart to obtain fossils and bones.",
 
-"FrozenGeodeStone_Name": "Frozen Geode Stone",
-"FrozenGeodeStone_Description": "Break apart to obtain frozen geodes.",
+    "FrozenGeodeStone_Name": "Frozen Geode Stone",
+    "FrozenGeodeStone_Description": "Break apart to obtain frozen geodes.",
 
-"GemStone_Name": "Gem Stone",
-"GemStone_Description": "Break apart to obtain stone, ores, or geodes.",
+    "GemStone_Name": "Gem Stone",
+    "GemStone_Description": "Break apart to obtain stone, ores, or geodes.",
 
-"GeodeStone_Name": "Geode Stone",
-"GeodeStone_Description": "Break apart to obtain geodes.",
+    "GeodeStone_Name": "Geode Stone",
+    "GeodeStone_Description": "Break apart to obtain geodes.",
 
-"GoldStone_Name": "Gold Stone",
-"GoldStone_Description": "Break apart to obtain gold ore.",
+    "GoldStone_Name": "Gold Stone",
+    "GoldStone_Description": "Break apart to obtain gold ore.",
 
-"HaleysLostBracelet_Name": "Haley's Lost Bracelet",
-"HaleysLostBracelet_Description": "A family heirloom.",
+    "HaleysLostBracelet_Name": "Haley's Lost Bracelet",
+    "HaleysLostBracelet_Description": "A family heirloom.",
 
-"IceCrystal_Name": "Ice Crystal",
-"IceCrystal_Description": "Might contain fibers or mixed seeds.",
+    "IceCrystal_Name": "Ice Crystal",
+    "IceCrystal_Description": "Might contain fibers or mixed seeds.",
 
-"IridiumStone_Name": "Iridium Stone",
-"IridiumStone_Description": "Break apart to obtain iridium ore.",
+    "IridiumStone_Name": "Iridium Stone",
+    "IridiumStone_Description": "Break apart to obtain iridium ore.",
 
-"IronStone_Name": "Iron Stone",
-"IronStone_Description": "Break apart to obtain iron ore.",
+    "IronStone_Name": "Iron Stone",
+    "IronStone_Description": "Break apart to obtain iron ore.",
 
-"JadeStone_Name": "Jade Stone",
-"JadeStone_Description": "Break apart to obtain jade.",
+    "JadeStone_Name": "Jade Stone",
+    "JadeStone_Description": "Break apart to obtain jade.",
 
-"MagmaGeodeStone_Name": "Magma Geode Stone",
-"MagmaGeodeStone_Description": "Break apart to obtain magma geodes.",
+    "MagmaGeodeStone_Name": "Magma Geode Stone",
+    "MagmaGeodeStone_Description": "Break apart to obtain magma geodes.",
 
-"MusselStone_Name": "Mussel Stone",
+    "MusselStone_Name": "Mussel Stone",
 
-"MysticStone_Name": "Mystic Stone",
-"MysticStone_Description": "Break apart to obtain stone, ores, or geodes.",
+    "MysticStone_Name": "Mystic Stone",
+    "MysticStone_Description": "Break apart to obtain stone, ores, or geodes.",
 
-"OmniGeodeStone_Name": "Omni Geode Stone",
-"OmniGeodeStone_Description": "Break apart to obtain omni geodes.",
+    "OmniGeodeStone_Name": "Omni Geode Stone",
+    "OmniGeodeStone_Description": "Break apart to obtain omni geodes.",
 
-"RadioactiveStone_Name": "Radioactive Stone",
+    "RadioactiveStone_Name": "Radioactive Stone",
 
-"RubyStone_Name": "Ruby Stone",
-"RubyStone_Description": "Break apart to obtain rubies.",
+    "RubyStone_Name": "Ruby Stone",
+    "RubyStone_Description": "Break apart to obtain rubies.",
 
-"SnowyStone_Name": "Snowy Stone",
-"SnowyStone_Description": "Break apart to obtain stone, ores, or geodes.",
+    "SnowyStone_Name": "Snowy Stone",
+    "SnowyStone_Description": "Break apart to obtain stone, ores, or geodes.",
 
-"Stone_Node_Description": "Break apart to obtain stone, ores, or geodes.",
+    "Stone_Node_Description": "Break apart to obtain stone, ores, or geodes.",
 
-"Stone_NodeStoneOnly_Description": "Break apart to obtain stone.",
+    "Stone_NodeStoneOnly_Description": "Break apart to obtain stone.",
 
-"Stone_NodeWithCoal_Description": "Break apart to obtain stone with a chance of coal.",
+    "Stone_NodeWithCoal_Description": "Break apart to obtain stone with a chance of coal.",
 
-"TopazStone_Name": "Topaz Stone",
-"TopazStone_Description": "Break apart to obtain topaz.",
+    "TopazStone_Name": "Topaz Stone",
+    "TopazStone_Description": "Break apart to obtain topaz.",
 
-"Twig_Description": "A broken branch. Chop with an axe to obtain wood.",
+    "Twig_Description": "A broken branch. Chop with an axe to obtain wood.",
 
-"Weeds_DryBush_Name": "杂草",
-"Weeds_DryBush_Description": "一簇干燥、老灌木丛。 Might contain fibers or mixed seeds.",
-"Weeds_Fiber_Ugly_Name": "杂草",
-"Weeds_Fiber_Ugly_Description": "一束令人讨厌的野草。 Cut to obtain wild seeds.",
-"Weeds_FiberOrMixedSeeds_Name": "杂草",
-"Weeds_FiberOrMixedSeeds_Description": "Might contain fibers or mixed seeds.",
-"Weeds_FiberOrMixedSeeds_Ugly_Name": "杂草",
-"Weeds_FiberOrMixedSeeds_Ugly_Description": "一束令人讨厌的野草。 Might contain fibers or mixed seeds.",
+    "Weeds_DryBush_Name": "杂草",
+    "Weeds_DryBush_Description": "一簇干燥、老灌木丛。 Might contain fibers or mixed seeds.",
+    "Weeds_Fiber_Ugly_Name": "杂草",
+    "Weeds_Fiber_Ugly_Description": "一束令人讨厌的野草。 Cut to obtain wild seeds.",
+    "Weeds_FiberOrMixedSeeds_Name": "杂草",
+    "Weeds_FiberOrMixedSeeds_Description": "Might contain fibers or mixed seeds.",
+    "Weeds_FiberOrMixedSeeds_Ugly_Name": "杂草",
+    "Weeds_FiberOrMixedSeeds_Ugly_Description": "一束令人讨厌的野草。 Might contain fibers or mixed seeds.",
 
 5. 祝尼魔相关对话？
 
-Strings/StringsFromCSFiles
+    Strings/StringsFromCSFiles
 
-"JunimoNoteMenu.cs.10786": "We    the  Junimo are    happy to    aid  you.  In     return we     ask for gifts   of      the valley.    If you   are one     with    forest   magic    then you    will   see    the true    nature   of  this scroll.",
+    "JunimoNoteMenu.cs.10786": "We    the  Junimo are    happy to    aid  you.  In     return we     ask for gifts   of      the valley.    If you   are one     with    forest   magic    then you    will   see    the true    nature   of  this scroll.",
 
 6. 创建存档设置里底下那个新按钮没汉化
 
-已翻译，待商定
+    已反馈，已简易翻译待商榷
 
-Strings/UI
+    Strings/UI
 
-"AGO_LegacyRandomization_Tooltip": "Make random choices in a way that often repeats patterns. Most players should keep this disabled.",
+    "AGO_LegacyRandomization_Tooltip": "Make random choices in a way that often repeats patterns. Most players should keep this disabled.",
 
-"Item_CantBeUsedHere": "This item can't be used here.",
+    "Item_CantBeUsedHere": "This item can't be used here.",
 
 ~~7. 补充花舞节结束提示翻译（官中已修）~~ 
 
