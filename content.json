@@ -848,34 +848,6 @@
 		  	}
       },
 	  
-	  //翻译日历上的沙漠节名字
-	  {
-		"Action": "EditData",
-		"Target": "Data/PassiveFestivals",
-		"Priority": "Early",
-		"When":{"Language":"zh"},
-		"Entries":
-			{
-				"DesertFestival": {
-				"DisplayName": "沙漠节",
-				"Condition": "LOCATION_ACCESSIBLE Desert",
-				"ShowOnCalendar": true,
-				"Season": "Spring",
-				"StartDay": 15,
-				"EndDay": 17,
-				"StartTime": 1000,
-				"StartMessage": "[LocalizedText Strings\\1_6_Strings:DesertFestival_NowOpen]",
-				"OnlyShowMessageOnFirstDay": false,
-				"MapReplacements": {
-				"Desert": "DesertFestival"
-				},
-				"DailySetupMethod": "StardewValley.Locations.DesertFestival, Stardew Valley: SetupFestivalDay",
-				"CleanupMethod": "StardewValley.Locations.DesertFestival, Stardew Valley: CleanupFestival",
-				"CustomFields": null
-				}
-			}
-      },
-	  
 	  // 补充内裤汤翻译
 	  {
 		"Action": "EditData",
