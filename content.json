@@ -89,7 +89,7 @@
 	  // 谷仓->畜棚
 	  {
 		  "Action": "EditData",
-		  "Target": "Strings/StringsFromCSfiles",
+		  "Target": "Strings/StringsFromCSFiles",
 		  "Priority": "Early",
 		  "When":{"Language":"zh"},
 		  "Entries":
@@ -113,7 +113,7 @@
 	  // 今天->明天
 	  {
 		  "Action": "EditData",
-		  "Target": "Strings/StringsFromCSfiles",
+		  "Target": "Strings/StringsFromCSFiles",
 		  "Priority": "Early",
 		  "When":{"Language":"zh"},
 		  "Entries":
@@ -357,7 +357,7 @@
 				  "spring_15_2": "亲爱的 @,^我想给我的丈夫一份特别的礼物。他特别喜欢韭葱，你可以给我点么？^-艾芙琳奶奶%item quest 116 %%[#]艾芙琳的惊喜",
 			  }
 	  },
-
+	  
 	  {
 		  "Action": "EditData",
 		  "Target": "Data/Quests",
@@ -883,6 +883,18 @@
 			{
 				"FarmComputer_Intro_NamedLocation": "{0}分析：",
 				"FarmComputer_Intro_Generic": "位置分析：",
+			}
+	  },
+
+	  // 根据游戏内容，将大麦统一为小麦，将芥兰菜统一为甘蓝菜
+	  {
+		"Action": "EditData",
+		"Target": "Strings/Notes",
+		"Priority": "Early",
+		"When":{"Language":"zh"},
+		"Entries":
+			{
+				"0": "种植小贴士--^*使用肥料有助于增加农作物质量、减少工作量、或提升农作物产量。^*果树成熟需要一整个季节，但并不需要过多打理。注意要把树苗周围的杂草石木清理干净，以便果树茁壮成长。^*各种庄稼在当前季节结束时，就会死去。除非是可以多季节进行栽培的种类，比如玉米。^*诸如芥兰菜与大麦等部分农作物需要用镰刀来收割。",
 			}
 	  }
   ]
