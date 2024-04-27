@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://chr.svbbs.club/"><img src="https://files.timewind.fun/2022/12/chr.webp" alt="星露谷物语中文修订MOD"></a>
+  <a href="https://chr.svbbs.club/"><img src="https://s21.ax1x.com/2024/04/26/pkPdjGd.png" alt="星露谷物语中文修订MOD"></a>
 </p>
 
 <div align="center">
