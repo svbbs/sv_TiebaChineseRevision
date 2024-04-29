@@ -238,15 +238,15 @@
     },
 
     // 再次修正乔治对话，儿子->孩子
-	  {
-		  "Action": "EditData",
-		  "Target": "Data/Events/JoshHouse",
-		  "Priority": "Early",
-		  "When":{"Language":"zh"},
-		  "Entries": {
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/JoshHouse",
+      "Priority": "Early",
+      "When":{"Language":"zh"},
+      "Entries": {
 				"5837189/n georgeGifts": "jaunty/-1000 -1000/farmer -100 -100 02 George 18 19 2 Evelyn 3 17 0/skippable/animate George false true 400 0 20/positionOffset George 0 -16/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 17 17/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 19.5 18.5/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 16.5 18/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 20 17/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 19 17/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 103 243 10 13 18.5 19.5/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 17.25 20.6/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 17 21/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 17.5 21/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 103 243 10 13 15 18/specificTemporarySprite staticSprite LooseSprites\\\\Cursors 288 1231 16 16 17 19 998/viewport 18 19 true/pause 5000/warp farmer 9 24/playSound doorClose/move farmer 0 -4 1/move farmer 4 0 1/stopAnimation George/faceDirection George 3/speak George \"@？这都是什么意思……#$b#是什么恶作剧吗？\"/pause 500/quickQuestion #我们想表达对你的感谢#你的妻子搞出来的#是的，就是恶作剧(break)playMusic none\\pause 1000\\positionOffset George -4 0\\playSound Cowboy_Footstep\\pause 500\\positionOffset George -4 0\\playSound Cowboy_Footstep\\pause 500\\positionOffset George -4 0\\playSound Cowboy_Footstep\\pause 500\\specificTemporarySprite georgeLeekGift\\specificTemporarySprite removeSprite 998\\playSound Ship\\pause 800\\showFrame George 21\\playSound coin\\playMusic echos\\pause 1000\\speak George \"韭葱……$s\"\\pause 1000\\speak George \"是我的最爱……就像妈妈在好多年前一直做的一样……\"\\pause 2000\\showFrame George 0\\faceDirection George 2\\speak George \"唔。嗯……\"\\emote George 40\\showFrame George 16\\pause 500\\speak George \"嗯，那个……唔……#$b#我想我大概没有我以为的那样，被遗忘和忽视了……$s\"\\faceDirection George 3\\speak George \"谢谢你，孩子。$h^谢谢，亲爱的。$h#$b#我这老头子太高兴了。$h\"\\pause 500\\emote farmer 32(break)playMusic none\\pause 300\\jump George\\pause 1000\\speak George \"哈！她以为能耍我！\"\\pause 500\\faceDirection George 2\\pause 400\\showFrame George 16\\pause 600\\speak George \"她以为能耍我……让我以为我只是个麻烦。$s\"\\stopAnimation George\\faceDirection George 3\\speak George \"呵，我才没那么蠢……\"\\pause 400\\faceDirection George 1\\speak George \"赶紧滚！$u\"\\emote farmer 28(break)playMusic none\\pause 300\\jump George\\pause 1000\\speak George \"哈！所以你就是捣蛋鬼？\"\\emote George 40\\playMusic playful\\speak George \"哈哈……这样啊，我年轻的时候也经常恶作剧。$h\"\\faceDirection George 2\\speak George \"嗯，至少你让我笑了笑。$h\"\\pause 2000\\faceDirection George 3\\emote George 8\\speak George \"什么，你以为我会打开？\"\\jump George\\pause 1000\\speak George \"哈！不可能。你以为我会中那个老套的“爆炸礼物”的陷阱？\"\\faceDirection George 2\\speak George \"我会直接把它们丢进垃圾桶！\"\\pause 300\\faceDirection farmer 2 true\\showFrame farmer 94\\jump farmer/pause 2000/end",
 			}
-	  },
+    },
 
     // 佩妮->潘妮
     {
@@ -332,26 +332,26 @@
     },
 
     // 包装箱->出货箱，使描述更准确以免产生误解
-	  {
-		  "Action": "EditData",
-		  "Target": "Characters/Dialogue/Lewis",
-		  "Priority": "Early",
-		  "When":{"Language":"zh"},
-		  "Entries": {
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Lewis",
+      "Priority": "Early",
+      "When":{"Language":"zh"},
+      "Entries": {
 				"Tue": "把你想要卖掉的东西都放到你房子旁边的出货箱里。#$e#我会去看看你往里面放了什么的。",	
 			}
-	  },
+    },
 
 	  // 石膏->木雕
-	  {
-		  "Action": "EditData",
-		  "Target": "Characters/Dialogue/Leah",
-		  "Priority": "Early",
-		  "When":{"Language":"zh"},
-		  "Entries": {
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Leah",
+      "Priority": "Early",
+      "When":{"Language":"zh"},
+      "Entries": {
 				"Sun": "如果你听到我的小屋里传出砰砰的声音，那可能是我在制作木雕。",	
 			}
-	  }
+    }
 
     // 将“山洞胡萝卜”统一为“山洞萝卜” 古代珍宝鉴定指南->古董鉴定指南 箭筒->箭袋
     {
