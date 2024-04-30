@@ -55,7 +55,7 @@
         "NPC.cs.4100": "如果你想获得{0}的青睐，送给他“{1}”。",
         "NPC.cs.4103": "如果你想获得{0}的青睐，送给她“{1}”。",
         "ShopMenu.cs.11484": "我只卖最好的商品。",
-        "TargetGame.cs.12154": "精准度： {0}%",
+        "TargetGame.cs.12154": "精准度：{0}%",
         "SkillsPage.cs.11591": "骷髅钥匙",
         "SpecialItem.cs.13088": "骷髅钥匙",
         "TV.cs.13111": "依地而居",
@@ -66,7 +66,7 @@
         "MapPage.PamHouse": "河间大道 2 号",
         "MapPage.cs.11088": "艾利欧特的小屋",
         "MapPage.cs.11174": "鹈鹕镇海滩",
-        "Object.cs.12726": "{0} 蔬菜汁",
+        "Object.cs.12726": "{0}蔬菜汁",
         "FishingRod.cs.14047": "玻璃纤维鱼竿",
         "MiniObelisk_NeedsPair": "需要两个迷你传送塔。",
         "VolcanoMines1": "火山矿井（熔火胶冻）",
@@ -97,7 +97,7 @@
     },
     
     //  修订 蠢材的黄金->愚人金 陶瓷碎片->星星碎片 大麦粉->小麦粉 未碾米->稻谷 葡萄干布丁->梅干布丁 蒜->大蒜 浮标->浮漂 
-    //  果干->水果干 旋式鱼饵->旋式亮片 法式田螺->法式蜗牛
+    //  果干->水果干 旋式鱼饵->旋转亮片 法式田螺->法式蜗牛 蜜蜂酒->蜂蜜酒
     //  煎鸡蛋->煎蛋 羊奶->山羊奶
     {
       "Action": "EditData",
@@ -121,18 +121,19 @@
         "LeadBobber_Name": "铅制浮漂",
         "QualityBobber_Name": "优质浮漂",
         "TrapBobber_Name": "陷阱浮漂",
-        "Spinner_Name": "旋式亮片",
-        "DressedSpinner_Name": "精装旋式亮片",
+        "Spinner_Name": "旋转亮片",
+        "DressedSpinner_Name": "精装旋转亮片",
         "FriedEgg_Name": "煎蛋",
         "GoatMilk_Name": "山羊奶",
         "GoatMilk_Description": "山羊的奶。",
         "LGoatMilk_Name": "大瓶山羊奶",
         "Escargot_Name": "法式蜗牛",
         "Escargot_Description": "淋上黄油的蜗牛，做的恰到火候。",
+        "Mead_Name": "蜂蜜酒",
       }
     },
 
-    // 星之果实餐吧->星之果实酒吧
+    // 星之果实餐吧->星之果实酒吧 巧妙->灵巧
     {
       "Action": "EditData",
       "Target": "Data/SecretNotes",
@@ -141,6 +142,7 @@
       "Entries": {
         "6": "星之果实酒吧特别订单^^刘易斯镇长：秋日恩赐^（配两份高纤维面包）^^玛妮：南瓜派^（多加鲜奶油！）^^德米特里厄斯：豆类火锅^（加辣）^^卡洛琳：鱼肉卷^（她要三倍酱汁！最好多放几张餐巾纸……）%revealtaste:Lewis:235%revealtaste:Marnie:608%revealtaste:Demetrius:207%revealtaste:Caroline:213",
         "12": "在走运的日子里，我在垃圾桶里找到了一些好东西。^^有时你会在星之果实酒吧的垃圾桶里找到“当日特供”……通常还很新鲜！^^至于甜点，我会翻翻乔治·莫尔纳家的垃圾桶，看看有没有饼干。^^珍宝的话，我会看看铁匠铺和博物馆旁的垃圾桶。",
+        "1008": "——武器附魔——^^灵巧：能让你更快地做出“特殊动作”。^^虫子杀手：对虫子造成更多伤害。^^吸血：偶尔能从怪物身上吸取生命。^^十字军：对“邪恶”怪物造成更多伤害。^^干草：割杂草时，你会得到更多的纤维，也有几率获得干草。^^——工具附魔——^^强力：对石头、树木等造成更多工具伤害。^^范围：增强蓄力能力，作用范围更大。^^木屑：砍树时有几率获得额外的木材。^^无底洞：喷壶永远不会干涸。^^丰富：能从地下挖出更多东西。^^考古学家：有更高几率发现文物和骨头。^^省力：使用不费体力。^^迅捷：更快地挥动工具。^^精通：提升钓鱼等级。^^自动上钩：鱼咬钩时自动开始钓鱼。^^耐用：有 50% 的几率不消耗鱼饵和渔具。",
       }
     },
 
@@ -153,13 +155,13 @@
       "Priority": "Early",
       "When": { "Language": "zh" },
       "Entries": {
-        "fall_26": "亲爱的 @，^不知道你有没有注意到空气中的凉意？冬天可能就要来了……^要不然就是黑暗的游魂，呼啸着和我们一起庆祝明天的节日……万灵节！^晚上 10 点来镇上和我们一起庆祝吧。^-镇长刘易斯 [#]万灵节通知",
+        "fall_26": "亲爱的@，^不知道你有没有注意到空气中的凉意？冬天可能就要来了……^要不然就是黑暗的游魂，呼啸着和我们一起庆祝明天的节日……万灵节！^晚上 10 点来镇上和我们一起庆祝吧。^-镇长刘易斯 [#]万灵节通知",
         "spring_15_2": "亲爱的 @，^我想送给我丈夫一份特别的礼物。他特别喜欢韭葱，你可以带一根给我吗？^-艾芙琳奶奶%item quest 116 %%[#]艾芙琳的惊喜",
         "Clint": "呃，你好……^抱歉，我不怎么会写信。我一不小心做多了金属锭，或许你能用得上。 ^-铁匠克林特 %item id (O)334 1 (O)335 1 (O)336 1 %%[#]来自克林特的礼物",
         "passedOut3_NotBilled": "@，^昨晚有人将你送到诊所了。你因体力不支而晕倒！^你要照顾好自己，并在合理的时间内及时上床睡觉。^由于你没有钱，我为你提供免费的医疗服务。^^-哈维医生[#]哈维免费的医疗服务",
         "joshMessage": "@：^天黑后到酒吧见我。 ^——亚历克斯[#]亚历克斯的邀请",
         "incubator": "亲爱的@：^^感谢你选择购买{{鸡舍}}升级服务！我不仅让你的{{鸡舍}}容量翻了一番，我还帮你安装了孵化器。^你只要把鸡蛋放入孵化器即可。只要你的{{鸡舍}}还有位置，过不了几天鸡蛋就会孵化啦。^^很感谢您的光临。^——罗宾[#]关于孵化器",
-        "spring_12": "亲爱的@：^明天我们会在广场欢庆{{复活节}}。^^如果你想和我们一起庆祝的话， 请在上午 9 点到下午 2 点之间到位。^一年一度的彩蛋大寻宝不容错过！^——镇长刘易斯[#]欢庆{{复活节}}通知",
+        "spring_12": "亲爱的@：^明天我们会在广场欢庆{{复活节}}。^^如果你想和我们一起庆祝的话， 请在 9 点到 14 点之间到位。^一年一度的彩蛋大寻宝不容错过！^——镇长刘易斯[#]欢庆{{复活节}}通知",
         "RarecrowSociety": "亲爱的@：^^您的贡献令人赞叹……^^只有少数人能够收集全套{{珍奇乌鸦}}系列！！^^请收下这张图纸以纪念你的成就。^   ——Z.C. {{珍奇乌鸦}}协会%item craftingRecipe Deluxe_Scarecrow %%[#]{{珍奇乌鸦}}协会来信",
       }
     },
@@ -183,7 +185,7 @@
       "Priority": "Early",
       "When": { "Language": "zh" },
       "Entries": {
-        "PurchasedItem_Haley": "昨晚，艾米丽想要把{1}{2}作为我们的晚餐……  我趁着她没看到的时候，把它扔掉了。#$e#我不喜欢健康食品……$s",
+        "PurchasedItem_Haley": "昨晚，艾米丽想要把{1}{2}作为我们的晚餐……我趁她不注意，把它扔掉了。#$e#我不喜欢健康食品……$s",
         "PurchasedItem_3_QualityLow_Rude": "我昨晚去购物了，买了打折的{1}{2}，只需要{3}金。#$e#那是{4}！难怪皮埃尔把{5}卖得那么便宜……",
         "PurchasedItem_3_QualityHigh_Rude": "我昨晚去购物了，买了打折的{1}{2}，只需要{3}金。#$e#它其实相当{4}。",
         "PurchasedItem_3_NonRude": "我昨晚去购物了，买了打折的{1}{2}，只需要{3}金。#$e#我不能错过那么低的价格。",
@@ -228,7 +230,7 @@
       }
     },
     
-    //  修订 洞穴胡萝卜汤->山洞萝卜汤
+    //  修订 洞穴胡萝卜->山洞萝卜
     //  润色 “这里的水从来不会变得更干净” 
     {
       "Action": "EditData",
@@ -356,7 +358,7 @@
         "14": "Basic/探索矿井/镇子北方山脉处有一座旧矿井。里面也许有珍贵的矿物，但是马龙说那里可能有危险。/到达矿井的 5 层。/17/17/0/-1/false",
         "17": "Basic/矿井深处/看来矿井的升降机依然能用。你能够通过它快速回到你之前发现过的任何升降机门口。现在可以更加深入矿井了。/在矿井中达到 40 层。/18/18/0/-1/false",
         "18": "Basic/深入地底？/当前依然未发现地底最深处。这到底有多深啊？/抵达矿井地底。/-1/-1/0/-1/false",
-        "28": "Basic/黑暗护身符/法师要我从他前妻家取回魔法墨水，…但是我需要一个黑暗护身符才能获得去往他前妻家的路。/进入下水道，询问科罗布斯有关黑暗护身符的事情。/-1/-1/0/-1/false",
+        "28": "Basic/黑暗护身符/法师要我从他前妻家取回魔法墨水，……但是我需要一个黑暗护身符才能获得去往他前妻家的路。/进入下水道，询问科罗布斯有关黑暗护身符的事情。/-1/-1/0/-1/false",
         "7": "Building/养殖动物/本地的木匠罗宾就住在镇子北方。只要给她充足的原材料和金钱，她就会替你在你的农场里建造新的建筑。你需要让她帮你建造{{鸡舍}}和畜棚来饲养动物。/建造一个{{鸡舍}}。/Coop/-1/100/-1/true",
       }
     },
@@ -380,7 +382,7 @@
       "When": { "Language": "zh" },
       "Entries": {
         "992553/t 600 1130/n copperFound": "continue/64 15/farmer 64 16 2 Clint 64 18 0/skippable/pause 1500/speak Clint \"啊……嗨。早啊。#$b#我注意到你一直在凿石头找矿石。真的很棒！\"/pause 500/speak Clint \"如果你想最大化利用矿石的话，你需要一个熔炉。\"/pause 500/speak Clint \"正巧我有个闲置的蓝图。给，你收下吧。\"/pause 800/itemAboveHead/playSound getNewSpecialItem/addCraftingRecipe Furnace/pause 3300/message \"学会如何制造'熔炉'。\"/pause 800/speak Clint \"你可以用熔炉来熔炼金属锭。这些金属锭可以用来锻造，建造，以及升级工具。\"/pause 500/faceDirection Clint 1/pause 500/faceDirection Clint 0/speak Clint \"当你熔炼了一定数量的铜锭时，可以考虑让我给你升级一件工具。你的工作会变得更加轻松。#$b#那好。我回去了。慢慢来。\"/pause 200/addQuest 11/end",
-        "91/f Marnie 750/t 600 930": "continue/64 15/farmer 64 16 2 Marnie 64 18 0/pause 1500/addQuest 21/skippable/speak Marnie \"早上好啊， @先生！$h^早上好啊， @小姐！$h#$b#我来是请你帮忙的，因为你是个善良的邻居。#$b#我在训练我的山羊向人打招呼……但它们的注意力根本不在我身上，除非我用它们最爱的食物山洞萝卜来吸引它们！$u#$b#所以……由于我害怕矿山……你有机会的话能不能给我带一根山洞萝卜？#$b#不强迫的……但如果你愿帮我的话，上午 9:00 到下午 5:00 之间带着山洞萝卜来我家就好。你的善举会让一位老姑娘非常开心的。再见。\"/pause 300/end dialogue Marnie \"我家的山羊想山洞萝卜都快想疯了……真搞不懂为什么。\"",
+        "91/f Marnie 750/t 600 930": "continue/64 15/farmer 64 16 2 Marnie 64 18 0/pause 1500/addQuest 21/skippable/speak Marnie \"早上好啊， @先生！$h^早上好啊， @小姐！$h#$b#我来是请你帮忙的，因为你是个善良的邻居。#$b#我在训练我的山羊向人打招呼……但它们的注意力根本不在我身上，除非我用它们最爱的食物山洞萝卜来吸引它们！$u#$b#所以……由于我害怕矿山……你有机会的话能不能给我带一根山洞萝卜？#$b#不强迫的……但如果你愿帮我的话，9:00 到 17:00 之间带着山洞萝卜来我家就好。你的善举会让一位老姑娘非常开心的。再见。\"/pause 300/end dialogue Marnie \"我家的山羊想山洞萝卜都快想疯了……真搞不懂为什么。\"",
       }
     },
 
@@ -627,16 +629,6 @@
       }
     },
 
-    {
-      "Action": "EditData",
-      "Target": "Strings/Shirts",
-      "Priority": "Early",
-      "When": { "Language": "zh" },
-      "Entries": {
-        "1008": "——武器附魔——^^灵巧：能让你更快地做出“特殊动作”。^^虫子杀手：对虫子造成更多伤害。^^吸血：偶尔能从怪物身上吸取生命。^^十字军：对“邪恶”怪物造成更多伤害。^^干草：割杂草时，你会得到更多的纤维，也有几率获得干草。^^——工具附魔——^^强力：对石头、树木等造成更多工具伤害。^^范围：增强蓄力能力，作用范围更大。^^木屑：砍树时有几率获得额外的木材。^^无底洞：喷壶永远不会干涸。^^丰富：能从地下挖出更多东西。^^考古学家：有更高几率发现文物和骨头。^^省力：使用不费体力。^^迅捷：更快地挥动工具。^^精通：提升钓鱼等级。^^自动上钩：鱼咬钩时自动开始钓鱼。^^耐用：有 50% 的几率不消耗鱼饵和渔具。",
-      }
-    },
-
     // 个人披萨->单人份披萨
     {
       "Action": "EditData",
@@ -841,13 +833,14 @@
       }
     },
     
-    // 润色谢恩对话
+    // 润色谢恩对话 统一为山洞萝卜
     {
       "Action": "EditData",
       "Target": "Data/vents/AnimalShop",
       "When": { "Language": "zh" },
       "Entries": {
         "3910674/f Shane 1000": "shaneTheme/-2000 -2000/farmer 18 18 1 Marnie 21 14 0 Jas 25 16 2 Shane -1000 -1000 2/skippable/specificTemporarySprite shanePassedOut/viewport 22 8 true/pause 2000/speak Marnie \"谢恩？\"/pause 2000/doAction 21 13/pause 500/move Marnie 0 -7 1/textAboveHead Marnie \"噢！亲爱的……\"/doAction 21 13/removeTile 21 13 Buildings/removeTile 21 12 Front/move farmer 3 0 0/faceDirection Jas 3 true/move farmer 0 -10 1/faceDirection Marnie 2/pause 500/speak Marnie \"@……你能帮帮忙吗？他完全不省人事了。$s\"/pause 500/faceDirection farmer 0/pause 500/faceDirection farmer 1/move farmer 3 0 0/faceDirection Marnie 1 true/move farmer 0 -1 1/pause 1000/speak Shane \"不……$7\"/pause 2000/specificTemporarySprite waterShane/pause 250/playSound wateringCan/pause 1000/specificTemporarySprite waterShaneDone/warp Shane 25 7/textAboveHead Shane \"什……？！\"/jump Shane/shake Shane 2000/showFrame Shane 18/pause 3000/showFrame Shane 0/move farmer -1 0 1/faceDirection Shane 3/speak Marnie \"谢恩！你到底怎么了？你现在就只会躲在房间里闷闷不乐，然后一瓶瓶地喝啤酒！$s\"/move Jas -4 0 0 true/pause 200/faceDirection Shane 2 true/pause 50/faceDirection Shane 1/emote Shane 12/shake Shane 1000/textAboveHead Shane \"……\"/pause 1500/speak Shane \"你不懂……\"/pause 1000/textAboveHead Marnie \"我很担心你……\"/move Jas 0 -8 1/speak Marnie \"你的计划是什么？你想过未来吗？\"/faceDirection Shane 0/textAboveHead Shane \"计划？\"/pause 2000/speak Shane \"希望我不会活到需要“计划”的时候……\"/jump Jas/pause 500/shake Jas 10000/speed Jas 4/textAboveHead Jas \"……*啜泣*……\"/move Jas 0 10 2 true/faceDirection Marnie 2/emote Marnie 28 true/faceDirection farmer 3/faceDirection Shane 1 true/pause 50/faceDirection Shane 2/pause 600/move Marnie 0 10 2 true/pause 1000/textAboveHead Shane \"贾斯……\"/pause 500/faceDirection farmer 1/pause 400/showFrame Shane 19/pause 1000/textAboveHead Shane \"对不起……\"/pause 3000/faceDirection Shane 1 true/showFrame Shane 4/pause 500/showFrame Shane 35/playSound thudStep/shake Shane 4000/pause 2000/end",
+        "92/e 91/i 78/t 900 1700": "jaunty/13 17/farmer 13 19 0 Marnie 13 14 2/move farmer 0 -1 0/removeQuest 21/removeItem 78/friendship Marnie 100/skippable/emote Marnie 16/speed Marnie 4/move Marnie 0 -1 2/speed Marnie 4/move Marnie 2 0 2/speed Marnie 4/move Marnie 0 3 2/move Marnie -2 0 2/pause 300/speak Marnie \"噢！你把山洞萝卜拿来了！太感谢你了，@先生。$h^噢！你把山洞萝卜拿来了！太感谢你了，@女士。$h\"/pause 500/move farmer 0 -1 1/faceDirection farmer 1/pause 500/playSound woodyStep/addObject 14 17 78/showFrame 35/pause 500/showFrame 6/pause 400/faceDirection farmer 1/move Marnie 1 0 2/emote Marnie 32/speak Marnie \"看起来很不错……我都忍不住要自己吃了！$h#$b#……开玩笑呢。\"/faceDirection farmer 1/pause 600/speak Marnie \"希望没给你添麻烦……十分感激你能帮忙\"/pause 300/removeObject 14 17/pause 400/end dialogue Marnie \"再次感谢你能帮忙。$h#$e#我的羊也向你说“谢谢”了。\"",
       }
     },
 
