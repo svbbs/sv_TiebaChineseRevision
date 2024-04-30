@@ -2,13 +2,14 @@
   "Format": "2.0.0",
 
   "ConfigSchema": {
+    // 默认项皆为投票结果
     "鸡舍": {
        "AllowValues": "禽舍, 鸡舍",
        "Default": "禽舍"
     },
     "伐木秘事": {
       "AllowValues": "伐木秘事, 伍迪密传，樵夫秘事，森林秘事",
-      "Default": ""
+      "Default": "樵夫秘事"
     },
     "复活节": {
       "AllowValues": "彩蛋节，复活节",
@@ -138,7 +139,7 @@
 
     //  修订 今天->明天 统一为韭葱 将所有"金属棒 Metal bars"统一改为"金属锭" 我想你->我向你
     //  润色 谢恩、哈维对话
-    //  鸡舍 ->禽舍
+    //  修改鸡舍 珍奇乌鸦
     {
       "Action": "EditData",
       "Target": "Data/mail",
@@ -151,7 +152,9 @@
         "3910674/f Shane 1000": "shaneTheme/-2000 -2000/farmer 18 18 1 Marnie 21 14 0 Jas 25 16 2 Shane -1000 -1000 2/skippable/specificTemporarySprite shanePassedOut/viewport 22 8 true/pause 2000/speak Marnie \"谢恩？\"/pause 2000/doAction 21 13/pause 500/move Marnie 0 -7 1/textAboveHead Marnie \"噢！亲爱的……\"/doAction 21 13/removeTile 21 13 Buildings/removeTile 21 12 Front/move farmer 3 0 0/faceDirection Jas 3 true/move farmer 0 -10 1/faceDirection Marnie 2/pause 500/speak Marnie \"@……你能帮帮忙吗？他完全不省人事了。$s\"/pause 500/faceDirection farmer 0/pause 500/faceDirection farmer 1/move farmer 3 0 0/faceDirection Marnie 1 true/move farmer 0 -1 1/pause 1000/speak Shane \"不……$7\"/pause 2000/specificTemporarySprite waterShane/pause 250/playSound wateringCan/pause 1000/specificTemporarySprite waterShaneDone/warp Shane 25 7/textAboveHead Shane \"什……？！\"/jump Shane/shake Shane 2000/showFrame Shane 18/pause 3000/showFrame Shane 0/move farmer -1 0 1/faceDirection Shane 3/speak Marnie \"谢恩！你到底怎么了？你现在就只会躲在房间里闷闷不乐，然后一瓶瓶地喝啤酒！$s\"/move Jas -4 0 0 true/pause 200/faceDirection Shane 2 true/pause 50/faceDirection Shane 1/emote Shane 12/shake Shane 1000/textAboveHead Shane \"……\"/pause 1500/speak Shane \"你不懂……\"/pause 1000/textAboveHead Marnie \"我很担心你……\"/move Jas 0 -8 1/speak Marnie \"你的计划是什么？你想过未来吗？\"/faceDirection Shane 0/textAboveHead Shane \"计划？\"/pause 2000/speak Shane \"希望我不会活到需要“计划”的时候……\"/jump Jas/pause 500/shake Jas 10000/speed Jas 4/textAboveHead Jas \"……*啜泣*……\"/move Jas 0 10 2 true/faceDirection Marnie 2/emote Marnie 28 true/faceDirection farmer 3/faceDirection Shane 1 true/pause 50/faceDirection Shane 2/pause 600/move Marnie 0 10 2 true/pause 1000/textAboveHead Shane \"贾斯……\"/pause 500/faceDirection farmer 1/pause 400/showFrame Shane 19/pause 1000/textAboveHead Shane \"对不起……\"/pause 3000/faceDirection Shane 1 true/showFrame Shane 4/pause 500/showFrame Shane 35/playSound thudStep/shake Shane 4000/pause 2000/end",
         "passedOut3_NotBilled": "@，^昨晚有人将你送到诊所了。你因体力不支而晕倒！^你要照顾好自己，并在合理的时间内及时上床睡觉。^由于你没有钱，我为你提供免费的医疗服务。^^-哈维医生[#]哈维免费的医疗服务",
         "joshMessage": "@：^天黑后到酒吧见我。 ^——亚历克斯[#]亚历克斯的邀请",
-        "incubator": "亲爱的@：^^感谢你选择购买{{鸡舍}}升级服务！我不仅让你的{{鸡舍}}容量翻了一番，我还帮你安装了孵化器。^你只要把鸡蛋放入孵化器即可。只要你的{{鸡舍}}还有位置，过不了几天鸡蛋就会孵化啦。^^很感谢您的光临。^——罗宾[#]关于孵化器"
+        "incubator": "亲爱的@：^^感谢你选择购买{{鸡舍}}升级服务！我不仅让你的{{鸡舍}}容量翻了一番，我还帮你安装了孵化器。^你只要把鸡蛋放入孵化器即可。只要你的{{鸡舍}}还有位置，过不了几天鸡蛋就会孵化啦。^^很感谢您的光临。^——罗宾[#]关于孵化器",
+        "spring_12": "亲爱的@：^明天我们会在广场欢庆{{复活节}}。^^如果你想和我们一起庆祝的话， 请在上午 9 点到下午 2 点之间到位。^一年一度的彩蛋大寻宝不容错过！^——镇长刘易斯[#]欢庆{{复活节}}通知",
+        "RarecrowSociety": "亲爱的@：^^您的贡献令人赞叹……^^只有少数人能够收集全套{{珍奇乌鸦}}系列！！^^请收下这张图纸以纪念你的成就。^   ——Z.C. {{珍奇乌鸦}}协会%item craftingRecipe Deluxe_Scarecrow %%[#]{{珍奇乌鸦}}协会来信",
       }
     },
     //  修订 青葱->大葱 青葱现在值 5 倍金子->大葱的价格提升为原来的 5 倍
@@ -230,6 +233,7 @@
     },
 
     // 东边->西边 头骨->骷髅
+    // 修改老师傅香炸奶酪卷
     {
       "Action": "EditData",
       "Target": "Strings/Locations",
@@ -238,6 +242,7 @@
       "Entries": {
         "NutHint_WestBuried": "还有 {0} 个埋在西边……",
         "SkullCave_SkullDoor_Unlock": "你把骷髅钥匙插入钥匙孔内。完美契合！",
+        "Woods_Statue": "--{{老师傅香炸奶酪卷}}--\n……依旧寻求着最甜的味道……",
       }
     },
 
@@ -409,7 +414,7 @@
       }
     },
 
-    //  统一矿井
+    //  统一矿井 修改复活节
     //  润色翻译，尖叫->哭闹 
     {
       "Action": "EditData",
@@ -419,6 +424,7 @@
       "Entries": {
         "TwoKids_0": "我已经给%kid1和%kid2喂过巧克力麦片了。他们在哭闹！",
         "Indoor_Day_2": "去矿井吗？嘿……如果你找到什么好吃的东西，记得给我带一份！$h",
+        "spring_12": "嘿，明天就是{{复活节}}了。抱歉，但我不会因为我们结婚了而手下留情的！$h#$e#我要成为彩蛋大寻宝的赢家。你尽管试着打败我吧。",
       }
     },
 
@@ -502,6 +508,7 @@
     },
 
     // 迷你图腾尖塔->迷你传送塔 圆石->巨石 宝箱->箱子 石箱->石质箱子 空置的胶囊->空的胶囊
+    // 修改珍奇乌鸦
     {
       "Action": "EditData",
       "Target": "Strings/BigCraftables",
@@ -516,6 +523,14 @@
         "EmptyCapsule_Name": "空的胶囊",
         "AutoGrabber_Description": "每天早晨自动采集动物产品。必须放在{{鸡舍}}或畜棚内。",
         "AutoPetter_Description": "Joja 公司专利技术，适用于{{鸡舍}}和畜棚。可以让动物们满足，但是无法实现亲自抚摸的所有好处。使用后仍可手动抚摸来补足。",
+        "RareCrow_1_Name": "{{珍奇乌鸦}}",
+        "RareCrow_2_Name": "{{珍奇乌鸦}}",
+        "RareCrow_3_Name": "{{珍奇乌鸦}}",
+        "RareCrow_4_Name": "{{珍奇乌鸦}}",
+        "RareCrow_5_Name": "{{珍奇乌鸦}}",
+        "RareCrow_6_Name": "{{珍奇乌鸦}}",
+        "RareCrow_7_Name": "{{珍奇乌鸦}}",
+        "RareCrow_8_Name": "{{珍奇乌鸦}}",
       }
     },
 
@@ -690,7 +705,7 @@
       "Target": "Strings/StringsFromCSFiles",
       "Priority": "Early",
       "When": { 
-        "启用特殊爱称": false,  
+        "启用特殊爱称彩蛋": false,  
         "Language": "zh"
       },
       "Entries": {
@@ -713,7 +728,7 @@
       "Target": "Strings/StringsFromCSFiles",
       "Priority": "Early",
       "When": { 
-        "启用特殊爱称": true,  
+        "启用特殊爱称彩蛋": true,  
         "Language": "zh"
       },
       "Entries": {
@@ -730,5 +745,25 @@
         "NPC.cs.4523": "甜心", // Sweetheart 亲爱的（默认）甜心（选项）
       }
     },
+
+    // 修改复活节
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/FestivalDates",
+      "When": { "Language": "zh" },
+      "Entries": {
+        "spring13": "{{复活节}}",
+      }
+    },
+    
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "When": { "Language": "zh" },
+      "Entries": {
+        "name": "{{复活节}}",
+        "Marnie": "欢迎来到{{复活节}}……这个节日全靠我家母鸡下的蛋维持着。",
+      }
+    }
   ]
 }
