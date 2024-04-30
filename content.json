@@ -99,7 +99,8 @@
       }
     },
     
-    //  修订 蠢材的黄金->愚人金 陶瓷碎片->星星碎片 大麦粉->小麦粉 未碾米->稻谷 葡萄干布丁->梅干布丁 蒜->大蒜 浮标->浮漂
+    //  修订 蠢材的黄金->愚人金 陶瓷碎片->星星碎片 大麦粉->小麦粉 未碾米->稻谷 葡萄干布丁->梅干布丁 蒜->大蒜 浮标->浮漂 
+    //  果干->水果干
     //  煎鸡蛋->煎蛋 羊奶->山羊奶
     {
       "Action": "EditData",
@@ -116,6 +117,7 @@
         "Garlic_Name": "大蒜",
         "DriedFruit_CollectionsTabName": "水果干",
         "DriedFruit_CollectionsTabDescription": "有嚼劲的水果干。",
+        "DriedFruit_Description": "用{0}制成的水果干，有嚼劲。",
         "DriedFruit_Name": "水果干",
         "DriedMushrooms_Name": "蘑菇干",
         "CorkBobber_Name": "软木塞浮漂",
