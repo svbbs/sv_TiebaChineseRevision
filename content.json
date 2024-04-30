@@ -40,8 +40,7 @@
   [
     /*
       修订 盖斯->格斯 谷仓->畜棚 今天->明天 只买->只卖 加速->精准度 
-      离地而居->依地而居 头骨钥匙->骷髅钥匙 1 柳巷->柳巷 1 号 1 河间大道->河间大道 1 号 艾利欧特小屋->艾利欧特的小屋 棕榈镇海滩->鹈鹕镇海滩 修改鸡舍
-      果汁->蔬菜汁 迷你图腾尖塔->迷你传送塔 果干->水果干 补充废案 Dried 翻译 肾上腺冲击->肾上腺素飙升 统一矿井
+      离地而居->依地而居 头骨钥匙->骷髅钥匙 1 柳巷->柳巷 1 号 1 河间大道->河间大道 1 号 艾利欧特小屋->艾利欧特的小屋 棕榈镇海滩->鹈鹕镇海滩 修改鸡舍 果汁->蔬菜汁 迷你图腾尖塔->迷你传送塔 肾上腺冲击->肾上腺素飙升 统一矿井
       润色 支持->青睐
     */
     {
@@ -778,6 +777,16 @@
         "afterEggHunt": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/globalFade/viewport -1000 -1000/playMusic event1/loadActors MainEvent/warpFarmers 27 69 0 26 67 1 32 67 3 28 71 0 22 65 1 25 63 2 32 65 3 32 62 2 right 31 71 0/pause 1000/viewport 27 67 true/pause 2000/speak Lewis \"哇，看这些蛋蛋！$h#$b#如果你们这些孩子捡垃圾也有这个效率的话，我们就是宝石之海这一带最干净的城市了！* 咯咯 *$h\"/pause 800/playMusic none/speak Lewis \"那么，今年彩蛋大寻宝的获胜者是……\"/playMusic none/pause 3000/cutscene eggHuntWinner/null/playMusic event1/pause 500/fork AbbyWin/move Lewis 0 1 2/speak Lewis \"这是你的奖品！希望你会喜欢。\"/awardFestivalPrize/null/move Lewis 0 -1 0/speak Lewis \"好了，今年的{{复活节}}就此结束。谢谢大家捧场！\"/pause 600/viewport move 1 0 5000/pause 2000/globalFade/viewport -1000 -1000/waitForOtherPlayers festivalEnd/end",
         "AbbyWin": "pause 100/jump Abigail/faceDirection Vincent 3/pause 800/move Abigail 0 -1 0/faceDirection Vincent 0/speak Lewis \"这是你的奖品，阿比盖尔。希望你会喜欢！\"/pause 500/move Abigail 0 -1 0/playSound coin/pause 400/move Abigail 0 2 0/faceDirection Lewis 0/speak Lewis \"好了，今年的{{复活节}}就此结束。谢谢大家捧场！\"/pause 1000/viewport move 1 -1 5000/pause 2000/globalFade/viewport -1000 -1000/waitForOtherPlayers festivalEnd/end",
       }
+    },
+
+    // 果干->水果干
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "When": { "Language": "zh" },
+      "Entries": {
+          "Gus": "做糖拐杖是一门艺术。你得漫山遍野地寻找最适合的原料。这年头可难找了！$h#$e#我通常用芬群岛水果干做糖拐杖，这样才能保证质量。那亮丽的红色实在是太合适了……还是纯天然的！#$e#哦，你想知道制作顶级双拐杖糖的秘诀？告诉你可以，不过一定要保密啊。*细语*在白色果糖里面加入一点点香草，再与樱桃混合就行了。$h#$e#当然了，薄荷味拐杖糖也是很受欢迎的，所以我也会做很多这种口味的。#$e#喂，你看起来快要睡着了。你没事吧？$s",
+        }
     }
   ]
 }
