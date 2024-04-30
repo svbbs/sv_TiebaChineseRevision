@@ -443,7 +443,7 @@
       }
     },
 
-    //  润色翻译，小女婴->宝贝女儿 星之果实餐吧->星之果实酒吧
+    //  润色翻译，小女婴->宝贝女儿 姐姐->姐妹 星之果实餐吧->星之果实酒吧
     {
       "Action": "EditData",
       "Target": "Strings/Characters",
@@ -451,6 +451,7 @@
       "When": { "Language": "zh" },
       "Entries": {
         "Relative_LittleBabyGirl": "宝贝女儿",
+        "Relative_Sister": "姐妹",
         "Phone_Gus_Closed": "你好，我是星之果实酒吧的格斯。店里现在不是营业时间，如果你想品尝每日特色菜“{0}”的话还请稍后再来！（嘟嘟）",
         "Phone_Gus_Festival": "你好，我是星之果实酒吧的格斯。店内今天不营业。（嘟嘟）",
         "Phone_Gus_Closed_NoDishOfTheDay": "你好，我是星之果实酒吧的格斯。店里现在不是营业时间。如果你想品尝我们店的美味食物与饮品，请在晚 12 点到中午 12 点间过来。（嘟嘟）",
@@ -761,7 +762,7 @@
         "spring13": "{{复活节}}",
       }
     },
-    
+    // 伊芙莉->艾芙琳
     {
       "Action": "EditData",
       "Target": "Data/Festivals/spring13",
@@ -772,6 +773,7 @@
         "spring_12": "{{复活节}}大概是我最喜欢的节日……你了解我的，与鸡有关的任何事情都能让我为之疯狂。$h",
         "afterEggHunt": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/globalFade/viewport -1000 -1000/playMusic event1/loadActors MainEvent/warpFarmers 27 69 0 26 67 1 32 67 3 28 71 0 22 65 1 25 63 2 32 65 3 32 62 2 right 31 71 0/pause 1000/viewport 27 67 true/pause 2000/speak Lewis \"哇，看这些蛋蛋！$h#$b#如果你们这些孩子捡垃圾也有这个效率的话，我们就是宝石之海这一带最干净的城市了！* 咯咯 *$h\"/pause 800/playMusic none/speak Lewis \"那么，今年彩蛋大寻宝的获胜者是……\"/playMusic none/pause 3000/cutscene eggHuntWinner/null/playMusic event1/pause 500/fork AbbyWin/move Lewis 0 1 2/speak Lewis \"这是你的奖品！希望你会喜欢。\"/awardFestivalPrize/null/move Lewis 0 -1 0/speak Lewis \"好了，今年的{{复活节}}就此结束。谢谢大家捧场！\"/pause 600/viewport move 1 0 5000/pause 2000/globalFade/viewport -1000 -1000/waitForOtherPlayers festivalEnd/end",
         "AbbyWin": "pause 100/jump Abigail/faceDirection Vincent 3/pause 800/move Abigail 0 -1 0/faceDirection Vincent 0/speak Lewis \"这是你的奖品，阿比盖尔。希望你会喜欢！\"/pause 500/move Abigail 0 -1 0/playSound coin/pause 400/move Abigail 0 2 0/faceDirection Lewis 0/speak Lewis \"好了，今年的{{复活节}}就此结束。谢谢大家捧场！\"/pause 1000/viewport move 1 -1 5000/pause 2000/globalFade/viewport -1000 -1000/waitForOtherPlayers festivalEnd/end",
+        "George_y2": "艾芙琳早餐做了鸡蛋和韭葱，所以我现在心情很好。$h",
       }
     },
 
