@@ -1,5 +1,35 @@
 {
   "Format": "2.0.0",
+
+  "ConfigSchema": {
+    "鸡舍": {
+       "AllowValues": "禽舍, 鸡舍",
+       "Default": "禽舍"
+    },
+    "伐木秘事": {
+      "AllowValues": "伐木秘事, 伍迪密传，樵夫秘事，森林秘事",
+      "Default": ""
+    },
+    "复活节": {
+      "AllowValues": "彩蛋节，复活节",
+      "Default": "彩蛋节"
+    },
+    "珍奇乌鸦": {
+      "AllowValues": "珍奇稻草人，珍奇乌鸦",
+      "Default": "珍奇稻草人"
+    },
+    "老师傅香炸奶酪卷": {
+      "AllowValues": "老克诺比大师，老啃烙饼大师",
+      "Default": "老克诺比大师"
+    },
+
+    "启用特殊爱称彩蛋": {
+       "AllowValues": "true, false",
+       "Default": "false",
+       "Description": "婚后对话概率出现：小可爱，小太阳，黏人精，黏人虫，老公，老婆，宝贝，帅哥，甜心。关闭则只有亲爱的"
+    },
+ },
+
   "Changes": 
   [
     /*
@@ -42,6 +72,10 @@
         "Object.cs.12739": "{0} 果酱",
         "Object.cs.12760": "{0} 蜂蜜",
         "Buff.cs.472": "肾上腺素飙升",
+        "Utility.cs.5926": "需要修建{{鸡舍}}",
+        "Utility.cs.5940": "需要建造大{{鸡舍}}",
+        "Utility.cs.5947": "需要先建造高级{{鸡舍}}",
+        "PurchaseAnimalsMenu.cs.11335": "饲养在{{鸡舍}}里。",
       }
     },
 
@@ -100,10 +134,11 @@
         "6": "星之果实酒吧特别订单^^刘易斯镇长：秋日恩赐^（配两份高纤维面包）^^玛妮：南瓜派^（多加鲜奶油！）^^德米特里厄斯：豆类火锅^（加辣）^^卡洛琳：鱼肉卷^（她要三倍酱汁！最好多放几张餐巾纸……）%revealtaste:Lewis:235%revealtaste:Marnie:608%revealtaste:Demetrius:207%revealtaste:Caroline:213",
         "12": "在走运的日子里，我在垃圾桶里找到了一些好东西。^^有时你会在星之果实酒吧的垃圾桶里找到“当日特供”……通常还很新鲜！^^至于甜点，我会翻翻乔治·莫尔纳家的垃圾桶，看看有没有饼干。^^珍宝的话，我会看看铁匠铺和博物馆旁的垃圾桶。",
       }
-    }
+    },
 
     //  修订 今天->明天 统一为韭葱 将所有"金属棒 Metal bars"统一改为"金属锭" 我想你->我向你
     //  润色 谢恩、哈维对话
+    //  鸡舍 ->禽舍
     {
       "Action": "EditData",
       "Target": "Data/mail",
@@ -116,6 +151,7 @@
         "3910674/f Shane 1000": "shaneTheme/-2000 -2000/farmer 18 18 1 Marnie 21 14 0 Jas 25 16 2 Shane -1000 -1000 2/skippable/specificTemporarySprite shanePassedOut/viewport 22 8 true/pause 2000/speak Marnie \"谢恩？\"/pause 2000/doAction 21 13/pause 500/move Marnie 0 -7 1/textAboveHead Marnie \"噢！亲爱的……\"/doAction 21 13/removeTile 21 13 Buildings/removeTile 21 12 Front/move farmer 3 0 0/faceDirection Jas 3 true/move farmer 0 -10 1/faceDirection Marnie 2/pause 500/speak Marnie \"@……你能帮帮忙吗？他完全不省人事了。$s\"/pause 500/faceDirection farmer 0/pause 500/faceDirection farmer 1/move farmer 3 0 0/faceDirection Marnie 1 true/move farmer 0 -1 1/pause 1000/speak Shane \"不……$7\"/pause 2000/specificTemporarySprite waterShane/pause 250/playSound wateringCan/pause 1000/specificTemporarySprite waterShaneDone/warp Shane 25 7/textAboveHead Shane \"什……？！\"/jump Shane/shake Shane 2000/showFrame Shane 18/pause 3000/showFrame Shane 0/move farmer -1 0 1/faceDirection Shane 3/speak Marnie \"谢恩！你到底怎么了？你现在就只会躲在房间里闷闷不乐，然后一瓶瓶地喝啤酒！$s\"/move Jas -4 0 0 true/pause 200/faceDirection Shane 2 true/pause 50/faceDirection Shane 1/emote Shane 12/shake Shane 1000/textAboveHead Shane \"……\"/pause 1500/speak Shane \"你不懂……\"/pause 1000/textAboveHead Marnie \"我很担心你……\"/move Jas 0 -8 1/speak Marnie \"你的计划是什么？你想过未来吗？\"/faceDirection Shane 0/textAboveHead Shane \"计划？\"/pause 2000/speak Shane \"希望我不会活到需要“计划”的时候……\"/jump Jas/pause 500/shake Jas 10000/speed Jas 4/textAboveHead Jas \"……*啜泣*……\"/move Jas 0 10 2 true/faceDirection Marnie 2/emote Marnie 28 true/faceDirection farmer 3/faceDirection Shane 1 true/pause 50/faceDirection Shane 2/pause 600/move Marnie 0 10 2 true/pause 1000/textAboveHead Shane \"贾斯……\"/pause 500/faceDirection farmer 1/pause 400/showFrame Shane 19/pause 1000/textAboveHead Shane \"对不起……\"/pause 3000/faceDirection Shane 1 true/showFrame Shane 4/pause 500/showFrame Shane 35/playSound thudStep/shake Shane 4000/pause 2000/end",
         "passedOut3_NotBilled": "@，^昨晚有人将你送到诊所了。你因体力不支而晕倒！^你要照顾好自己，并在合理的时间内及时上床睡觉。^由于你没有钱，我为你提供免费的医疗服务。^^-哈维医生[#]哈维免费的医疗服务",
         "joshMessage": "@：^天黑后到酒吧见我。 ^——亚历克斯[#]亚历克斯的邀请",
+        "incubator": "亲爱的@：^^感谢你选择购买{{鸡舍}}升级服务！我不仅让你的{{鸡舍}}容量翻了一番，我还帮你安装了孵化器。^你只要把鸡蛋放入孵化器即可。只要你的{{鸡舍}}还有位置，过不了几天鸡蛋就会孵化啦。^^很感谢您的光临。^——罗宾[#]关于孵化器"
       }
     },
     //  修订 青葱->大葱 青葱现在值 5 倍金子->大葱的价格提升为原来的 5 倍
@@ -175,6 +211,8 @@
         "Collections_Description_BiggestCatch": "最大捕获尺寸：{0}",
         "LevelUp_ProfessionDescription_Blacksmith": "金属锭价值增加 50%。",
         "GameMenu_Options": "设置",
+        "LevelUp_ProfessionName_Coopmaster": "{{鸡舍}}大师",
+        "LevelUp_ProfessionDescription_Coopmaster": "更快的与{{鸡舍}}的动物交好。\n孵化时间减半。",
       }
     },
     
@@ -305,6 +343,7 @@
         "17": "Basic/矿井深处/看来矿井的升降机依然能用。你能够通过它快速回到你之前发现过的任何升降机门口。现在可以更加深入矿井了。/在矿井中达到 40 层。/18/18/0/-1/false",
         "18": "Basic/深入地底？/当前依然未发现地底最深处。这到底有多深啊？/抵达矿井地底。/-1/-1/0/-1/false",
         "28": "Basic/黑暗护身符/法师要我从他前妻家取回魔法墨水，…但是我需要一个黑暗护身符才能获得去往他前妻家的路。/进入下水道，询问科罗布斯有关黑暗护身符的事情。/-1/-1/0/-1/false",
+        "7": "Building/养殖动物/本地的木匠罗宾就住在镇子北方。只要给她充足的原材料和金钱，她就会替你在你的农场里建造新的建筑。你需要让她帮你建造{{鸡舍}}和畜棚来饲养动物。/建造一个{{鸡舍}}。/Coop/-1/100/-1/true",
       }
     },
 
@@ -351,9 +390,9 @@
       "Entries": {
 				"Sun": "如果你听到我的小屋里传出砰砰的声音，那可能是我在制作木雕。",	
 			}
-    }
+    },
 
-    // 将“山洞胡萝卜”统一为“山洞萝卜” 古代珍宝鉴定指南->古董鉴定指南 箭筒->箭袋
+    // 将“山洞胡萝卜”统一为“山洞萝卜” 古代珍宝鉴定指南->古董鉴定指南 箭筒->箭袋 修改伐木秘事
     {
       "Action": "EditData",
       "Target": "Strings/1_6_Strings",
@@ -366,6 +405,7 @@
         "RapidMagicQuiver": "快速魔法箭袋",
         "HeavyMagicQuiver": "重型魔法箭袋",
         "PerfectMagicQuiver": "完美魔法箭袋",
+        "Book_Woodcutting_Name": "{{伐木秘事}}",
       }
     },
 
@@ -474,6 +514,8 @@
         "Chest_Name": "箱子",
         "StoneChest_Name": "石质箱子",
         "EmptyCapsule_Name": "空的胶囊",
+        "AutoGrabber_Description": "每天早晨自动采集动物产品。必须放在{{鸡舍}}或畜棚内。",
+        "AutoPetter_Description": "Joja 公司专利技术，适用于{{鸡舍}}和畜棚。可以让动物们满足，但是无法实现亲自抚摸的所有好处。使用后仍可手动抚摸来补足。",
       }
     },
 
@@ -605,13 +647,50 @@
       }
     },
 
+    //  鸡舍->禽舍
+    {
+      "Action": "EditData",
+      "Target": "Strings/Buildings",
+      "Priority": "Early",
+      "When": { "Language": "zh" },
+      "Entries": {
+        "Coop_Name": "{{鸡舍}}",
+        "BigCoop_Name": "大{{鸡舍}}",
+        "DeluxeCoop_Name": "高级{{鸡舍}}",
+      }
+    },
+
+    //  栏舍->禽舍 修改伐木秘事
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Robin",
+      "Priority": "Early",
+      "When": { "Language": "zh" },
+      "Entries": {
+        "structureBuilt_Coop": "这个{{鸡舍}}我修得可结实了，希望你能充分利用！",
+        "structureBuilt_Coop_memory_oneweek": "新建的{{鸡舍}}怎么样？如果能看看你养的新动物就好了！",
+        "AcceptGift_(O)Book_Woodcutting": "这是啥……《{{伐木秘事}}》？……呃，@，这是什么书啊？$6#$b#嗐，是伐木的书啊！哈哈哈……哎，我肯定爱看的，谢谢你！$4",
+      }
+    },
+
+    //  栏舍->禽舍 暖气片->加热器
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Priority": "Early",
+      "When": { "Language": "zh" },
+      "Entries": {
+        "Shane_y2": "冬天的时候，动物挺难熬的。你的{{鸡舍}}和畜棚里装加热器了吗？"
+      }
+    },
+
     // 随机爱称彩蛋相关
     {
       "Action": "EditData",
       "Target": "Strings/StringsFromCSFiles",
       "Priority": "Early",
       "When": { 
-        "是否开启": true,  
+        "启用特殊爱称": false,  
         "Language": "zh"
       },
       "Entries": {
@@ -624,9 +703,32 @@
         "NPC.cs.4513": "亲爱的", // Cutie 惹人喜欢->亲爱的（默认）小可爱（选项）
         "NPC.cs.4514": "亲爱的", // Ducky 顺心如愿->亲爱的（默认）宝贝（选项）
         "NPC.cs.4515": "亲爱的", // Handsome 英俊->亲爱的（默认）帅哥（选项）
-        "NPC.cs.4517": "甜心", // Honey 甜心（默认）宝贝（选项）
+        "NPC.cs.4517": "亲爱的", // Honey 甜心（默认）宝贝（选项）
         "NPC.cs.4523": "亲爱的", // Sweetheart 亲爱的（默认）甜心（选项）
       }
-    }
+    },
+    
+    {
+      "Action": "EditData",
+      "Target": "Strings/StringsFromCSFiles",
+      "Priority": "Early",
+      "When": { 
+        "启用特殊爱称": true,  
+        "Language": "zh"
+      },
+      "Entries": {
+        "NPC.cs.4507": "小可爱", // Pookie 布奇->亲爱的（默认）小可爱（选项）
+        "NPC.cs.4508": "亲爱的", // Love 爱->亲爱的
+        "NPC.cs.4509": "小太阳", // Hot Stuff 烫手货->亲爱的（默认）小太阳（选项）
+        "NPC.cs.4510": "{{Random:黏人精, 黏人虫}}", // Cuddlebug 虫虫款->亲爱的（默认）黏人精（选项） 黏人虫（选项）
+        "NPC.cs.4511": "老公", // Hunky 不错->亲爱的（默认）老公（选项）
+        "NPC.cs.4512": "老婆", // Peach 桃子->亲爱的（默认）老婆（选项）
+        "NPC.cs.4513": "小可爱", // Cutie 惹人喜欢->亲爱的（默认）小可爱（选项）
+        "NPC.cs.4514": "宝贝", // Ducky 顺心如愿->亲爱的（默认）宝贝（选项）
+        "NPC.cs.4515": "帅哥", // Handsome 英俊->亲爱的（默认）帅哥（选项）
+        "NPC.cs.4517": "宝贝", // Honey 甜心（默认）宝贝（选项）
+        "NPC.cs.4523": "甜心", // Sweetheart 亲爱的（默认）甜心（选项）
+      }
+    },
   ]
 }
