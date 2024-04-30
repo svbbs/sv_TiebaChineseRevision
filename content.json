@@ -224,6 +224,7 @@
         "GameMenu_Options": "设置",
         "LevelUp_ProfessionName_Coopmaster": "{{鸡舍}}大师",
         "LevelUp_ProfessionDescription_Coopmaster": "更快的与{{鸡舍}}的动物交好。\n孵化时间减半。",
+        "Chat_PassedOut_Saloon": "{0}在酒吧睡着了。",
       }
     },
     
@@ -266,7 +267,7 @@
       }
     },
 
-    // 沙龙->餐吧
+    // 沙龙->餐吧->酒吧
     {
       "Action": "EditData",
       "Target": "Characters/Dialogue/Caroline",
@@ -688,7 +689,7 @@
       }
     },
 
-    //  栏舍->禽舍 修改伐木秘事
+    //  栏舍->禽舍 修改伐木秘事 “嗐”无法正常显示，根据英文原文修改为“噢”
     {
       "Action": "EditData",
       "Target": "Characters/Dialogue/Robin",
@@ -697,7 +698,7 @@
       "Entries": {
         "structureBuilt_Coop": "这个{{鸡舍}}我修得可结实了，希望你能充分利用！",
         "structureBuilt_Coop_memory_oneweek": "新建的{{鸡舍}}怎么样？如果能看看你养的新动物就好了！",
-        "AcceptGift_(O)Book_Woodcutting": "这是啥……《{{伐木秘事}}》？……呃，@，这是什么书啊？$6#$b#嗐，是伐木的书啊！哈哈哈……哎，我肯定爱看的，谢谢你！$4",
+        "AcceptGift_(O)Book_Woodcutting": "这是啥……《{{伐木秘事}}》？……呃，@，这是什么书啊？$6#$b#噢，是伐木的书啊！哈哈哈……哎，我肯定爱看的，谢谢你！$4",
       }
     },
 
@@ -847,6 +848,45 @@
       "When": { "Language": "zh" },
       "Entries": {
         "3910674/f Shane 1000": "shaneTheme/-2000 -2000/farmer 18 18 1 Marnie 21 14 0 Jas 25 16 2 Shane -1000 -1000 2/skippable/specificTemporarySprite shanePassedOut/viewport 22 8 true/pause 2000/speak Marnie \"谢恩？\"/pause 2000/doAction 21 13/pause 500/move Marnie 0 -7 1/textAboveHead Marnie \"噢！亲爱的……\"/doAction 21 13/removeTile 21 13 Buildings/removeTile 21 12 Front/move farmer 3 0 0/faceDirection Jas 3 true/move farmer 0 -10 1/faceDirection Marnie 2/pause 500/speak Marnie \"@……你能帮帮忙吗？他完全不省人事了。$s\"/pause 500/faceDirection farmer 0/pause 500/faceDirection farmer 1/move farmer 3 0 0/faceDirection Marnie 1 true/move farmer 0 -1 1/pause 1000/speak Shane \"不……$7\"/pause 2000/specificTemporarySprite waterShane/pause 250/playSound wateringCan/pause 1000/specificTemporarySprite waterShaneDone/warp Shane 25 7/textAboveHead Shane \"什……？！\"/jump Shane/shake Shane 2000/showFrame Shane 18/pause 3000/showFrame Shane 0/move farmer -1 0 1/faceDirection Shane 3/speak Marnie \"谢恩！你到底怎么了？你现在就只会躲在房间里闷闷不乐，然后一瓶瓶地喝啤酒！$s\"/move Jas -4 0 0 true/pause 200/faceDirection Shane 2 true/pause 50/faceDirection Shane 1/emote Shane 12/shake Shane 1000/textAboveHead Shane \"……\"/pause 1500/speak Shane \"你不懂……\"/pause 1000/textAboveHead Marnie \"我很担心你……\"/move Jas 0 -8 1/speak Marnie \"你的计划是什么？你想过未来吗？\"/faceDirection Shane 0/textAboveHead Shane \"计划？\"/pause 2000/speak Shane \"希望我不会活到需要“计划”的时候……\"/jump Jas/pause 500/shake Jas 10000/speed Jas 4/textAboveHead Jas \"……*啜泣*……\"/move Jas 0 10 2 true/faceDirection Marnie 2/emote Marnie 28 true/faceDirection farmer 3/faceDirection Shane 1 true/pause 50/faceDirection Shane 2/pause 600/move Marnie 0 10 2 true/pause 1000/textAboveHead Shane \"贾斯……\"/pause 500/faceDirection farmer 1/pause 400/showFrame Shane 19/pause 1000/textAboveHead Shane \"对不起……\"/pause 3000/faceDirection Shane 1 true/showFrame Shane 4/pause 500/showFrame Shane 35/playSound thudStep/shake Shane 4000/pause 2000/end",
+      }
+    },
+
+    // 统一餐吧->酒吧
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Shane",
+      "When": { "Language": "zh" },
+      "Entries": {
+        "breakUp": "（咽口水）哦……嗯，好吧……我早该知道会变成这样的。$s#$b#我……呃……那就酒吧见。",
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "When": { "Language": "zh" },
+      "Entries": {
+        "giveAlexMoney": "pause 200/addMailReceived gaveAlexMoney/money -5000/emote Alex 20/pause 500/speak Alex \"太棒了！你星期天顺路来酒吧一趟，我给你看最终结果！$h\"/pause 500/end",
+        "980558/t 600 1130/w sunny/f Gus 1250": "playful/64 15/farmer 64 16 2 Gus 64 18 0/skippable/pause 1500/speak Gus \"早上好！\"/pause 500/faceDirection Gus 3/pause 600/speak Gus \"啊……天气真好啊！\"/pause 400/faceDirection Gus 0/speak Gus \"这个，我是酒吧老板，所以能听到镇上发生的所有事情。#$b#我还记得你刚来这里的时候……大家都对将来的事情有些忐忑。#$b#一个从城里来的陌生人……未知的性格……$s\"/textAboveHead Gus \"等一下……\"/faceDirection Gus 2/animate Gus false true 250 24 25/pause 500/playSound slimeHit/pause 500/playSound slimeHit/pause 500/playSound slimeHit/pause 500/playSound slimeHit/pause 500/stopAnimation Gus/pause 500/faceDirection Gus 0/pause 500/speak Gus \"不好意思，我得每隔 5 分钟给这个锅搅拌一次。\"/emote farmer 40/speak Gus \"不管了，我刚说到哪了？哦，对……那啥，这就像你在制作酱汁的时候……\"/playMusic none/speak Gus \"……如果你加入一种新的香料，就有可能把整个酱汁都毁了！$s\"/pause 500/playSound fireball/animate Gus false true 100 26/shake Gus 1000/specificTemporarySprite sauceFire/pause 2000/animate Gus false true 200 24 25/pause 400/playSound slimeHit/pause 400/playSound slimeHit/pause 400/playSound slimeHit/pause 400/playSound slimeHit/pause 400/playSound slimeHit/animate Gus false true 100 24/pause 500/playSound discoverMineral/specificTemporarySprite sauceGood/pause 800/playMusic distantBanjo/speak Gus \"……但话又说回来，如果你加入新的香料，也总是有可能创造出新的美味的，对吧？哈哈哈哈。$h\"/pause 100/stopAnimation Gus/faceDirection Gus 0/emote farmer 8/faceDirection Gus 3/faceDirection Gus 0/pause 500/speak Gus \"呃……我想说的是……$s#$b#你能来到镇上真是太好了，我已经把你当作我的好朋友了！\"/emote farmer 32/speak Gus \"总之，我是来给你件东西的……#$b#我在清理里屋的时候，找到了这个旧的迷你点唱机。希望你能收下它！\"/pause 800/itemAboveHead jukebox/playSound getNewSpecialItem/pause 3300/awardFestivalPrize jukebox/pause 200/message \"收到一个“迷你点唱机”\"/pause 800/speak Gus \"这实际上是好几年前我自己手工做的。做起来还挺容易的！#$b#所以，我还给你带来了图纸，这样你就可以再做几个……\"/pause 200/playSound getNewSpecialItem/addCraftingRecipe Mini-Jukebox/pause 500/message \"已学会制作“迷你点唱机”\"/pause 800/speak Gus \"好了，我该回家了。我得把这个红酱放回炉子上！祝你愉快！\"/pause 500/end",
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SeedShop",
+      "When": { "Language": "zh" },
+      "Entries": {
+        "963113/n pierreQualityCrops": "distantBanjo/5 19/farmer 5 23 0 Pierre 5 17 2 Gus 5 19 0 Jodi 5 21 0 Marnie 10 20 0 Robin 2 24 3 Evelyn 9 26 1/hostMail MSB_Pierre/skippable/pause 3000/speak Pierre \"格斯，我这里正有你想要的东西……\"/speak Gus \"愿闻其详。\"/speak Pierre \"是一袋原种的有机蔬菜，本地生产的……#$b#经过人工精挑细选，质量和味道上乘。#$b#过了这个村，就没这店了！\"/speak Gus \"听起来不错嘛！我在酒吧里用得到优质蔬菜。多少钱？\"/jump Pierre/pause 800/speak Pierre \"只！要！……*咕哝* *咕哝*\"/emote Gus 8/speak Gus \"什么玩意？#$b#哈哈哈……我还以为我听到了“2.5 万金”。$h\"/emote Pierre 40/speak Pierre \"呃……就是这个价。确实很便宜吧？\"/jump Gus/shake Gus 1000/pause 1000/speak Gus \"皮埃尔，你疯了吗？我压根买不起，除非我把酒吧卖了！$3\"/advancedMove Gus false 3 0 4 9999/move Jodi 0 -2 0 true/move farmer 0 -2 0 false/speak Jodi \"我无意中听到了价格……太离谱了！你应该感到惭愧。$3\"/move Jodi 1 0 1/speak Pierre \"等等！1 万金如何？！$4\"/textAboveHead Jodi \"不可能！\"/move Jodi 1 0 1/faceDirection Gus 3/pause 1000/emote Pierre 28/pause 100/proceedPosition Jodi/move farmer 0 -1 0/pause 500/speak Pierre \"太糟糕了，@……$s#$b#我以为这个做生意的策略特别靠谱。$s#$b#结果发现，即使我贴了个“有机”的标签，还是没有人愿意以 10 倍的差价买蔬菜。$s\"/pause 400/quickQuestion #有得必有失#别那么贪婪#他们不买我的蔬菜，太气人了(break)pause 300\\speak Pierre \"你说得对，做生意总会有风险。\"(break)emote Pierre 12\\speak Pierre \"喂，我也没有逼别人买啊！如果觉得价格不合适，大可直接离开。$3\"\\pause 1000\\speak Pierre \"……不过你说得也有道理。如果我惹恼了所有顾客，那很快就没有人来买东西了……$s\"(break)faceDirection Jodi 3\\speak Jodi \"@，你的蔬菜卖相很好。是皮埃尔杂货店出的价格把我们赶跑了。\"\\faceDirection Jodi 1\\pause 1000/emote Pierre 40/speak Pierre \"@，说起来……说不定你今天可以用这个蔬菜做一顿晚餐。#$b#你觉得呢，想要以 2501 金的抄底价买回去吗？\"/emote farmer 12/end"
+      }
+    },
+    
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "When": { "Language": "zh" },
+      "Entries": {
+        "3917584/f Shane 3500/O Shane/d Fri/t 800 1700": "distantBanjo/45 71/farmer 48 67 2 Marnie 52 71 0 Jas 51 71 0 Shane -100 -100 2/addConversationTopic shaneSaloon1 0/skippable/move farmer 0 3 2/warp Shane 45 71/playSound doorClose/faceDirection Marnie 3 true/faceDirection Jas 3 true/move Shane 0 1 2/pause 500/speak Shane \"呼……真好玩。$h#$b#好久没有像那样来上一盘了……嗝\"/pause 500/emote Marnie 28 true/emote Jas 28 true/emote farmer 28 true/pause 1000/speak Shane \"哎……我全身都是汗。最好快点回家。\"/advancedMove Shane false -10 0 0 -14 -10 0 0 -3 -10 0/move farmer 0 2 3 true/pause 3000/speak Marnie \"哦不……这看起来有点糟糕。$s\"/pause 500/faceDirection Jas 1/emote Jas 28/move Marnie 0 1 3 false/faceDirection Jas 2 true/move Marnie -3 0 3/faceDirection Jas 3 true/faceDirection farmer 1/speak Marnie \"@？你最好盯着他一点……下次你看到他从酒吧里出来，你得说说他……$s\"/pause 1000/faceDirection farmer 2 true/pause 100/faceDirection farmer 3/pause 1000/end dialogue Shane \"没事吧，@？你一脸担忧的样子……\"",
+        "3917589/n gaveAlexMoney/O Alex/d Mon/d Tue/d Wed/d Thu/d Fri/d Sat": "continue/-1000 -1000/farmer 100 100 2/addWorldState saloonSportsRoom/addMailReceived saloonSportsRoom/message \"星期天了……我应该顺路去一趟酒吧，看看亚历克斯都在干什么！\"/end",
       }
     }
   ]
