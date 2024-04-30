@@ -97,7 +97,7 @@
     },
     
     //  修订 蠢材的黄金->愚人金 陶瓷碎片->星星碎片 大麦粉->小麦粉 未碾米->稻谷 葡萄干布丁->梅干布丁 蒜->大蒜 浮标->浮漂 
-    //  果干->水果干 旋式鱼饵->旋式亮片
+    //  果干->水果干 旋式鱼饵->旋式亮片 法式田螺->法式蜗牛
     //  煎鸡蛋->煎蛋 羊奶->山羊奶
     {
       "Action": "EditData",
@@ -127,6 +127,8 @@
         "GoatMilk_Name": "山羊奶",
         "GoatMilk_Description": "山羊的奶。",
         "LGoatMilk_Name": "大瓶山羊奶",
+        "Escargot_Name": "法式蜗牛",
+        "Escargot_Description": "淋上黄油的蜗牛，做的恰到火候。",
       }
     },
 
@@ -405,6 +407,7 @@
     },
 
     // 将“山洞胡萝卜”统一为“山洞萝卜” 古代珍宝鉴定指南->古董鉴定指南 箭筒->箭袋 修改伐木秘事 石制大箱子->石质大箱子
+    // 寒冰法杖->冰雪魔杖
     {
       "Action": "EditData",
       "Target": "Strings/1_6_Strings",
@@ -419,6 +422,7 @@
         "PerfectMagicQuiver": "完美魔法箭袋",
         "Book_Woodcutting_Name": "{{伐木秘事}}",
         "BigStoneChest_Name": "石质大箱子",
+        "IceRod_Name": "冰雪魔杖",
       }
     },
 
@@ -643,7 +647,7 @@
       }
     },
     
-    // 精灵裤->灯神裤 五彩神怪裤->五彩灯神裤 法式田螺->法式蜗牛
+    // 精灵裤->灯神裤 五彩神怪裤->五彩灯神裤
     {
       "Action": "EditData",
       "Target": "Strings/Pants",
@@ -652,7 +656,6 @@
       "Entries": {
         "GeniePants_Name": "灯神裤",
         "PrismaticGeniePants_Name": "五彩灯神裤",
-        "Escargot_Name": "法式蜗牛",
       }
     },
 
