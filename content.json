@@ -68,8 +68,6 @@
         "MapPage.cs.11174": "鹈鹕镇海滩",
         "Object.cs.12726": "{0} 蔬菜汁",
         "FishingRod.cs.14047": "玻璃纤维鱼竿",
-        "Spinner_Name": "旋式亮片",
-        "DressedSpinner_Name": "精装旋式亮片",
         "MiniObelisk_NeedsPair": "需要两个迷你传送塔。",
         "VolcanoMines1": "火山矿井（熔火胶冻）",
         "VolcanoMines2": "火山矿井（遗忘的世界）",
@@ -99,7 +97,7 @@
     },
     
     //  修订 蠢材的黄金->愚人金 陶瓷碎片->星星碎片 大麦粉->小麦粉 未碾米->稻谷 葡萄干布丁->梅干布丁 蒜->大蒜 浮标->浮漂 
-    //  果干->水果干
+    //  果干->水果干 旋式鱼饵->旋式亮片
     //  煎鸡蛋->煎蛋 羊奶->山羊奶
     {
       "Action": "EditData",
@@ -123,6 +121,8 @@
         "LeadBobber_Name": "铅制浮漂",
         "QualityBobber_Name": "优质浮漂",
         "TrapBobber_Name": "陷阱浮漂",
+        "Spinner_Name": "旋式亮片",
+        "DressedSpinner_Name": "精装旋式亮片",
         "FriedEgg_Name": "煎蛋",
         "GoatMilk_Name": "山羊奶",
         "GoatMilk_Description": "山羊的奶。",
