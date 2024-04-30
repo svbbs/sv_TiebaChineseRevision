@@ -40,7 +40,7 @@
   [
     /*
       修订 盖斯->格斯 谷仓->畜棚 今天->明天 只买->只卖 加速->精准度 
-      离地而居->依地而居 头骨钥匙->骷髅钥匙 1 柳巷->柳巷 1 号 1 河间大道->河间大道 1 号 艾利欧特小屋->艾利欧特的小屋 棕榈镇海滩->鹈鹕镇海滩 修改鸡舍 果汁->蔬菜汁 迷你图腾尖塔->迷你传送塔 肾上腺冲击->肾上腺素飙升 统一矿井
+      离地而居->依地而居 头骨钥匙->骷髅钥匙 1 柳巷->柳巷 1 号 1 河间大道->河间大道 1 号 艾利欧特小屋->艾利欧特的小屋 棕榈镇海滩->鹈鹕镇海滩 修改鸡舍 果汁->蔬菜汁 迷你图腾尖塔->迷你传送塔 肾上腺冲击->肾上腺素飙升 统一矿井 玻璃纤维棒->玻璃纤维鱼竿
       润色 支持->青睐
     */
     {
@@ -145,7 +145,7 @@
     },
 
     //  修订 今天->明天 统一为韭葱 将所有"金属棒 Metal bars"统一改为"金属锭" 我想你->我向你
-    //  润色 谢恩、哈维对话
+    //  润色 哈维对话
     //  修改鸡舍 珍奇乌鸦
     {
       "Action": "EditData",
@@ -156,7 +156,6 @@
         "fall_26": "亲爱的 @，^不知道你有没有注意到空气中的凉意？冬天可能就要来了……^要不然就是黑暗的游魂，呼啸着和我们一起庆祝明天的节日……万灵节！^晚上 10 点来镇上和我们一起庆祝吧。^-镇长刘易斯 [#]万灵节通知",
         "spring_15_2": "亲爱的 @，^我想送给我丈夫一份特别的礼物。他特别喜欢韭葱，你可以带一根给我吗？^-艾芙琳奶奶%item quest 116 %%[#]艾芙琳的惊喜",
         "Clint": "呃，你好……^抱歉，我不怎么会写信。我一不小心做多了金属锭，或许你能用得上。 ^-铁匠克林特 %item id (O)334 1 (O)335 1 (O)336 1 %%[#]来自克林特的礼物",
-        "3910674/f Shane 1000": "shaneTheme/-2000 -2000/farmer 18 18 1 Marnie 21 14 0 Jas 25 16 2 Shane -1000 -1000 2/skippable/specificTemporarySprite shanePassedOut/viewport 22 8 true/pause 2000/speak Marnie \"谢恩？\"/pause 2000/doAction 21 13/pause 500/move Marnie 0 -7 1/textAboveHead Marnie \"噢！亲爱的……\"/doAction 21 13/removeTile 21 13 Buildings/removeTile 21 12 Front/move farmer 3 0 0/faceDirection Jas 3 true/move farmer 0 -10 1/faceDirection Marnie 2/pause 500/speak Marnie \"@……你能帮帮忙吗？他完全不省人事了。$s\"/pause 500/faceDirection farmer 0/pause 500/faceDirection farmer 1/move farmer 3 0 0/faceDirection Marnie 1 true/move farmer 0 -1 1/pause 1000/speak Shane \"不……$7\"/pause 2000/specificTemporarySprite waterShane/pause 250/playSound wateringCan/pause 1000/specificTemporarySprite waterShaneDone/warp Shane 25 7/textAboveHead Shane \"什……？！\"/jump Shane/shake Shane 2000/showFrame Shane 18/pause 3000/showFrame Shane 0/move farmer -1 0 1/faceDirection Shane 3/speak Marnie \"谢恩！你到底怎么了？你现在就只会躲在房间里闷闷不乐，然后一瓶瓶地喝啤酒！$s\"/move Jas -4 0 0 true/pause 200/faceDirection Shane 2 true/pause 50/faceDirection Shane 1/emote Shane 12/shake Shane 1000/textAboveHead Shane \"……\"/pause 1500/speak Shane \"你不懂……\"/pause 1000/textAboveHead Marnie \"我很担心你……\"/move Jas 0 -8 1/speak Marnie \"你的计划是什么？你想过未来吗？\"/faceDirection Shane 0/textAboveHead Shane \"计划？\"/pause 2000/speak Shane \"希望我不会活到需要“计划”的时候……\"/jump Jas/pause 500/shake Jas 10000/speed Jas 4/textAboveHead Jas \"……*啜泣*……\"/move Jas 0 10 2 true/faceDirection Marnie 2/emote Marnie 28 true/faceDirection farmer 3/faceDirection Shane 1 true/pause 50/faceDirection Shane 2/pause 600/move Marnie 0 10 2 true/pause 1000/textAboveHead Shane \"贾斯……\"/pause 500/faceDirection farmer 1/pause 400/showFrame Shane 19/pause 1000/textAboveHead Shane \"对不起……\"/pause 3000/faceDirection Shane 1 true/showFrame Shane 4/pause 500/showFrame Shane 35/playSound thudStep/shake Shane 4000/pause 2000/end",
         "passedOut3_NotBilled": "@，^昨晚有人将你送到诊所了。你因体力不支而晕倒！^你要照顾好自己，并在合理的时间内及时上床睡觉。^由于你没有钱，我为你提供免费的医疗服务。^^-哈维医生[#]哈维免费的医疗服务",
         "joshMessage": "@：^天黑后到酒吧见我。 ^——亚历克斯[#]亚历克斯的邀请",
         "incubator": "亲爱的@：^^感谢你选择购买{{鸡舍}}升级服务！我不仅让你的{{鸡舍}}容量翻了一番，我还帮你安装了孵化器。^你只要把鸡蛋放入孵化器即可。只要你的{{鸡舍}}还有位置，过不了几天鸡蛋就会孵化啦。^^很感谢您的光临。^——罗宾[#]关于孵化器",
@@ -177,7 +176,7 @@
       }
     },
 
-    //  修订 埃米莉->艾米丽 克->金 廉价的->打折的
+    //  修订 埃米莉->艾米丽 克->金 廉价的->打折的 顶峰->山顶
     {
       "Action": "EditData",
       "Target": "Data/ExtraDialogue",
@@ -188,6 +187,7 @@
         "PurchasedItem_3_QualityLow_Rude": "我昨晚去购物了，买了打折的{1}{2}，只需要{3}金。#$e#那是{4}！难怪皮埃尔把{5}卖得那么便宜……",
         "PurchasedItem_3_QualityHigh_Rude": "我昨晚去购物了，买了打折的{1}{2}，只需要{3}金。#$e#它其实相当{4}。",
         "PurchasedItem_3_NonRude": "我昨晚去购物了，买了打折的{1}{2}，只需要{3}金。#$e#我不能错过那么低的价格。",
+        "SummitEvent_closingmessage2": "你挑战自己，登上了山顶。",
       }
     },
 
@@ -473,7 +473,7 @@
     "Action": "EditImage",
     "Target": "LooseSprites/Cursors",
     "When": {"Language": "zh"},
-    "FromFile": "assets/Cursors.zh-CN.png",
+    "FromFile": "assets/草原之王.png",
     "FromArea": { "X": 0, "Y": 1, "Width": 93, "Height": 34 },
     "ToArea": { "X": 130, "Y": 1752, "Width": 93, "Height": 34 }
     },
@@ -790,6 +790,64 @@
       "Entries": {
           "Gus": "做糖拐杖是一门艺术。你得漫山遍野地寻找最适合的原料。这年头可难找了！$h#$e#我通常用芬群岛水果干做糖拐杖，这样才能保证质量。那亮丽的红色实在是太合适了……还是纯天然的！#$e#哦，你想知道制作顶级双拐杖糖的秘诀？告诉你可以，不过一定要保密啊。*细语*在白色果糖里面加入一点点香草，再与樱桃混合就行了。$h#$e#当然了，薄荷味拐杖糖也是很受欢迎的，所以我也会做很多这种口味的。#$e#喂，你看起来快要睡着了。你没事吧？$s",
         }
+    },
+    
+    // 将星露谷集市统一为星露谷展览会
+    // 修改“星露谷集市”的图片为“星露谷展览会”
+    {
+      "Action": "EditImage",
+      "Target": "Maps/Festivals",
+      "When": {"Language": "zh"},
+      "FromFile": "assets/星露谷展览会.png",
+      "PatchMode": "Overlay",
+      "FromArea": { "X": 0, "Y": 0, "Width": 116, "Height": 25 },
+      "ToArea": { "X": 358, "Y": 181, "Width": 116, "Height": 25 }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Caroline",
+      "When": { "Language": "zh" },
+      "Entries": {
+        "wonGrange": "皮埃尔之前在星露谷展览会上输给你，他装作不在意，其实还耿耿于怀呢。",
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueSebastian",
+      "When": { "Language": "zh" },
+      "Entries": {
+        "fall_15": "星露谷展览会对我来说有点儿挤……但我只是和山姆闲逛。跟他交流一番应该挺不错。#$e#但你也应该玩一玩摊位游戏！不要担心我。$7",
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Achievements",
+      "When": { "Language": "zh" },
+      "Entries": {
+        "37": "冠军^在星露谷展览会的比赛中获得第一名。^true^-1^9",
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "When": { "Language": "zh" },
+      "Entries": {
+        "Lewis_y2": "@，你好！“星露谷展览会”终于开始了，大家都蜂拥而至。#$b#和去年一样，我给你准备了一个农庄展示的空位，你准备好开始评分了就来跟我说。",
+      }
+    },
+    
+    // 润色谢恩对话
+    {
+      "Action": "EditData",
+      "Target": "Data/vents/AnimalShop",
+      "When": { "Language": "zh" },
+      "Entries": {
+        "3910674/f Shane 1000": "shaneTheme/-2000 -2000/farmer 18 18 1 Marnie 21 14 0 Jas 25 16 2 Shane -1000 -1000 2/skippable/specificTemporarySprite shanePassedOut/viewport 22 8 true/pause 2000/speak Marnie \"谢恩？\"/pause 2000/doAction 21 13/pause 500/move Marnie 0 -7 1/textAboveHead Marnie \"噢！亲爱的……\"/doAction 21 13/removeTile 21 13 Buildings/removeTile 21 12 Front/move farmer 3 0 0/faceDirection Jas 3 true/move farmer 0 -10 1/faceDirection Marnie 2/pause 500/speak Marnie \"@……你能帮帮忙吗？他完全不省人事了。$s\"/pause 500/faceDirection farmer 0/pause 500/faceDirection farmer 1/move farmer 3 0 0/faceDirection Marnie 1 true/move farmer 0 -1 1/pause 1000/speak Shane \"不……$7\"/pause 2000/specificTemporarySprite waterShane/pause 250/playSound wateringCan/pause 1000/specificTemporarySprite waterShaneDone/warp Shane 25 7/textAboveHead Shane \"什……？！\"/jump Shane/shake Shane 2000/showFrame Shane 18/pause 3000/showFrame Shane 0/move farmer -1 0 1/faceDirection Shane 3/speak Marnie \"谢恩！你到底怎么了？你现在就只会躲在房间里闷闷不乐，然后一瓶瓶地喝啤酒！$s\"/move Jas -4 0 0 true/pause 200/faceDirection Shane 2 true/pause 50/faceDirection Shane 1/emote Shane 12/shake Shane 1000/textAboveHead Shane \"……\"/pause 1500/speak Shane \"你不懂……\"/pause 1000/textAboveHead Marnie \"我很担心你……\"/move Jas 0 -8 1/speak Marnie \"你的计划是什么？你想过未来吗？\"/faceDirection Shane 0/textAboveHead Shane \"计划？\"/pause 2000/speak Shane \"希望我不会活到需要“计划”的时候……\"/jump Jas/pause 500/shake Jas 10000/speed Jas 4/textAboveHead Jas \"……*啜泣*……\"/move Jas 0 10 2 true/faceDirection Marnie 2/emote Marnie 28 true/faceDirection farmer 3/faceDirection Shane 1 true/pause 50/faceDirection Shane 2/pause 600/move Marnie 0 10 2 true/pause 1000/textAboveHead Shane \"贾斯……\"/pause 500/faceDirection farmer 1/pause 400/showFrame Shane 19/pause 1000/textAboveHead Shane \"对不起……\"/pause 3000/faceDirection Shane 1 true/showFrame Shane 4/pause 500/showFrame Shane 35/playSound thudStep/shake Shane 4000/pause 2000/end",
+      }
     }
   ]
 }
