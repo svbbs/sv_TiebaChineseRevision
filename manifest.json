@@ -9,5 +9,11 @@
    "ContentPackFor": {
       "UniqueID": "Pathoschild.ContentPatcher",
       "MinimumVersion": "2.0.1"
-   }
+   },
+   "Dependencies": [
+      {
+         "UniqueID": "spacechase0.GenericModConfigMenu",
+         "IsRequired": false
+      }
+   ]
 }
