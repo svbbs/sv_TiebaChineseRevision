@@ -149,7 +149,7 @@
     },
 
     //  修订 今天->明天 统一为韭葱 将所有"金属棒 Metal bars"统一改为"金属锭" 我想你->我向你
-    //  润色 哈维对话
+    //  润色 哈维对话 艾利欧特的信
     //  修改鸡舍 珍奇乌鸦
     {
       "Action": "EditData",
@@ -165,6 +165,7 @@
         "incubator": "亲爱的@：^^感谢你选择购买{{鸡舍}}升级服务！我不仅让你的{{鸡舍}}容量翻了一番，我还帮你安装了孵化器。^你只要把鸡蛋放入孵化器即可。只要你的{{鸡舍}}还有位置，过不了几天鸡蛋就会孵化啦。^^很感谢您的光临。^——罗宾[#]关于孵化器",
         "spring_12": "亲爱的@：^明天我们会在广场欢庆{{复活节}}。^^如果你想和我们一起庆祝的话， 请在 9 点到 14 点之间到位。^一年一度的彩蛋大寻宝不容错过！^——镇长刘易斯[#]欢庆{{复活节}}通知",
         "RarecrowSociety": "亲爱的@：^^您的贡献令人赞叹……^^只有少数人能够收集全套{{珍奇乌鸦}}系列！！^^请收下这张图纸以纪念你的成就。^   ——Z.C. {{珍奇乌鸦}}协会%item craftingRecipe Deluxe_Scarecrow %%[#]{{珍奇乌鸦}}协会来信",
+        "elliottLetter4": "在梦中，当我居高远望^凝视着波光粼粼的海洋^我曾到达过多么遥远的彼岸^可如今时光尽使回忆蒙尘^^但有个地方却是我唯一的永恒^那是此生漂泊的归处^就在那可亲可爱的星露谷里：^我的挚爱，正在池边的小屋守候^^-艾利欧特 %item conversationTopic ElliottGone5 0 %%[#]我丈夫的信 4",
       }
     },
     //  修订 青葱->大葱 青葱现在值 5 倍金子->大葱的价格提升为原来的 5 倍
@@ -367,7 +368,7 @@
       }
     },
 
-    // 修正了冈瑟对话中的错误翻译，并使整体对话内容更为合理
+    // 修正了冈瑟对话中的错误翻译，并使整体对话内容更为合理 润色艾利欧特的对话
     {
       "Action": "EditData",
       "Target": "Data/Events/ArchaeologyHouse",
@@ -375,6 +376,7 @@
       "When": { "Language": "zh" },
       "Entries": {
         "0/n somethingToDonate/l somethingWasDonated": "libraryTheme/29 12/farmer 22 13 1 Gunther 31 12 2/removeQuest 23/addQuest 24/skippable/pause 1000/showFrame Gunther 4/pause 500/showFrame Gunther 0/pause 500/showFrame Gunther 12/pause 500/showFrame Gunther 0/pause 1000/showFrame Gunther 1/pause 500/speak Gunther \"简直糟透了……#$b#整个收藏室里连半个藏品都找不到。\"/move farmer 7 0 1/showFrame Gunther 12/pause 800/emote Gunther 16/jump Gunther/pause 800/speak Gunther \"这是？你找到了什么？快让我看看！\"/move farmer 0 -1 1/move farmer 1 0 1/pause 500/playSound coin/animate Gunther false true 500 2 3/pause 3000/speak Gunther \"太美妙了！#$b#这可是老古董了。#$b#我很想深入研究一下……不过它是你找到的。\"/stopAnimation Gunther/showFrame Gunther 12/pause 1000/speak Gunther \"唔……#$b#我想找你帮个忙。#$b#你是否愿意捐献你找到的任何文物或者矿物？#$b#我们可以联手制造大新闻！#$b#而且，如果你一直捐献的话，说不定我会送你一些有趣的物品。\"/pause 1000/showFrame Gunther 0/pause 500/speak Gunther \"考虑下吧，好吗？#$b#如果你决定捐献了，就把物品带到前台来。\"/move farmer -3 0 2 true/pause 400/showFrame Gunther 1/proceedPosition farmer/move farmer 0 1 3/move farmer -7 0 3 true/pause 1000/globalFade/viewport -1000 -1000/end",
+        "1848481/f Elliott 2000/t 1300 1900/n elliottReading": "breezy/14 11/Elliott 14 9 2 Pierre 10 13 1 Caroline 11 13 3 Marnie 11 15 1 Lewis 12 15 3 Sebastian 11 17 2 Abigail 12 18 3 Sam 10 18 1 Leah 15 15 0 Emily 16 16 2 Clint 15 17 1 Jodi 19 13 2 Robin 20 14 3 Demetrius 20 11 3 Maru 10 10 1 Penny 11 9 1 Gus 18 16 0 Shane 19 16 0 Willy 21 11 3 farmer 6 14 1/skippable/move farmer 6 0 0/move farmer 0 -1 0/move Elliott 0 4 3/faceDirection farmer 1/speak Elliott \"@，我成功了！$h#$b#完成写作后我整个人都轻松多了……就好像卸下了个挑着大象的担子。\"/pause 800/faceDirection Elliott 2/pause 500/faceDirection Elliott 1/pause 500/faceDirection Elliott 3/pause 500/speak Elliott \"好吧，我最好开始准备阅读了……祝我好运吧。$8\"/pause 700/move Elliott 0 -4 2/faceDirection farmer 0/pause 500/faceDirection Elliott 1/faceDirection Elliott 2/faceDirection Elliott 3/faceDirection Elliott 2/speak Elliott \"大家下午好。\"/pause 500/faceDirection Caroline 0 true/faceDirection Emily 0 true/textAboveHead Emily \"嗨！\"/faceDirection Abigail 0/faceDirection Sebastian 0 true/faceDirection Lewis 0/faceDirection Sam 0 true/faceDirection Marnie 0/faceDirection Pierre 0 true/faceDirection Jodi 0/faceDirection Clint 0/speak Elliott \"我从小就梦想成为一名作家。#$b#当我长大后离家出外闯荡时，我就选择移居到了这里。这个山谷的宁静之美深深地吸引了我。我希望在这田园诗般环境里静心冥想的日子，能将我文学的烈火燃至燎原。\"/showFrame Elliott 32/pause 200/showFrame Elliott 34/fork 958699 mysteryBook/fork 958700 romanceBook/speak Elliott \"经过在书桌前奋斗无数个小时之后，我为你们带来了我的第一本小说：《亚索星兴衰录》……这是一本科幻小说，描述一个遥远的银河系延绵数千年的事迹。\"/animate Elliott false true 1000 33 33 34/pause 500/speak Elliott \"第一章。#$b#尤特金指挥官刚踏上金碧辉煌的拱道，身后的气阀门便“啪”地一声关闭了。这是他来到亚索行星的第一天，而所有 14 位同盟代表，都被召集在了宏伟尖塔……\"/playMusic none/globalFade/viewport -100 -100/pause 1000/warp Sebastian -1000 -1000/warp Sam -1000 -1000/warp Abigail -1000 -1000/warp Jodi -1000 -1000/warp Robin -1000 -1000/warp Demetrius -1000 -1000/warp Shane -1000 -1000/warp Maru -1000 -1000/warp Pierre -1000 -1000/warp Caroline -1000 -1000/viewport 14 11 true/pause 1000/speak Elliott \"……当第七个月亮沿着地平线下沉，不祥的变异将会随之降临亚索行星……这是连尤特金指挥官都完全没有料到的情况。\"/stopAnimation Elliott/showFrame Elliott 34/pause 800/speak Elliott \"好了，我的阅读就到此为止。我将会在前台出售亲笔签名的版本。感谢各位的倾听！$h\"/faceDirection Lewis 3/faceDirection Marnie 1/faceDirection Emily 2 true/faceDirection Clint 1/move Elliott 0 4 3/faceDirection farmer 1/pause 600/speak Elliott \"那么，你觉得怎么样？\"/emote farmer 32/speak Elliott \"谢谢。$h#$b#其实，我创造这本科幻小说的灵感是来自于你。你还记得吗？#$b#所以我想把这本书献给你……$l\"/move Elliott -1 0 3/emote Elliott 32/pause 1000/end",
       }
     },
 
@@ -886,6 +888,18 @@
       "Entries": {
         "3917584/f Shane 3500/O Shane/d Fri/t 800 1700": "distantBanjo/45 71/farmer 48 67 2 Marnie 52 71 0 Jas 51 71 0 Shane -100 -100 2/addConversationTopic shaneSaloon1 0/skippable/move farmer 0 3 2/warp Shane 45 71/playSound doorClose/faceDirection Marnie 3 true/faceDirection Jas 3 true/move Shane 0 1 2/pause 500/speak Shane \"呼……真好玩。$h#$b#好久没有像那样来上一盘了……嗝\"/pause 500/emote Marnie 28 true/emote Jas 28 true/emote farmer 28 true/pause 1000/speak Shane \"哎……我全身都是汗。最好快点回家。\"/advancedMove Shane false -10 0 0 -14 -10 0 0 -3 -10 0/move farmer 0 2 3 true/pause 3000/speak Marnie \"哦不……这看起来有点糟糕。$s\"/pause 500/faceDirection Jas 1/emote Jas 28/move Marnie 0 1 3 false/faceDirection Jas 2 true/move Marnie -3 0 3/faceDirection Jas 3 true/faceDirection farmer 1/speak Marnie \"@？你最好盯着他一点……下次你看到他从酒吧里出来，你得说说他……$s\"/pause 1000/faceDirection farmer 2 true/pause 100/faceDirection farmer 3/pause 1000/end dialogue Shane \"没事吧，@？你一脸担忧的样子……\"",
         "3917589/n gaveAlexMoney/O Alex/d Mon/d Tue/d Wed/d Thu/d Fri/d Sat": "continue/-1000 -1000/farmer 100 100 2/addWorldState saloonSportsRoom/addMailReceived saloonSportsRoom/message \"星期天了……我应该顺路去一趟酒吧，看看亚历克斯都在干什么！\"/end",
+      }
+    },
+
+    // 润色艾利欧特对话
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Elliott",
+      "When": { "Language": "zh" },
+      "Entries": {
+        "event_idea1": "悬疑，是吗？这确实是个扣人心弦的题材。好，我记下了。",
+        "event_idea2": "噢，这是经典题材之一啊。好，我记下了。",
+        "event_idea3": "没想到会是这个！也许，一个人就算做着最“接地气”的工作，也时不时会在脑海中拥抱星空。$h#$b#好，我记下了。",
       }
     }
   ]
