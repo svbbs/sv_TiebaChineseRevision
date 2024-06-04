@@ -1553,7 +1553,7 @@
       "Target": "Characters/Dialogue/Marnie",
       "Priority": "Early",
       "Entries": {
-        "Introduction": "啊，镇长刘易斯跟我说你刚到这里。我是玛妮！#$e#我在我的牧场上卖家禽和动物护理用品。你有空的话可以来光顾一下哦。$h",
+        "Introduction": "啊，镇长刘易斯跟我说你刚到这里。我是玛妮！#$e#我在我的牧场上卖家养动物和动物护理用品。你有空的话可以来光顾一下哦。$h",
         "AcceptGift_(O)StardropTea": "哇，@，太感谢你了。我会一直记在心里的！",
         "AcceptGift_(O)SkillBook_0": "@，谢谢你，我一直想要一本年历，里面写的都很准！$h",
         "gotPet": "我相信农场上有了小动物陪伴你会很开心的。",
