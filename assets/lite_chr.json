@@ -4,7 +4,7 @@
       /*
         修订 盖斯->格斯 谷仓->畜棚 今天->明天 只买->只卖 加速->精准度 彩蛋节计分表 鸡蛋->彩蛋
         离地而居->依地而居 头骨钥匙->骷髅钥匙 1 柳巷->柳巷 1 号 1 河间大道->河间大道 1 号 艾利欧特小屋->艾利欧特的小屋 棕榈镇海滩->鹈鹕镇海滩 修改鸡舍 果汁->蔬菜汁 迷你图腾尖塔->迷你传送塔 肾上腺冲击->肾上腺素飙升 统一矿井 玻璃纤维棒->玻璃纤维鱼竿
-        润色 支持->处好关系
+        润色 支持->处好关系 动物->怪物 去除星之果实 Stardew 彩蛋对话中多余的句号
       */
       {
         "Action": "EditData",
@@ -41,6 +41,8 @@
           "Utility.cs.5947": "需要先建造一个高级{{鸡舍}}",
           "PurchaseAnimalsMenu.cs.11335": "饲养在{{鸡舍}}里。",
           "Event.cs.1515": "彩蛋：{0}",
+          "SlayMonsterQuest.cs.13757": "怪物",
+          "Game1.cs.3097": "你感受到自己与星露谷之间有着坚不可摧的联系",
         }
       },
   
@@ -159,7 +161,7 @@
         }
       },
   
-      // 修订并润色离地而居中的若干内容 可流->河流 离地而居->依地而居 大保健->水疗
+      // 修订并润色离地而居中的若干内容 可流->河流 离地而居->依地而居 大保健->水疗 加了一句话处理游戏排版问题
       {
         "Action": "EditData",
         "Target": "Data/TV/TipChannel",
@@ -168,6 +170,7 @@
         "Entries": {
           "1": "给所有新人一个提示：在等待第一次收获的时候，你可以去砍树和收集野生采集品来赚点钱！",
           "8": "接下来就说说围栏吧。围栏不仅能抑制杂草的蔓延、保护你的庄稼，还能用来圈养牲口。木围栏很快就会坏掉，但是石头、铁、硬木做的围栏可以用很久！",
+          "39": "从明天开始，大量的贝壳和珊瑚会被冲到世界各地的海滩上。我不是科学家，并不清楚其中的原理，但我听说这和螃蟹的交配季节有关系。不管怎么样，你可以利用当地的海滩好好挣些钱。",
           "43": "要在镇上做一次水疗吗？静静地站在冒着热气的泉水中，放松自己，恢复体力。啊……感觉真好，对吧？",
           "78": "鱼类聚焦：大眼鱼。你可以在秋天和冬天的雨夜找到这种鱼。任何淡水水域都有它们的身影。",
           "88": "想知道怎样才可以获得“精炼石英”吗？你只需将一块普通的石英放进熔炉。然后用一颗煤炭来烧它。",
@@ -181,7 +184,7 @@
         }
       },
   
-      //  修订 去掉重复的厘米 去掉多余的句号 将所有"金属棒 Metal bars"统一改为"金属锭" 选项->设置
+      //  修订 去掉重复的厘米 去掉多余的句号 将所有“金属棒 Metal bars”统一改为“金属锭” 选项->设置 去掉“收获野莓”多余的句号
       {
         "Action": "EditData",
         "Target": "Strings/UI",
@@ -194,6 +197,7 @@
           "LevelUp_ProfessionName_Coopmaster": "{{鸡舍}}大师",
           "LevelUp_ProfessionDescription_Coopmaster": "更快的与{{鸡舍}}的动物交好。\n孵化时间减半。",
           "Chat_PassedOut_Saloon": "{0}在酒吧睡着了。",
+          "LevelUp_ExtraInfo_Foraging3": "+1 收获野莓",
         }
       },
       
@@ -213,6 +217,7 @@
   
       // 东边->西边 头骨->骷髅
       // 修改老师傅香炸奶酪卷
+      // 营业时间->开放时间：
       {
         "Action": "EditData",
         "Target": "Strings/Locations",
@@ -222,6 +227,7 @@
           "NutHint_WestBuried": "还有 {0} 个埋在西边……",
           "SkullCave_SkullDoor_Unlock": "你把骷髅钥匙插入钥匙孔内。完美契合！",
           "Woods_Statue": "--{{老师傅香炸奶酪卷}}--\n……依旧寻求着最甜的味道……",
+          "LockedDoor_OpenRange": "上锁了……（开放时间： {0} - {1}）",
         }
       },
   
@@ -472,13 +478,14 @@
         }
       },
       
-      // 葡萄干布丁->梅干布丁
+      // 葡萄干布丁->梅干布丁 生鱼片寿司->生鱼寿司
       {
         "Action": "EditData",
         "Target": "Data/TV/CookingChannel",
         "Priority": "Early",
         "When": { "Language": "zh" },
         "Entries": {
+          "7": "Maki Roll/生鱼寿司！鲜美的海洋风味，被包裹在云一样松软的枕状米饭中。喜欢刺激的人还可以加一点芥末。说着说着，我就开始流口水了。哦，我太喜欢寿司了……",
           "13": "Plum Pudding/梅干布丁！面对这种黏糊糊的美味，童谣里的小杰克霍纳已经显得迫不及待了。但谁会责怪他呢？这野梅真的是又香又甜，再加上适度的酸味，完全能激活你每一个沉睡的味蕾。你真的需要亲身体验一下……",
         }
       },
@@ -543,14 +550,15 @@
         }
       },
   
-      // 浮标->浮漂
+      // 浮标->浮漂 蟹肉饼->蟹黄糕
       {
         "Action": "EditData",
         "Target": "Data/Events/Beach",
         "Priority": "Early",
         "When": { "Language": "zh" },
         "Entries": {
-          "3131209/n willyBugWadCutscene": "ocean/-2000 -2000/farmer 49 22 2/addTemporaryActor Willy 16 64 52 26 2/addCraftingRecipe Quality Bobber/skippable/specificTemporarySprite WillyWad/animate Willy false true 500 8 9 10 11/pause 1000/speak Willy \"嘿嘿……它们很喜欢……看它们动来动去！$h\"/pause 1000/playSound slosh/pause 500/playSound slosh/pause 500/playSound slosh/pause 500/viewport 52 24 true/pause 1000/move farmer 0 2 2/textAboveHead Willy \"啊嘿！\"/pause 2000/speak Willy \"我正想到你，小伙子。^我正想到你，小姑娘。#$b#你找来的虫肉真是完美！#$b#哈哈……我起初说要“新鲜”，可没想到它们现在还在蠕动！#$b#啊，我没在抱怨！鱼儿很喜欢……哈哈哈……$h\"/emote farmer 28 true/pause 300/playSound slimeHit/pause 500/playSound slimeHit/pause 500/playSound slimeHit/pause 1000/speak Willy \"作为感谢，我想教给你一个老渔夫的秘密……我老爹在好多年前，带我出去钓鱼时教会我的。\"/pause 500/playSound reward/message \"已学会制作“优质浮漂”\"/pause 500/speak Willy \"用那个浮漂可以吸引来高品质的鱼。#$b#然后口袋里就会有更多的钱，小伙子。哈哈……$h^然后口袋里就会有更多的钱，小姑娘。哈哈……$h\"/pause 1500/pause 300/playSound fishBite/pause 500/pause 400/playSound FishHit/animate Willy false true 100 17 18/textAboveHead Willy \"钓到了！\"/shake Willy 5000/pause 200/playSound slosh/pause 200/playSound slosh/pause 220/playSound slosh/pause 160/playSound slosh/pause 200/playSound slosh/pause 220/playSound slosh/pause 160/playSound slosh/pause 200/playSound slosh/pause 220/playSound slosh/pause 160/playSound slosh/pause 200/fade/viewport -1000 -1000/end"
+          "3131209/n willyBugWadCutscene": "ocean/-2000 -2000/farmer 49 22 2/addTemporaryActor Willy 16 64 52 26 2/addCraftingRecipe Quality Bobber/skippable/specificTemporarySprite WillyWad/animate Willy false true 500 8 9 10 11/pause 1000/speak Willy \"嘿嘿……它们很喜欢……看它们动来动去！$h\"/pause 1000/playSound slosh/pause 500/playSound slosh/pause 500/playSound slosh/pause 500/viewport 52 24 true/pause 1000/move farmer 0 2 2/textAboveHead Willy \"啊嘿！\"/pause 2000/speak Willy \"我正想到你，小伙子。^我正想到你，小姑娘。#$b#你找来的虫肉真是完美！#$b#哈哈……我起初说要“新鲜”，可没想到它们现在还在蠕动！#$b#啊，我没在抱怨！鱼儿很喜欢……哈哈哈……$h\"/emote farmer 28 true/pause 300/playSound slimeHit/pause 500/playSound slimeHit/pause 500/playSound slimeHit/pause 1000/speak Willy \"作为感谢，我想教给你一个老渔夫的秘密……我老爹在好多年前，带我出去钓鱼时教会我的。\"/pause 500/playSound reward/message \"已学会制作“优质浮漂”\"/pause 500/speak Willy \"用那个浮漂可以吸引来高品质的鱼。#$b#然后口袋里就会有更多的钱，小伙子。哈哈……$h^然后口袋里就会有更多的钱，小姑娘。哈哈……$h\"/pause 1500/pause 300/playSound fishBite/pause 500/pause 400/playSound FishHit/animate Willy false true 100 17 18/textAboveHead Willy \"钓到了！\"/shake Willy 5000/pause 200/playSound slosh/pause 200/playSound slosh/pause 220/playSound slosh/pause 160/playSound slosh/pause 200/playSound slosh/pause 220/playSound slosh/pause 160/playSound slosh/pause 200/playSound slosh/pause 220/playSound slosh/pause 160/playSound slosh/pause 200/fade/viewport -1000 -1000/end",
+          "711130/t 600 1710/f Willy 1500": "ocean/30 34/farmer 27 35 1 Willy 30 34 2 Gus -10 -10 0/skippable/addConversationTopic willyCrabs/showFrame Willy 24/move farmer 3 0 0/showFrame Willy 0/pause 800/speak Willy \"啊……太好了，你来了，小伙子。^啊……太好了，你来了，小姑娘。#$b#我遇到……遇到了一点麻烦，可能需要帮忙……\"/faceDirection Willy 3/faceDirection Willy 0/pause 1000/faceDirection Willy 3 true/pause 100/faceDirection Willy 2/speak Willy \"呃……还是直接让你看一下比较好……\"/pause 600/faceDirection Willy 3 true/pause 100/faceDirection Willy 0/speak Willy \"现在深呼吸一次。\"/pause 300/playSound doorClose/warp Willy -100 -100/move farmer 0 -1 0/pause 500/playSound doorClose/warp farmer -100 -100/globalFade/viewport -1000 -1000/changeLocation FishShop/specificTemporarySprite willyCrabExperiment/warp Willy 5 7/faceDirection Willy 0/playMusic ragtime/pause 500/viewport 5 7 true/pause 5000/warp farmer 5 9/playSound doorClose/pause 100/jump farmer/pause 1000/emote farmer 16/faceDirection Willy 3 true/pause 100/faceDirection Willy 2/speak Willy \"正如你能看到……#$b#也能闻到的……呃……#$b#这是老姑娘们昨晚的“狂欢”……呵……$h#$b#我的实验需要一些改进……\"/move farmer 0 -1 0/move farmer 2 0 1/emote farmer 56/warp Gus 5 9/playSound doorClose/pause 100/jump Gus/pause 1000/speak Gus \"吼吼~……又在做实验哈，威利？$h\"/textAboveHead Willy \"对……\"/move Gus 0 -1 3/move Gus -2 0 3/pause 1000/speak Gus \"这些螃蟹看起来很新鲜……\"/faceDirection Willy 3/speak Willy \"是了……这些是你见识不到的，最好、最肥美的螃蟹。$h#$b#但是，他们有点过于活跃了……$s\"/pause 1000/emote Gus 40/pause 500/jump Gus/pause 1000/speak Gus \"我全要了！$h#$b#当然，打点折，毕竟帮你忙算额外的劳动……\"/pause 2000/move farmer 1 0 0 true/move Gus -1 0 0 false/move farmer 0 -1 0 true/move Gus 0 -1 0 false/faceDirection Willy 0/pause 1000/playSound slimeHit/specificTemporarySprite removeSprite 3/pause 1000/playSound slimeHit/specificTemporarySprite removeSprite 1/pause 1000/playSound fishSlap/specificTemporarySprite removeSprite 2/pause 500/globalFade/viewport -1000 -1000/pause 1500/speak Gus \"似乎全归我们了……\"/pause 1000/speak Willy \"再见，甜心美人们……$s\"/pause 1000/speak Gus \"嘘……@……不要告诉威利，但我会在接下来的几天里在酒吧中做点特别的蟹黄糕……\"/pause 1000/end position 30 34",
         }
       },
       
@@ -777,6 +785,7 @@
         }
       },
       
+      // 过去的就让它过去吧-“把”->“吧”
       {
         "Action": "EditData",
         "Target": "Data/Events/Town",
@@ -784,6 +793,7 @@
         "Entries": {
           "3917584/f Shane 3500/O Shane/d Fri/t 800 1700": "distantBanjo/45 71/farmer 48 67 2 Marnie 52 71 0 Jas 51 71 0 Shane -100 -100 2/addConversationTopic shaneSaloon1 0/skippable/move farmer 0 3 2/warp Shane 45 71/playSound doorClose/faceDirection Marnie 3 true/faceDirection Jas 3 true/move Shane 0 1 2/pause 500/speak Shane \"呼……真好玩。$h#$b#好久没有像那样来上一盘了……*嗝*。\"/pause 500/emote Marnie 28 true/emote Jas 28 true/emote farmer 28 true/pause 1000/speak Shane \"哎……我全身都是汗。最好快点回家。\"/advancedMove Shane false -10 0 0 -14 -10 0 0 -3 -10 0/move farmer 0 2 3 true/pause 3000/speak Marnie \"哦不……这看起来有点糟糕。$s\"/pause 500/faceDirection Jas 1/emote Jas 28/move Marnie 0 1 3 false/faceDirection Jas 2 true/move Marnie -3 0 3/faceDirection Jas 3 true/faceDirection farmer 1/speak Marnie \"@？你最好盯着他一点……下次你看到他从酒吧里出来，你得说说他……$s\"/pause 1000/faceDirection farmer 2 true/pause 100/faceDirection farmer 3/pause 1000/end dialogue Shane \"没事吧，@？你好像一脸担忧的样子……\"",
           "3917589/n gaveAlexMoney/O Alex/d Mon/d Tue/d Wed/d Thu/d Fri/d Sat": "continue/-1000 -1000/farmer 100 100 2/addWorldState saloonSportsRoom/addMailReceived saloonSportsRoom/message \"星期天了……我晚点会去一趟酒吧，看看亚历克斯在干什么！\"/end",
+          "didntHear": "pause 400/pause 100/faceDirection Alex 1/speak Alex \"哦……我在和小灰说话。#$b#他和我其实有很多共同点。$s\"/faceDirection Alex 2/pause 1000/showFrame Alex 27/pause 600/playMusic desolate/emote Alex 28/speak Alex \"其实我不太想说的……但是我们已经认识有一段时间了，我觉得我可以信任你。$s\"/pause 1000/faceDirection Alex 0/pause 500/speak Alex \"你有没有好奇过，为什么我要和我的爷爷奶奶一起住？$s#$b#我的父亲……不是什么好家伙……他……唉，他几乎毁了我和我母亲的人生。$a#$b#从我出生起到现在，有一半的时间他是不在的……而剩下的一半时间，他每天都酗酒度日，然后数落我，说我一文不值，我会永远一事无成。$a#$b#我想，他是因为我还年轻所以才心怀怨恨……因为他虚度了青春，一事无成，所以满心苦涩。$a\"/faceDirection Alex 1/speak Alex \"唔……至少我是这么认为的。谁知道他脑子里到底在想些什么。$a\"/pause 800/speak Alex \"有一天，他突然离开了，很快我的母亲就生了重病，然后逝世了。我别无选择，只能搬来和爷爷奶奶一起住。$s\"/move farmer 0 1 1/pause 3000/emote Alex 40/faceDirection Alex 0/playMusic spring_day_ambient/pause 500/faceDirection farmer 2/pause 500/speak Alex \"你猜怎么着？过去的就让它过去吧……我不需要任何同情。#$b#我觉得人还是要乐观一点……我的童年或许不怎么快乐，但至少它让我变得很坚强。我也必须坚强。\"/pause 1000/speak Alex \"来，让你看看小灰吃烤牛排的样子。$h\"/faceDirection Alex 1/faceDirection farmer 1/showFrame Alex 26/specificTemporarySprite joshSteak/playSound dwop/pause 500/pause 500/speak Alex \"哈！看他那口水流的。我想他和我一样喜欢牛排。$h\"/playSound dogWhining/pause 3000/end",
         }
       },
   
