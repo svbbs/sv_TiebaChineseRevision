@@ -184,7 +184,7 @@
         }
       },
   
-      //  修订 去掉重复的厘米 去掉多余的句号 将所有"金属棒 Metal bars"统一改为"金属锭" 选项->设置
+      //  修订 去掉重复的厘米 去掉多余的句号 将所有“金属棒 Metal bars”统一改为“金属锭” 选项->设置 去掉“收获野莓”多余的句号
       {
         "Action": "EditData",
         "Target": "Strings/UI",
@@ -197,6 +197,7 @@
           "LevelUp_ProfessionName_Coopmaster": "{{鸡舍}}大师",
           "LevelUp_ProfessionDescription_Coopmaster": "更快的与{{鸡舍}}的动物交好。\n孵化时间减半。",
           "Chat_PassedOut_Saloon": "{0}在酒吧睡着了。",
+          "LevelUp_ExtraInfo_Foraging3": "+1 收获野莓",
         }
       },
       
