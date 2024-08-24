@@ -814,7 +814,7 @@
       // 修订人称问题 你们->你
       {
         "Action": "EditData",
-        "Target": "Characters/Dialogue/Elliott",
+        "Target": "Characters/Dialogue/Kent",
         "When": { "Language": "zh" },
         "Entries": {
           "Thu": "你是我儿子的朋友吗？#$e#你大概比我还了解他……$s",
