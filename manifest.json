@@ -8,7 +8,7 @@
    "UpdateKeys": [ "Nexus:2936" ],
    "ContentPackFor": {
       "UniqueID": "Pathoschild.ContentPatcher",
-      "MinimumVersion": "2.0.1"
+      "MinimumVersion": "2.4.0"
    },
    "Dependencies": [
       {
