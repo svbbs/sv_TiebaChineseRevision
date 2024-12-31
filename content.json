@@ -1,13 +1,7 @@
 {
-  "Format": "2.0.0",
+  "Format": "2.4.0",
 
   "ConfigSchema": {
-    "启用全文精校": {
-      "AllowValues": "true, false",
-      "Default": "true",
-      "Description": "是否启用全文精校，默认开启，关闭则只有老版本的局部少量修订。\n在原官方中文的基础上进行了全文精校，相当于选择另一个版本的中文翻译",
-      "Section": "译文选择"
-    },
     //  默认项皆为投票结果
     "鸡舍": {
       "AllowValues": "禽舍, 鸡舍",
@@ -54,16 +48,6 @@
 },
 
   "Changes": [
-    // 加载 4.1 翻译文件
-    {
-      "Action": "Include",
-      "FromFile": "assets/lite_chr.json",
-      "When": {
-        "Language": "zh"
-      },
-      "Priority": "Early"
-    },
-
     //  加载全文精校翻译文件
     {
       "Action": "Include",
@@ -73,10 +57,9 @@
       },
       "Update": "OnTimeChange, OnLocationChange",
       "When": {
-        "Language": "zh",
-        "启用全文精校": "true"
+        "Language": "zh"
       },
-      "Priority": "Early"
+      "Priority": "Early-1000"
     },
 
     //  图片修改部分
@@ -84,7 +67,8 @@
     {
       "Action": "EditImage",
       "Target": "LooseSprites/Cursors",
-      "Priority": "Early",
+      "Priority": "Early-1000",
+      "TargetLocale": "zh",
       "FromFile": "assets/草原之王.png",
       "FromArea": { "X": 0, "Y": 1, "Width": 93, "Height": 34 },
       "ToArea": { "X": 130, "Y": 1752, "Width": 93, "Height": 34 }
@@ -94,7 +78,9 @@
     {
       "Action": "EditImage",
       "Target": "Maps/Festivals",
+      "Priority": "Early-1000",
       "When": {"Language": "zh"},
+      "TargetLocale": "zh",
       "FromFile": "assets/星露谷展览会.png",
       "PatchMode": "Overlay",
       "FromArea": { "X": 0, "Y": 0, "Width": 116, "Height": 25 },
@@ -109,10 +95,11 @@
         "CurrentTime": "{{Time}}"
       },
       "Update": "OnTimeChange, OnLocationChange",
-      "Priority": "Early",
+      "Priority": "Early-1000",
       "When": {
         "复选框样式修改": "对勾"
       },
+      "TargetLocale": "zh",
       "FromFile": "assets/复选框-对勾.png",
       "FromArea": { "X": 9, "Y": 0, "Width": 9, "Height": 9 },
       "ToArea": { "X": 236, "Y": 425, "Width": 9, "Height": 9 }
@@ -126,10 +113,11 @@
         "CurrentTime": "{{Time}}"
       },
       "Update": "OnTimeChange, OnLocationChange",
-      "Priority": "Early",
+      "Priority": "Early-1000",
       "When": {
         "复选框样式修改": "方块"
       },
+      "TargetLocale": "zh",
       "FromFile": "assets/复选框-方块.png",
       "FromArea": { "X": 9, "Y": 0, "Width": 9, "Height": 9 },
       "ToArea": { "X": 236, "Y": 425, "Width": 9, "Height": 9 }
@@ -142,11 +130,12 @@
         "CurrentTime": "{{Time}}"
       },
       "Update": "OnTimeChange, OnLocationChange",
-      "Priority": "Early",
+      "Priority": "Early-1000",
       "When": { 
         "启用特殊爱称彩蛋": false,  
         "Language": "zh"
       },
+      "TargetLocale": "zh",
       "Entries": {
         "NPC.cs.4507": "亲爱的", // Pookie 布奇->亲爱的（默认）小可爱（选项）
         "NPC.cs.4508": "亲爱的", // Love 爱->亲爱的
@@ -169,11 +158,12 @@
         "CurrentTime": "{{Time}}"
       },
       "Update": "OnTimeChange, OnLocationChange",
-      "Priority": "Early",
+      "Priority": "Early-1000",
       "When": { 
         "启用特殊爱称彩蛋": true,  
         "Language": "zh"
       },
+      "TargetLocale": "zh",
       "Entries": {
         "NPC.cs.4507": "小可爱", // Pookie 布奇->亲爱的（默认）小可爱（选项）
         "NPC.cs.4508": "亲爱的", // Love 爱->亲爱的
