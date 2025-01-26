@@ -68,7 +68,7 @@
       "Action": "EditImage",
       "Target": "LooseSprites/Cursors",
       "Priority": "Early-1000",
-      "TargetLocale": "zh",
+      "TargetLocale": "zh-CN",
       "FromFile": "assets/草原之王.png",
       "FromArea": { "X": 0, "Y": 1, "Width": 93, "Height": 34 },
       "ToArea": { "X": 130, "Y": 1752, "Width": 93, "Height": 34 }
@@ -80,7 +80,7 @@
       "Target": "Maps/Festivals",
       "Priority": "Early-1000",
       "When": {"Language": "zh"},
-      "TargetLocale": "zh",
+      "TargetLocale": "zh-CN",
       "FromFile": "assets/星露谷展览会.png",
       "PatchMode": "Overlay",
       "FromArea": { "X": 0, "Y": 0, "Width": 116, "Height": 25 },
@@ -99,7 +99,7 @@
       "When": {
         "复选框样式修改": "对勾"
       },
-      "TargetLocale": "zh",
+      "TargetLocale": "zh-CN",
       "FromFile": "assets/复选框-对勾.png",
       "FromArea": { "X": 9, "Y": 0, "Width": 9, "Height": 9 },
       "ToArea": { "X": 236, "Y": 425, "Width": 9, "Height": 9 }
@@ -117,7 +117,7 @@
       "When": {
         "复选框样式修改": "方块"
       },
-      "TargetLocale": "zh",
+      "TargetLocale": "zh-CN",
       "FromFile": "assets/复选框-方块.png",
       "FromArea": { "X": 9, "Y": 0, "Width": 9, "Height": 9 },
       "ToArea": { "X": 236, "Y": 425, "Width": 9, "Height": 9 }
@@ -135,7 +135,7 @@
         "启用特殊爱称彩蛋": false,  
         "Language": "zh"
       },
-      "TargetLocale": "zh",
+      "TargetLocale": "zh-CN",
       "Entries": {
         "NPC.cs.4507": "亲爱的", // Pookie 布奇->亲爱的（默认）小可爱（选项）
         "NPC.cs.4508": "亲爱的", // Love 爱->亲爱的
@@ -163,7 +163,7 @@
         "启用特殊爱称彩蛋": true,  
         "Language": "zh"
       },
-      "TargetLocale": "zh",
+      "TargetLocale": "zh-CN",
       "Entries": {
         "NPC.cs.4507": "小可爱", // Pookie 布奇->亲爱的（默认）小可爱（选项）
         "NPC.cs.4508": "亲爱的", // Love 爱->亲爱的
