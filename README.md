@@ -8,6 +8,6 @@
 
 作者：星露谷物语贴吧汉化组 <br/>
 
-对星露谷物语中文翻译进行全文校对，修订若干错误，润色人物对话、剧情文本等。更多详情请见[更新日志](https://chr.svbbs.club/about/changelog.html)。
+对星露谷物语中文翻译进行全文校对，修订若干错误，润色人物对话、剧情文本等。更多详情请见[更新日志](https://chr.svbbs.club/docs/chr-mod/changelog)
 
 </div>
