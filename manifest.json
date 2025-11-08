@@ -1,7 +1,7 @@
 {
    "Name": "贴吧中文修订",
    "Author": "星露谷物语贴吧汉化组",
-   "Version": "5.1.1",
+   "Version": "5.1.2",
    "Description": "对星露谷物语中文翻译进行全文校对，修订若干错误，润色人物对话、剧情文本等",
    "UniqueID": "FarAways.TiebaChineseRevision",
    "MinimumApiVersion": "4.0.0",
