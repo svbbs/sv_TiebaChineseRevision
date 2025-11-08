@@ -1,6 +1,6 @@
 <div align="center">
   
-<a href="https://chr.svbbs.club/"><img src="https://pic.svbbs.club/i/2024/0smbG5PsjR.png" width="250" height="250" alt="星露谷物语中文修订MOD"></a>
+<a href="https://chr.svbbs.club/"><img src="https://pics.svbbs.club/i/2025/0smbG5PsjR.png" width="250" height="250" alt="星露谷物语中文修订MOD"></a>
 
 # 星露谷物语贴吧中文修订 MOD
 
