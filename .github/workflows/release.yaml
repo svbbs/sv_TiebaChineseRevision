@@ -1,0 +1,191 @@
+name: CI & Release
+
+on:
+  push:
+    tags:
+      - "v*"
+    branches:
+      - "**"
+    paths-ignore:
+      - "README.md"
+      - "README.*"
+  pull_request:
+    branches:
+      - "**"
+    paths-ignore:
+      - "README.md"
+      - "README.*"
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  # ============================================
+  # Job 1: 验证 - 每次 push/PR 都会运行
+  # ============================================
+  validate:
+    name: Validate JSON files
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate JSON files
+        run: |
+          echo "🧪 Start validating JSON files..."
+
+          pip install commentjson > /dev/null
+
+          files=$(find . -name "*.json" ! -name "content.json")
+          error_count=0
+          checked_count=0
+
+          if [ -z "$files" ]; then
+            echo "No JSON files found, skip normal JSON check."
+          else
+            for file in $files; do
+              if [ -f "$file" ]; then
+                checked_count=$((checked_count + 1))
+                if python -m json.tool "$file" > /dev/null 2>&1; then
+                  echo "✓ $file"
+                else
+                  echo "✗ JSON error in: $file"
+                  python -m json.tool "$file" > /dev/null || true
+                  error_count=$((error_count + 1))
+                fi
+              fi
+            done
+          fi
+
+          if [ -f "content.json" ]; then
+            echo "🔍 Validate content.json as JSONC..."
+            checked_count=$((checked_count + 1))
+            if python -c 'import commentjson,sys,json; from pathlib import Path; p=Path("content.json"); data=commentjson.load(p.open(encoding="utf-8")); json.dumps(data); print("✓",p,"(JSONC)")' 2>&1; then
+              :
+            else
+              echo "✗ JSONC error in: content.json"
+              error_count=$((error_count + 1))
+            fi
+          else
+            echo "content.json not found, skip JSONC check."
+          fi
+
+          if [ "$error_count" -gt 0 ]; then
+            echo "::error ::JSON check failed: ${error_count} file(s) with errors (checked ${checked_count})."
+            exit 1
+          else
+            echo "✅ All ${checked_count} JSON/JSONC file(s) are valid."
+          fi
+
+  # ============================================
+  # Job 2: 元数据 - 判断是否需要发版
+  # ============================================
+  meta:
+    name: Prepare metadata
+    runs-on: ubuntu-latest
+    outputs:
+      tag: ${{ steps.set_tag.outputs.tag }}
+      version: ${{ steps.set_tag.outputs.version }}
+      short_version: ${{ steps.set_tag.outputs.short_version }}
+      is_release: ${{ steps.set_tag.outputs.is_release }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set tag info
+        id: set_tag
+        run: |
+          is_release=${{ startsWith(github.ref, 'refs/tags/v') }}
+          
+          if $is_release; then
+            tag="${GITHUB_REF_NAME}"
+            version="${tag#v}"
+
+            short_version=$(echo "$version" | cut -d. -f1,2)
+            echo "📦 This is a release build: $tag"
+            echo "📦 Short version: $short_version"
+          else
+            tag="dev-$(date +%y%m%d)-$(git rev-parse --short HEAD)"
+            version="dev"
+            short_version="dev"
+            echo "🔧 This is a development build: $tag"
+          fi
+          
+          echo "tag=$tag" >> $GITHUB_OUTPUT
+          echo "version=$version" >> $GITHUB_OUTPUT
+          echo "short_version=$short_version" >> $GITHUB_OUTPUT
+          echo "is_release=$is_release" >> $GITHUB_OUTPUT
+
+  # ============================================
+  # Job 3: 生成 Changelog - 仅发版时运行
+  # ============================================
+  changelog:
+    name: Generate changelog
+    needs: meta
+    if: ${{ needs.meta.outputs.is_release == 'true' }}
+    runs-on: ubuntu-latest
+    outputs:
+      release_body: ${{ steps.git-cliff.outputs.content }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate changelog with git-cliff
+        uses: orhun/git-cliff-action@v4
+        id: git-cliff
+        with:
+          config: .github/cliff.toml
+          args: --latest --strip header
+
+  # ============================================
+  # Job 4: 发布 Release - 仅 tag 推送时运行
+  # ============================================
+  release:
+    name: Create GitHub Release
+    needs: [validate, meta, changelog]
+    if: ${{ needs.meta.outputs.is_release == 'true' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set artifact name
+        id: vars
+        run: |
+          echo "artifact_name=Tieba-Chinese-Revision-${{ needs.meta.outputs.tag }}.zip" >> $GITHUB_OUTPUT
+          echo "folder_name=[CP]贴吧中文修订 ${{ needs.meta.outputs.short_version }}" >> $GITHUB_OUTPUT
+
+      - name: Zip project
+        run: |
+          FOLDER_NAME="${{ steps.vars.outputs.folder_name }}"
+          ARTIFACT_NAME="${{ steps.vars.outputs.artifact_name }}"
+
+          mkdir -p "$FOLDER_NAME"
+          
+          rsync -av --exclude='.git' --exclude='.github' --exclude='.gitignore' \
+            --exclude='README.md' --exclude='README.*' \
+            --exclude="$FOLDER_NAME" \
+            . "$FOLDER_NAME/"
+
+          zip -r "$ARTIFACT_NAME" "$FOLDER_NAME"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ needs.meta.outputs.tag }}
+          name: Tieba Chinese Revision ${{ needs.meta.outputs.version }}
+          body: ${{ needs.changelog.outputs.release_body }}
+          draft: false
+          prerelease: false
+          files: |
+            ${{ steps.vars.outputs.artifact_name }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

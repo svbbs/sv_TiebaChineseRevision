@@ -1,0 +1,59 @@
+[changelog]
+header = """"""
+
+body = """
+## 📋 更新内容
+
+### 🛠️ 开发相关
+
+{% set dev_commits = commits | filter(attribute="group", value="dev") %}
+{% if dev_commits | length == 0 %}
+- （本次无开发相关改动）
+{% else %}
+{% for commit in dev_commits %}
+{%- set msg = commit.message | split(pat="\n") | first -%}
+{%- set msg = msg | split(pat=": ") | slice(start=1) | join(sep=": ") -%}
+- {{ msg }}
+{% endfor %}
+{% endif %}
+
+### 📝 文本修订
+
+{% set text_commits = commits | filter(attribute="group", value="text") %}
+{% if text_commits | length == 0 %}
+- （本次无文本修订）
+{% else %}
+{% for commit in text_commits %}
+{%- set msg = commit.message | split(pat="\n") | first -%}
+{%- set msg = msg | split(pat=": ") | slice(start=1) | join(sep=": ") -%}
+- {{ msg }}
+{% endfor %}
+{% endif %}
+
+### 🧩 杂项
+
+{% set chore_commits = commits | filter(attribute="group", value="chore") %}
+{% if chore_commits | length == 0 %}
+- （本次无杂项改动）
+{% else %}
+{% for commit in chore_commits %}
+{%- set msg = commit.message | split(pat="\n") | first -%}
+{%- set msg = msg | split(pat=": ") | slice(start=1) | join(sep=": ") -%}
+- {{ msg }}
+{% endfor %}
+{% endif %}
+"""
+
+footer = """"""
+
+[git]
+tag_pattern = "v[0-9]*"
+conventional_commits = false
+skip_tags = ""
+
+commit_parsers = [
+  { message = "^dev", group = "dev" },
+  { message = "^text", group = "text" },
+  { message = "^chore", group = "chore" },
+  { message = ".*", group = "other", skip = true },
+]
